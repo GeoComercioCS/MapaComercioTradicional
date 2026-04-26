@@ -1280,6 +1280,341 @@ const locations = [
         images: [
             { url: "./images/31_Discos_Medicinales_01.jpg", date: today }
                    ]
+    },   
+    {
+        id: 46,
+        title: "IMA Horchatería y Heladería",
+        type: "Horchatería y heladería (CNAE 5610)",
+        description: "IMA Horchatería fue fundada en 1969 por Rosenda Alcaide e Ismael Pérez, \
+        originarios de Béjis. Antes de establecerse en Castellón, el matrimonio criaba \
+        cerdos y vendía carne en su localidad natal, distribuyéndola incluso a clientas \
+        de Benimaclet y Valencia, que Ismael llevaba en tren. Fue precisamente una de esas \
+        clientas quien le sugirió trasladarse a Castellón para dedicarse a la elaboración de \
+        horchata. Llegaron poco antes de Pascua de 1969 e iniciaron su actividad en la calle \
+        Conde Noroña, donde encontraron un local con un único molino y una lavadora, siendo \
+        el resto del proceso completamente manual. En aquella época la empresa se llamaba \
+        Horchatería Castalia.\
+        Los inicios del negocio estuvieron marcados por la tradición del barrio: las comuniones \
+        se celebraban en casa y el establecimiento servía pedidos de hasta 40 litros de horchata \
+        para las celebraciones familiares. Rosenda recuerda que en Castellón siempre se tomó \
+        horchata líquida, a diferencia de Valencia donde se consumía granizada, y que llegaron \
+        a repartir carteles en los bares del barrio anunciando <em>horchata líquida</em>. \
+        En 1971 el negocio pasó a llamarse IMA y en 1980 se trasladó a su ubicación actual \
+        la Avenida Capuchinos, 13.\
+        Durante su etapa en la calle Conde Noroña, el establecimiento formaba parte de un \
+        tejido comercial de barrio, hoy en gran parte desaparecido: el Cine Azul, un quiosco, \
+        dos alpargaterías, un tapicero y la señora Anita, abuela de Toni el Figuero de \
+        <em>La botiga de la figa</em>, que vendía churros en el mercado, componían el entorno \
+        cotidiano del negocio.\
+        Ismael, músico de la banda de Béjis, nunca dejó de regresar a su pueblo natal \
+        cada viernes para los ensayos, y desde hace más de 45 años la familia sube horchata \
+        a Béjis durante las fiestas del pueblo para repartirla gratuitamente entre los vecinos. \
+        Tras el fallecimiento de Ismael, es su hijo Luis quien mantiene viva esta tradición. \
+        En 2001, la gestión del establecimiento pasó a manos de su hija Inma Pérez, \
+        quien incorporó la actividad de heladería artesanal.\
+        Como señala Rosenda: <em>«la horchata ha sido medicinal en esta tierra toda \
+        la vida»</em>.\
+        <em>[Entrevista, 2020]</em>",
+        coordinates: [-0.03419, 39.98969],
+        details: {
+            address: "Avenida Capuchinos, 13 ",
+            category: "Tiendas históricas",
+            activity: "1969 –",
+            foundation: "Rosenda Alcaide e Ismael Pérez",
+            manager: " Inma Pérez (2001 – actualidad)", 
+            status: "Activo",
+            store: "",
+            link: "",
+            contact: "",
+            notes: ""
+
+        },
+        icon: "",
+        markerImage: "./images/Storici_rosa.png",
+        markerSize: 60,
+        images: [
+            { url: "./images/31_Discos_Medicinales_01.jpg", date: today }
+                   ],
+        video: [
+            {url: "https://youtu.be/RjnhSng8MYk?si=Jb9pygjmSFiLObw7" }
+        ]
+    },   
+    {
+        id: 47,
+        title: "J. Saura",
+        type: "Tienda de productos a granel (CNAE 4721)",
+        description: "J. Saura es una tienda de productos a granel fundada alrededor de 1950 \
+        por Jaime Saura. En sus orígenes funcionó principalmente como almacén de piensos \
+        para animales, respondiendo a una realidad de barrio en la que las familias criaban \
+        gallinas, pollos, patos y conejos en sus propias casas. Con el tiempo, al desaparecer \
+        esta costumbre, el negocio fue evolucionando hacia la venta de legumbres — garbanzos, \
+        lentejas, alubias — y frutos secos, conservando el carácter de comercio tradicional \
+        a granel. Entre los productos que ofrece se encuentran también arroz, harina, \
+        aceitunas, altramuces y levadura, esta última disponible únicamente en época de \
+        Pascua.\
+        El establecimiento ha pasado por tres generaciones: del fundador Jaime Saura a la \
+        segunda generación, formada por dos de sus hijos - entre ellos la madre de Jaime -  \
+        y finalmente a la actual, representada por Jaime Brun Saura y su hermana. En 1981, \
+        las hijas del hijo del fundador abrieron un establecimiento propio bajo el nombre \
+        de Nietas de J. Saura, ampliando así el legado familiar en el comercio tradicional \
+        de la ciudad. Jaime Brun Saura señala que este tipo de establecimientos son cada vez \
+        más escasos y tienden a desaparecer.\
+        <em>[Entrevista, 2025]</em>",
+        coordinates: [-0.04033, 39.98983],
+        details: {
+            address: "Plaza del Maestrazgo, 2",
+            category: "Tiendas históricas",
+            activity: "~1950 –",
+            foundation: "Jaime Saura",
+            manager: "Jaime Brun Saura (tercera generación)", 
+            status: "Activo",
+            store: "",
+            link: "",
+            contact: "",
+            notes: ""
+
+        },
+        icon: "",
+        markerImage: "./images/Storici_rosa.png",
+        markerSize: 60,
+        images: [
+            { url: "./images/31_Discos_Medicinales_01.jpg", date: today }
+                   ],
+        video: [
+            {url: "" }
+        ]
+    },   
+    {
+        id: 48,
+        title: "Nietas de J. Saura",
+        type: "Tienda de productos a granel (CNAE 4721)",
+        description: "Nietas de J. Saura fue fundada en 1984 por las hermanas Mari Carmen y \
+        Nuria Saura, nietas de Jaime Saura, fundador del establecimiento homónimo de la \
+        Plaza del Maestrazgo. El negocio representa la tercera generación de una familia \
+        dedicada al comercio de productos a granel, cuyos orígenes se remontan a un \
+        almacén de piensos para animales — trigo, salvado, maíz — en una época en que \
+        las familias de Castellón criaban gallinas y conejos en sus propias casas. Con \
+        el paso de los años, el negocio fue evolucionando hacia la venta de legumbres y \
+        frutos secos a granel, priorizando el producto nacional. En los últimos tiempos, \
+        el establecimiento amplió su oferta para responder a las nuevas demandas del mercado, \
+        incorporando productos para vegetarianos, veganos, celíacos e intolerantes alimentarios.\
+        Tras 40 años de actividad en la calle Trinidad, las hermanas Saura se jubilaron en 2025 \
+        con alegría, aunque también con <em>penita en el corazón</em>, emocionadas por el cariño \
+        demostrado por su clientela a lo largo de todos estos años.\
+        <em>[Entrevista, 2025]</em>",
+        coordinates: [-0.04032, 39.98229],
+        details: {
+            address: "Calle Trinidad, 94",
+            category: "Tiendas históricas",
+            activity: "1984–2025",
+            foundation: "Mari Carmen y Nuria Saura",
+            manager: "Mari Carmen y Nuria Saura", 
+            status: "Cerrado",
+            store: "Se traspasa",
+            link: "https://www.elperiodicomediterraneo.com/castello/2025/12/24/despedida-comercio-emblematico-castello-saura-nietas-negocio-frutos-secos-125103890.html",
+            contact: "",
+            notes: ""
+
+        },
+        icon: "",
+        markerImage: "./images/Storici_rosa.png",
+        markerSize: 60,
+        images: [
+            { url: "./images/31_Discos_Medicinales_01.jpg", date: today }
+                   ],
+        video: [
+            {url: "" }
+        ]
+    },   
+    {
+        id: 49,
+        title: "Patatas J. García",
+        type: "Elaboración artesanal de patatas fritas y frutos secos (CNAE 1084)",
+        description: "Empresa familiar fundada a comienzos de los años ochenta por Javier \
+        García y Yolanda Cosín, quienes iniciaron su actividad elaborando churros, \
+        buñuelos y patatas fritas mediante métodos tradicionales, vendidos en papelinas \
+        en su propio establecimiento. En 1990, ante el crecimiento de la demanda tanto de \
+        particulares como de pequeños comercios, iniciaron el envasado del producto y \
+        ampliaron la producción sin abandonar el modelo artesanal. La empresa ha mantenido \
+        como principio fundamental la prioridad de la tradición frente a la innovación, \
+        seleccionando materias primas de alta calidad y rechazando productos que no cumplan \
+        sus estándares organolépticos — como determinadas nueces importadas — en favor de \
+        proveedores nacionales o europeos sin tratamientos industriales.\
+        Yolanda describe la relación con sus clientes como algo que trasciende el ámbito \
+        comercial: muchos de ellos son clientes de toda la vida cuyos hijos y nietos \
+        siguen frecuentando el establecimiento. El negocio atrae también a visitantes \
+        extranjeros — franceses, ingleses — que hacen del establecimiento una parada \
+        obligada durante sus vacaciones en la ciudad.\
+        En abril de 2025, tras 42 años de actividad, la sociedad fue traspasada a un \
+        empresario de Castellón que mantiene la plantilla y la filosofía original de la marca.\
+        <em>[Entrevista, 2021]</em>",
+        coordinates: [-0.03479, 39.98646],
+        details: {
+            address: "Calle Aarau, 3",
+            category: "Tiendas históricas",
+            activity: "1982 –",
+            foundation: "Javier García y Yolanda Cosín",
+            manager: "Javier García y Yolanda Cosín (1982–2025), nuevo propietario (2025 – actualidad)", 
+            status: "Activo - Traspasado",
+            store: "",
+            link: "https://economia3.com/2017/06/20/123972-patatas-fritas-j-garcia-no-nos-basamos-en-la-innovacion-sino-en-la-tradicion-2/",
+            contact: "",
+            notes: ""
+
+        },
+        icon: "",
+        markerImage: "./images/Storici_rosa.png",
+        markerSize: 60,
+        images: [
+            { url: "./images/31_Discos_Medicinales_01.jpg", date: today }
+                   ],
+        video: [
+            {url: "" }
+        ]
+    },   
+    {
+        id: 50,
+        title: "Horno Adell",
+        type: "Elaboración artesanal de patatas fritas y frutos secos (CNAE 1084)",
+        description: "Panadería en funcionamiento documentado desde 1875, actualmente \
+        gestionada por Manolo Fuentes Adell y su esposa Raquel Ferragut, tercera generación. \
+        Mantiene la elaboración tradicional con horno de leña y una producción artesanal \
+        de pan y especialidades como magdalenas, cocas, rollos y <em>pastissets de boniato</em>. \
+        Las fotografías del establecimiento documentan la presencia de Manuel Fuentes Amela, \
+        quien continuó colaborando en el negocio familiar tras su jubilación — testimonio de \
+        la continuidad generacional que caracteriza a este tipo de comercio tradicional. \
+        Con más de un siglo y medio de actividad ininterrumpida, figura entre los \
+        establecimientos comerciales más antiguos documentados de Castellón.\
+        <em>[Fuentes hemerográficas, 2017, 2019]</em>",
+        coordinates: [-0.039375, 39.986361],
+        details: {
+            address: "Calle Alloza, 58",
+            category: "Tiendas históricas",
+            activity: "1875 –",
+            foundation: "Alfredo Adell Bellés",
+            manager: "Manolo Fuentes Adell y Raquel Ferragut", 
+            status: "Activo",
+            store: "",
+            link: "https://www.elperiodicomediterraneo.com/castello/2017/06/03/hornos-tradicionales-forman-parte-historia-41531238.html \
+                    https://www.elperiodicomediterraneo.com/ocio/gastronomia/2019/01/14/pan-arte-castellon-41181061.html",
+            contact: "",
+            notes: ""
+
+        },
+        icon: "",
+        markerImage: "./images/Storici_rosa.png",
+        markerSize: 60,
+        images: [
+            { url: "./images/31_Discos_Medicinales_01.jpg", date: today }
+                   ],
+        video: [
+            {url: "" }
+        ]
+    },   
+    {
+        id: 51,
+        title: "El Niño",
+        type: "Juguetería (CNAE 4765)",
+        description: "El recorrido de esta familia de comerciantes en juguetería constituye \
+        un ejemplo singular de continuidad comercial y transmisión familiar a lo largo de \
+        cuatro generaciones. El establecimiento El Niño abrió en su sede actual en 1968, \
+        pero los orígenes de esta familia en el comercio se remontan a finales del siglo XIX, \
+        cuando Rosa Serrano comenzó con una <em>tauleta</em> en la entrada del Teatro Principal \
+        con la que vendía caramelos, frutos secos, calabaza al horno y otros alimentos típicos \
+        de la época. Tras la Guerra Civil, y con la colaboración de su hijo Jaime, quien contaba \
+        con estudios superiores con los jesuitas, Rosa Serrano transformó el negocio familiar en \
+        una juguetería, instalada en el bajo donde residían, en la calle San Félix, 67. A lo largo \
+        de las décadas siguientes, el establecimiento atravesó varios traslados: primero a la calle \
+        Zaragoza, 24; posteriormente a la Ronda Mijares, 2; y finalmente, en 1968, a su sede actual \
+        en la calle Zaragoza, 17, donde tomó el nombre actual.\
+        En la actualidad, el negocio está regentado por Nuria Fabregat, quien comparte la \
+        gestión diaria con su madre, María Rosa Tena Beltrán, aún activa en el establecimiento. \
+        Ambas destacan el significado que la actividad comercial ha tenido en sus vidas: la calle \
+        Zaragoza ha sido para ellas, al mismo tiempo, hogar y comunidad. El vínculo con el barrio \
+        se ha extendido también a empleados y vecinos; es especialmente significativa la figura de \
+        Mari Carmen Roig, colaboradora del establecimiento desde 1969 hasta 2008, considerada parte \
+        de la familia.\
+        El relato de madre e hija ilustra una cultura comercial basada en la cohesión vecinal \
+        y la solidaridad entre comerciantes. Un ejemplo es la relación mantenida con la \
+        juguetería El Juguete Roig, establecimiento próximo con el que existía una práctica \
+        de préstamo de artículos: cuando uno de los negocios carecía de un juguete determinado, \
+        lo solicitaba al otro en préstamo para su venta, restituyéndolo una vez repuesto \
+        el <em>stock</em>.\
+        Nuria Fabregat subraya que el elemento que más la vincula a este tipo de comercio es \
+        la relación con los clientes, que trasciende el simple acto de compraventa para \
+        convertirse en un lazo personal duradero. Señala, asimismo, un cambio significativo \
+        en los hábitos de consumo: mientras que en el pasado los juguetes eran objeto de \
+        deseo prolongado y a menudo adquiridos mediante pagos fraccionados, la clientela \
+        actual, compuesta principalmente por personas de edad avanzada, tiende a realizar \
+        compras por impulso.\
+        <em>[Entrevista, 2026]</em>",
+        coordinates: [-0.041472, 39.987358],
+        details: {
+            address: "Calle Zaragoza, 17",
+            category: "Tiendas históricas",
+            activity: "1968 –",
+            foundation: "María Rosa Tena Beltrán",
+            manager: "Nuria Fabregat", 
+            status: "Activo",
+            store: "",
+            link: "",
+            contact: "",
+            notes: ""
+
+        },
+        icon: "",
+        markerImage: "./images/Storici_rosa.png",
+        markerSize: 60,
+        images: [
+            { url: "./images/31_Discos_Medicinales_01.jpg", date: today }
+                   ],
+        video: [
+            {url: "" }
+        ]
+    },   
+    {
+        id: 52,
+        title: "Panadería Macián",
+        type: " Panadería y bollería con horno artesanal tradicional (CNAE 1071)",
+        description: "La Panadería Macián inició su actividad en 1947, cuando Rosalía Palos \
+        García y Pedro Macián Salvador establecieron su primer obrador en la calle La Unión \
+        de Castellón. En 1950, el negocio se trasladó a su actual ubicación en la \
+        calle Mayor, 12, donde ha permanecido de forma ininterrumpida hasta hoy. \
+        Desde su fundación, el establecimiento ha mantenido métodos de producción \
+        tradicionales y la elaboración de productos típicos locales, preservando \
+        técnicas artesanales frente a los procesos industriales que han transformado \
+        el sector panadero a lo largo del siglo XX.Entre sus productos más emblemáticos \
+        como las pelotas de fraile, los <em>ximos</em>, las ensaimadas, las cocas, \
+        destacan los <em>pastelitos de boniato</em>, cuya incorporación al obrador \
+        responde a una historia singular: fue Mercedes Vicente, madre de Marimer Sidro, \
+        quien sugirió que una amiga suya, Teresa, conocida en su entorno por la calidad \
+        excepcional de estos dulces, acudiera a enseñar la receta a los panaderos. \
+        El éxito fue tal que, de elaborarse únicamente en Navidad, pasaron a producirse \
+        durante todo el año.\
+        <em>[Entrevista, 2022]</em>",
+        coordinates: [-0.0373419, 39.9844299],
+        details: {
+            address: "Calle Mayor, 12",
+            category: "Tiendas históricas",
+            activity: "1947 –",
+            foundation: "Rosalía Palos García y Pedro Macián Salvador",
+            manager: "Pedro Macián Sidro y Marimer Sidro (tercera generación)", 
+            status: "Activo",
+            store: "",
+            link: "https://www.elperiodic.com/castellon/ayuntamiento-castellon-homenaje-cinco-establecimientos-gala-comercio-siempre_52206",
+            contact: "",
+            notes: ""
+
+        },
+        icon: "",
+        markerImage: "./images/Storici_rosa.png",
+        markerSize: 60,
+        images: [
+            { url: "./images/31_Discos_Medicinales_01.jpg", date: today }
+                   ],
+        video: [
+            {url: "https://youtu.be/bOBUSJCj7Ik?si=Y9wSBniXYz4dNv-I" }
+        ]
     }
 ];
 
