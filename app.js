@@ -1092,6 +1092,194 @@ const locations = [
         images: [
             { url: "./images/31_Discos_Medicinales_01.jpg", date: today }
                    ]
+    },   
+    {
+        id: 41,
+        title: "Jeylo",
+        type: "Tienda de electricidad, venta y reparación de aparatos (CNAE 4754)",
+        description: "Desde 1963, Jeylo es un comercio emblemático del casco histórico de \
+        Castellón. Fundado por Jesús Medrano y su esposa Dolores (Lolita) Badenes Gual, \
+        el nombre surge de las iniciales del matrimonio. Inaugurado en noviembre de 1963, \
+        el mismo día del asesinato del presidente John Fitzgerald Kennedy, acontecimiento \
+        que muchos vecinos siguieron en directo en el propio establecimiento. Fue uno de \
+        los primeros comercios de la ciudad en vender y reparar televisores, convirtiéndose \
+        en un espacio de visionado comunitario en una época en que el televisor era todavía \
+        un bien de lujo. Durante décadas, los vecinos se reunían en la tienda para seguir \
+        acontecimientos colectivos — como la boda de Balduino y Fabiola — o para alquilar \
+        tocadiscos y altavoces para fiestas locales.En la actualidad, Lola continúa al frente \
+        del negocio a sus 90 años (2026), levantando la persiana cada día y atendiendo \
+        personalmente a sus clientes, ejerciendo su <em>vocación como asesora en \
+        electricidad del barrio centro</em>.\
+        <em>[Entrevista, 2019; Fuentes hemerográficas, 2022, 2024]</em>",
+        coordinates: [-0.03593, 39.98776],
+        details: {
+            address: "Calle Caballeros, 36",
+            category: "Tiendas históricas",
+            activity: "1963 –",
+            foundation: "Dolores Badenes Gual y Jesús Medrano",
+            manager: "Dolores Badenes Gual", 
+            status: "Activo",
+            store: "",
+            link: "https://www.castelloninformacion.com/lola-badenes-maria-dinu-monica-avila-y-jm-arquimbau-premiados-por-mujeres-en-igualdad \
+                https://www.elperiodicomediterraneo.com/castello-provincia/2022/06/19/historia-castellon-traves-mujeres-comerciantes-67271507.html\
+                https://youtu.be/WP5uqeZjCto?si=79aXK1DbH_unzxTt",
+            contact: "",
+            notes: ""
+
+        },
+        icon: "",
+        markerImage: "./images/Storici_rosa.png",
+        markerSize: 60,
+        images: [
+            { url: "./images/31_Discos_Medicinales_01.jpg", date: today }
+                   ]
+    },   
+    {
+        id: 42,
+        title: "Bollería Fernández",
+        type: "Bollería tradicional (CNAE 1071) ",
+        description: "No se dispone de datos adicionales.",
+        coordinates: [-0.03677, 39.98685],
+        details: {
+            address: "Calle Cervantes, 25",
+            category: "Tiendas históricas",
+            activity: "s/d",
+            foundation: "s/d",
+            manager: "s/d", 
+            status: "Cerrado",
+            store: "Cerrado",
+            link: "",
+            contact: "",
+            notes: ""
+
+        },
+        icon: "",
+        markerImage: "./images/Storici_rosa.png",
+        markerSize: 60,
+        images: [
+            { url: "./images/31_Discos_Medicinales_01.jpg", date: today }
+                   ]
+    },   
+    {
+        id: 43,
+        title: "Panadería Vives",
+        type: "Panadería tradicional (CNAE 1071)",
+        description: "La Panadería Vives cuenta con más de un siglo de actividad ininterrumpida. \
+        Sus fundadores, Jose Mele Molí y Antonia Benajes, originarios de Teruel, se trasladaron \
+        a Castellón donde, en 1908, iniciaron la actividad panadera. El establecimiento ha \
+        pasado por cinco generaciones: Jose Vives Domenech y Vicenta Mele Benajes (segunda); \
+        Jose Vives Mele y Pilar Vilar Perís (tercera); José Antonio Vives y Milagros Traver \
+        Portolés (cuarta); e Ivan, Carlos y María Vives Traver (quinta y actual).\
+        A lo largo de estas generaciones, el establecimiento ha mantenido la elaboración \
+        artesanal de productos tradicionales integrados en el calendario festivo y en la \
+        cultura gastronómica local, como los pasteles de boniato y de cabello de ángel, \
+        las monas de Pascua y el <em>Fadrinet</em>. \
+        Milagros Traver señala que el oficio de panadero, que exige trabajo en horario \
+        nocturno y una dedicación constante, resulta cada vez menos frecuente, lo que \
+        explica la progresiva desaparición de los hornos tradicionales. Subraya asimismo \
+        que la permanencia de este tipo de comercio de proximidad es fundamental para \
+        preservar la cohesión social y la vitalidad de los barrios.\
+        <em>[Entrevista, 2020 y 2026]</em>",
+        coordinates: [-0.03736, 39.99226],
+        details: {
+            address: "Calle Cerdán de Tallada, 4",
+            category: "Tiendas históricas",
+            activity: "1908 - ",
+            foundation: "Jose Mele Molí y Antonia Benajes",
+            manager: " Iván Vives Traver, Carlos Vives Traver y María Vives Traver (quinta generación)", 
+            status: "Activo",
+            store: "",
+            link: "",
+            contact: "",
+            notes: ""
+
+        },
+        icon: "",
+        markerImage: "./images/Storici_rosa.png",
+        markerSize: 60,
+        images: [
+            { url: "./images/31_Discos_Medicinales_01.jpg", date: today }
+                   ]
+    },   
+    {
+        id: 44,
+        title: "Panadería Virgilia",
+        type: "Panadería tradicional (CNAE 1071)",
+        description: "La Panadería Virgilia fue fundada en 1964 por Virgilia Aparici y \
+        José Viciano, originarios de Almazora. Virgilia representaba la tercera generación \
+        de una familia de panaderos: tras el fallecimiento de sus padres, ella y José, su \
+        novio, decidieron contraer matrimonio y continuar con el horno familiar. Ante la \
+        dificultad de consolidar clientela en Almazora, el matrimonio se trasladó a Castellón, \
+        donde abrió un horno con reventa de pan en el actual emplazamiento de la calle Sanz \
+        de Bremond, 19, manteniendo el carácter de panadería de barrio que lo ha definido \
+        desde sus inicios.\
+        José Virgilio Viciano Aparici, actual gerente y cuarta generación, comenzó a colaborar \
+        en el negocio familiar desde temprana edad, antes de acudir al colegio. Mantiene la \
+        actividad de forma artesanal, iniciando la jornada a las tres de la madrugada y \
+        elaborando las recetas tradicionales transmitidas de generación en generación: \
+        <em>panquemao</em>, <em>rosquilletas</em>, magdalenas y <em>ximos</em>. La panadería \
+        cuenta además con una segunda sede en la calle Alcalde Tárrega, 44, atendida por \
+        Mari Carmen Molín, esposa del actual gerente.\
+        <em>[Entrevista, 2026]</em>",
+        coordinates: [-0.03325, 39.99123],
+        details: {
+            address: "Calle Sanz de Bremond, 19",
+            category: "Tiendas históricas",
+            activity: "1964 -",
+            foundation: "Virgilia Aparici y José Viciano",
+            manager: "José Virgilio Viciano Aparici y Mari Carmen Molín", 
+            status: "Activo",
+            store: "",
+            link: "",
+            contact: "",
+            notes: ""
+
+        },
+        icon: "",
+        markerImage: "./images/Storici_rosa.png",
+        markerSize: 60,
+        images: [
+            { url: "./images/31_Discos_Medicinales_01.jpg", date: today }
+                   ]
+    },   
+    {
+        id: 45,
+        title: "Tot Jove",
+        type: "Tienda de moda (CNAE 4771)",
+        description: "Provi Sales fundó Tot Jove en noviembre de 1979 en la calle Rafalafena, \
+        14, y lo dirigió durante 45 años al servicio de su <em>fiel público</em> - \
+        como define a sus clientes - antes de traspasar el local en 2024. El establecimiento, \
+        en principio de moda unisex, abrió sus puertas en un local de unos 30 metros situado \
+        en la acera opuesta a la ubicación actual, que hasta entonces había sido utilizado \
+        por sus propietarios para secar jamones destinados al Mercado Central. El local \
+        carecía de instalación eléctrica y de agua, y fue rehabilitado antes de su \
+        apertura.\
+        Provi Sales fue la primera en abrir un comercio en aquella calle, que describe como \
+        completamente desprovista de actividad comercial en aquel momento. A raíz de su \
+        apertura, fueron estableciéndose progresivamente otros negocios en el entorno, \
+        muchos de los cuales han ido cerrando con el tiempo. En 2026, el establecimiento \
+        sigue en activo bajo la gestión de Delia Valero.\
+        <em>[Entrevista, 2020]</em>",
+        coordinates: [-0.03248, 39.98839],
+        details: {
+            address: "Calle Rafalafena, 14",
+            category: "Tiendas históricas",
+            activity: "1979 - ",
+            foundation: "Provi Sales",
+            manager: "Provi Sales (1979-2024), Delia Valero (2024 - actualidad)", 
+            status: "Activo - Traspasado",
+            store: "",
+            link: "",
+            contact: "",
+            notes: ""
+
+        },
+        icon: "",
+        markerImage: "./images/Storici_rosa.png",
+        markerSize: 60,
+        images: [
+            { url: "./images/31_Discos_Medicinales_01.jpg", date: today }
+                   ]
     }
 ];
 
@@ -1375,7 +1563,7 @@ function initializeClustering() {
     }));
 
     // Inizializza Supercluster con raggio di 40px e zoom massimo di 16
-    supercluster = new Supercluster({ radius: 40, maxZoom: 16 });
+    supercluster = new Supercluster({ radius: 20, maxZoom: 16 });
     supercluster.load(points);
 
     // Aggiorna i marker e i cluster sulla mappa
