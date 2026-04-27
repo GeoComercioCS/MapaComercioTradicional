@@ -1615,6 +1615,301 @@ const locations = [
         video: [
             {url: "https://youtu.be/bOBUSJCj7Ik?si=Y9wSBniXYz4dNv-I" }
         ]
+    },   
+    {
+        id: 53,
+        title: "Casa Edo",
+        type: "Venta de productos de peluquería y cosmética (CNAE 4775)",
+        description: "Casa Edo fue fundada a finales de los años cincuenta por Vicente Edo \
+        y su esposa Presentación. Vicente, barbero de oficio, se sacó el título de agente \
+        comercial para visitar peluquerías y vender productos del sector, mientras \
+        Presentación atendía la tienda, donde se vendían productos de perfumería, \
+        droguería y peluquería. El local, situado en la calle Rosel, ocupaba originalmente \
+        la planta baja de una vivienda familiar que con el tiempo fue transformada en \
+        establecimiento comercial.\
+        Entre las prácticas del negocio en sus inicios destaca la elaboración artesanal \
+        de champús — de menta, fresa y huevo — y de perfumes, ambos vendidos a granel: los \
+        clientes acudían con sus propios recipientes y compraban por mililitros, práctica hoy \
+        en día no permitida. Con el paso de los años, los hijos se incorporaron al negocio \
+        y posteriormente cada uno siguió su propio camino; la madre de Raquel, María Teresa, \
+        se quedó al frente del establecimiento. Actualmente, Raquel Badenas Edo, tercera \
+        generación, gestiona el negocio, que mantiene una clientela mixta de particulares \
+        y profesionales del sector.\
+        <em>[Entrevista, 2025]</em>",
+        coordinates: [-0.040253, 39.989099],
+        details: {
+            address: "Calle Rosel, 18-D",
+            category: "Tiendas históricas",
+            activity: "1959 –",
+            foundation: "Vicente Edo y Presentación",
+            manager: "Raquel Badenas Edo (tercera generación)", 
+            status: "Activo",
+            store: "",
+            link: "",
+            contact: "",
+            notes: ""
+
+        },
+        icon: "",
+        markerImage: "./images/Storici_rosa.png",
+        markerSize: 60,
+        images: [
+            { url: "./images/31_Discos_Medicinales_01.jpg", date: today }
+                   ],
+        video: [
+            {url: "" }
+        ]
+    },   
+    {
+        id: 54,
+        title: "Lledó, alpargatas artesanas",
+        type: "Fabricación artesanal y venta de alpargatas (CNAE 1520)",
+        description: "Establecimiento dedicado a la fabricación artesanal y venta de \
+        alpargatas, gestionado por Lledó y Agustín, continuadores de la actividad de \
+        un alpargatero procedente de Villores, pequeño municipio - 53 habitantes según \
+        el INE (2025) - que mantuvo históricamente una especialización ligada a la \
+        confección de alpargatas. El taller conserva técnicas y saberes propios de este \
+        oficio tradicional, vinculando la práctica artesanal con la memoria productiva del \
+        territorio. El proceso de elaboración combina materiales tradicionales - suela de \
+        goma, tela y talón - cosidos a mano. Entre los productos que se elaboran destacan \
+        las alpargatas para baile regional. Agustín señala que el oficio está en declive: \
+        en Villores ya no se practica y los escasos talleres que quedan se concentran en \
+        la zona de Logroño.\
+        <em>[Entrevista, 2020]</em>",
+        coordinates: [-0.03305, 39.99057],
+        details: {
+            address: "Calle Perot de Granyana, 2",
+            category: "Tiendas históricas",
+            activity: "s/d –",
+            foundation: "s/d",
+            manager: "Lledó Mundo y Agustín s/d", 
+            status: "Activo",
+            store: "",
+            link: "",
+            contact: "",
+            notes: ""
+
+        },
+        icon: "",
+        markerImage: "./images/Storici_rosa.png",
+        markerSize: 60,
+        images: [
+            { url: "./images/31_Discos_Medicinales_01.jpg", date: today }
+                   ],
+        video: [
+            {url: "" }
+        ]
+    },   
+    {
+        id: 55,
+        title: "Marton Centro de Sonido",
+        type: "Establecimiento especializado en electrónica audiovisual (CNAE 4743)",
+        description: "Marton Centro de Sonido nació en los años setenta en la calle Segorbe, \
+        donde Vicente Marqués regentaba una tienda de electrodomésticos y su hijo Toni \
+        aprendió el oficio. Fue Toni Marqués quien fundó Marton de forma independiente, \
+        especializándola en sonido. En sus inicios, el negocio se dedicaba principalmente a \
+        la instalación y reparación de autorradios y a la instalación de equipos de sonido \
+        en discotecas de toda la provincia. En 1978 el negocio se trasladó al local de más \
+        de 600 metros de la calle Enmedio, 103, donde consolidó su actividad.\
+        Con el tiempo, Marton se convirtió en referente provincial de la electrónica \
+        audiovisual, llegando a contar con 18 empleados en su etapa de mayor actividad. \
+        Participó en la sonorización e iluminación de los principales eventos de la ciudad — \
+        entre ellos las fiestas de la Magdalena, el <em>Magdalena Vítol</em> y actos \
+        institucionales de la Diputación — y se especializó en producción audiovisual a \
+        través de su marca Marton Broadcast. Fue pionera en la instalación de antenas \
+        parabólicas en la provincia.\
+        Tras el fallecimiento de Toni Marqués en febrero de 2020, su esposa Inmaculada \
+        asumió la gestión del establecimiento junto a Toni Caballer como encargado. \
+        En 2023, Marton cerró definitivamente tras la jubilación de ambos.\
+        <em>[Fuentes hemerográficas, 2023]</em>",
+        coordinates: [-0.03777, 39.98795],
+        details: {
+            address: "Calle Enmedio, 103 (anteriormente Calle Segorbe, 51)",
+            category: "Tiendas históricas",
+            activity: "años 70 – 2023",
+            foundation: "Toni Marqués (Antonio Marqués)",
+            manager: "Toni Marqués, Inmaculada Marqués y Toni Caballer", 
+            status: "Cerrado",
+            store: "En venta",
+            link: "https://www.elperiodicomediterraneo.com/castello/2023/01/09/marton-tienda-sonido-castellon-cierra-calle-enmedio-comercio-80927527.html \
+                    https://castellonplaza.com/castellonplaza/castellon-despide-un-pedazo-de-su-historia-audiovisual-cierra-marton-tras-medio-siglo",
+            contact: "",
+            notes: ""
+
+        },
+        icon: "",
+        markerImage: "./images/Storici_rosa.png",
+        markerSize: 60,
+        images: [
+            { url: "./images/31_Discos_Medicinales_01.jpg", date: today }
+                   ],
+        video: [
+            {url: "" }
+        ]
+    },   
+    {
+        id: 56,
+        title: "Pepe Renau",
+        type: "Tienda de moda (CNAE 4771)",
+        description: "Pepe Renau fue fundada en 1986 por José Renau Fauró y Ana Silvestre \
+        Torner en la calle Caballeros, 17, local que había albergado previamente el primer \
+        establecimiento comercial moderno, Lemon, inaugurado en 1970 por Leopoldo Monfort \
+        Berenguer. José Renau, que había sido gerente de Lemon, decidió emprender su \
+        propio proyecto comercial en el sector de la moda, eligiendo el emblemático \
+        local de la calle Caballeros donde todo había comenzado. Actualmente el negocio \
+        está gestionado por su hijo José Miguel Renau Silvestre y Nuria, su esposa. \
+        Con el tiempo, el establecimiento se ha especializado en moda para personas \
+        mayores, consolidándose como un referente para los habitantes del casco histórico.\
+        <em>[Entrevista, 2026]</em>",
+        coordinates: [-0.036570, 39.986990],
+        details: {
+            address: "Calle Caballeros, 15-17",
+            category: "Tiendas históricas",
+            activity: "1986 –",
+            foundation: "José Renau Fauró y Ana Silvestre Torner",
+            manager: "José Miguel Renau Silvestre y Nuria", 
+            status: "Activo",
+            store: "",
+            link: "",
+            contact: "",
+            notes: ""
+
+        },
+        icon: "",
+        markerImage: "./images/Storici_rosa.png",
+        markerSize: 60,
+        images: [
+            { url: "./images/31_Discos_Medicinales_01.jpg", date: today }
+                   ],
+        video: [
+            {url: "" }
+        ]
+    },   
+    {
+        id: 57,
+        title: "Estanco de la Cua (CS 15)",
+        type: "Estanco — tabaco, prensa y lotería (CNAE 4726)",
+        description: "El Estanco CS 15 o Estanco de la Cua lleva en activo desde 1921, \
+        cuando Dolores Huguet, abuela de los actuales gestores, que regentaba un bar \
+        en la misma esquina, obtuvo la licencia de estanco. El hijo de Dolores Huguet \
+        era cazador de unos pequeños pájaros conocidos como <em>cueters</em>, de esta \
+        especie de pájaros viene el nombre Cua. Desde entonces, el establecimiento ha \
+        permanecido en el mismo local de la Ronda Magdalena, convirtiéndose en un \
+        referente del barrio a lo largo de tres generaciones: de Dolores Huguet a su hija \
+        Dolores, y finalmente a los actuales gestores, Javier y María Dolores.\
+        A lo largo de los años, debido al cambio de los estilos de vida, el negocio fue \
+        diversificando su oferta más allá del tabaco, incorporando prensa, artículos \
+        de fumador y lotería. Fueron pioneros en la venta de la Primitiva en Castellón \
+        cuando todavía era poco conocida. Javier subraya que la clave del negocio ha sido \
+        siempre el trato personal y la atención a los clientes del barrio, a quienes \
+        atribuye la supervivencia del negocio. El estanco cerrará en los próximos años \
+        con su jubilación, sin continuidad generacional: nadie quiere continuar un negocio \
+        cuyo producto principal, el tabaco, tiene un futuro incierto.\
+        <em>[Entrevista, 2025]</em>",
+        coordinates: [-0.040696, 39.989925],
+        details: {
+            address: "Ronda Magdalena, 31",
+            category: "Tiendas históricas",
+            activity: "1921 –",
+            foundation: "Dolores Huguet",
+            manager: "Javier y María Dolores (tercera generación)", 
+            status: "Activo",
+            store: "",
+            link: "https://www.elperiodicomediterraneo.com/castello-provincia/2023/11/26/comercios-castellon-vida-sello-centenarios-siglo-95102092.html",
+            contact: "",
+            notes: ""
+
+        },
+        icon: "",
+        markerImage: "./images/Storici_rosa.png",
+        markerSize: 60,
+        images: [
+            { url: "./images/31_Discos_Medicinales_01.jpg", date: today }
+                   ],
+        video: [
+            {url: "" }
+        ]
+    },   
+    {
+        id: 58,
+        title: "Breva, tapicería",
+        type: "Tapicería (CNAE 9524)",
+        description: "El fundador Jose Breva comenzó a aprender el oficio de tapicero en 1950, \
+        con trece años, en la tapicería de José Antonio Pasuanga en la calle Pintor Castellano. \
+        Hijo de un soldado muerto en la Guerra Civil a quien nunca conoció, se crió con su madre \
+        y su hermana, y eligió el oficio por vocación en una época en que los jóvenes tenían \
+        acceso a múltiples oficios de aprendiz. En 1964, tras casarse, fundó su propio taller, \
+        primero en un local enfrente del actual y desde 1973 en la calle Trinidad, 104. \
+        En 1996, al jubilarse, cedió la gestión a su hijo, aunque continúa acudiendo al \
+        taller para colaborar — reflejo del patrón de continuidad generacional que caracteriza \
+        a este tipo de comercio tradicional.\
+        La especialización en tapizado de paredes y techos, con un sistema propio desarrollado \
+        por el fundador, llevó al taller más allá de Castellón: ha trabajado en Valencia, \
+        Zaragoza, Teruel, Madrid, y en proyectos en Inglaterra y Dubái. En Castellón realizó \
+        trabajos para la Fundación Dávalos Fletcher, la Diputación, el Ayuntamiento y varias \
+        entidades bancarias. Actualmente el hijo gestiona una agenda de dos meses de espera, \
+        testimonio de la reputación acumulada a lo largo de décadas.\
+        Sobre la calle Trinidad, el fundador recuerda un barrio más denso y familiar, con \
+        casas ocupadas por dos o tres familias, hoy en buena parte vacías, atribuye, por \
+        la falta de aparcamiento.\
+        <em>[Entrevista, 2026]</em>",
+        coordinates: [-0.03305, 39.99057],
+        details: {
+            address: "Calle Trinidad, 104",
+            category: "Tiendas históricas",
+            activity: "1964 –",
+            foundation: "Jose Breva Pastor",
+            manager: "Jose Breva Pastor (fundador, 1964–1996), Antonio Tomás Breva Nebot (hijo, 1996–actualidad)", 
+            status: "Activo",
+            store: "",
+            link: "",
+            contact: "",
+            notes: ""
+
+        },
+        icon: "",
+        markerImage: "./images/Storici_rosa.png",
+        markerSize: 60,
+        images: [
+            { url: "./images/31_Discos_Medicinales_01.jpg", date: today }
+                   ],
+        video: [
+            {url: "" }
+        ]
+    },   
+    {
+        id: 59,
+        title: "La Farola",
+        type: " Quiosco de prensa (CNAE 4762)",
+        description: "Carlos Tosca, responsable del negocio familiar, mantuvo el quiosco \
+        abierto durante la pandemia como servicio público esencial. Paradójicamente, aunque \
+        aquellos meses registraron un aumento de la demanda de periódicos y revistas de \
+        proximidad, el quiosco cerró poco después. Actualmente el local alberga La Pajarita \
+        Roja Editores y Artelirium, estudio de fotografía.\
+        <em>[Fuentes hemerográficas, 2020]</em>",
+        coordinates: [-0.042449347272556524, 39.98801531813292],
+        details: {
+            address: "Plaza Independencia, 6",
+            category: "Tiendas históricas",
+            activity: "~1980 – 2022",
+            foundation: "s/d",
+            manager: "Carlos Tosca", 
+            status: "Activo, cambio de actividad",
+            store: "",
+            link: "https://www.elperiodicomediterraneo.com/castello/2020/05/21/crisis-gente-busca-noticias-veraces-40812943.html",
+            contact: "",
+            notes: ""
+
+        },
+        icon: "",
+        markerImage: "./images/Storici_rosa.png",
+        markerSize: 60,
+        images: [
+            { url: "./images/31_Discos_Medicinales_01.jpg", date: today }
+                   ],
+        video: [
+            {url: "" }
+        ]
     }
 ];
 
