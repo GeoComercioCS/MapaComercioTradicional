@@ -1910,6 +1910,164 @@ const locations = [
         video: [
             {url: "" }
         ]
+    },   
+    {
+        id: 60,
+        title: "Sombrerería Fenollosa",
+        type: "Sombrerería tradicional (CNAE 1419)",
+        description: "Sombrerería fundada en 1918 y especializada en la fabricación y venta \
+        de sombreros y gorras para caballero y señora. Permaneció en manos de la familia \
+        Fenollosa durante más de un siglo, hasta su cierre en 2024.\
+        <em>[Fuentes hemerográficas, 2025]</em>",
+        coordinates: [-0.041437, 39.987692],
+        details: {
+            address: "Calle Zaragoza, 15",
+            category: "Tiendas históricas",
+            activity: "1918–2024",
+            foundation: "Familia Fenollosa",
+            manager: "Familia Fenollosa", 
+            status: "Cerrado",
+            store: "En venta",
+            link: "https://cadenaser.com/comunitat-valenciana/2025/04/28/la-mitica-merceria-elias-y-la-centenaria-sombrereria-fenollosa-bajan-la-persiana-de-sus-tiendas-en-el-centro-de-castellon-radio-castellon\
+                    https://www.elperiodicomediterraneo.com/castello/2025/04/29/adios-comercios-tota-vida-castello-jubilacion-tradicion-116873397.html",
+            contact: "",
+            notes: ""
+
+        },
+        icon: "",
+        markerImage: "./images/Storici_rosa.png",
+        markerSize: 60,
+        images: [
+            { url: "./images/31_Discos_Medicinales_01.jpg", date: today }
+                   ],
+        video: [
+            {url: "" }
+        ]
+    },   
+    {
+        id: 61,
+        title: "Salazones Giner y Verchili",
+        type: "Salazones y coloniales (CNAE 4723)",
+        description: "Comercio histórico de salazones fundado en 1907 por Fernando Vivas \
+        Silvestre y su esposa Rosario Lloret — conocida en el Mercat Central como <em>Rosarito \
+        La Paloma</em> por el uniforme de blanco inmaculado con el que despachaba el género. \
+        El negocio nació como almacén de salazones y coloniales especializado en bacalao en \
+        salazón y sardina de bota, productos fundamentales en la alimentación urbana de \
+        principios del siglo XX. Como recuerda Fernando Vivas, nieto del fundador: \
+        <em>«Estamos hablando de una época en la que no había neveras, ni había granjas de \
+        cerdos ni de aves, lo que hacía estas carnes inaccesibles para la mayoría de la \
+        población»</em>. En aquel contexto, Fernando Vivas Silvestre llegó a figurar entre \
+        los cinco mayores contribuyentes de Castellón.\
+        Con la llegada de las primeras grandes granjas de cerdos y aves en los años 60 y el \
+        consiguiente abaratamiento de la carne, el negocio fue diversificando su oferta. En 1977, \
+        Ricardo, hijo de los fundadores, cedió el testigo a Manuel Giner y José María Verchili, \
+        que rebautizaron el comercio como Salazones Giner y Verchili. En los últimos diez años, \
+        Guillermo Verchili y José Vicente Sales — que llevaban en el negocio desde 1977 y 1975 \
+        respectivamente — asumieron la gestión principal, manteniendo la reputación del establecimiento \
+        por la calidad de sus conservas y salazones.\
+        El edificio, situado frente al histórico edificio de Correos, conserva en una de sus \
+        rejas las marcas de metralla de una bomba de la Guerra Civil. La oficina trasera del \
+        establecimiento fue durante largo tiempo sede de reuniones vecinales y tertulias en \
+        torno a la actualidad del Club Deportivo Castellón.\
+        El cierre, el 30 de septiembre de 2021, se produjo por jubilación de sus responsables \
+        y ausencia de relevo generacional, poniendo fin a más de un siglo de actividad \
+        continuada.\
+        <em>[Fuentes hemerográficas, 2021]</em>",
+        coordinates: [-0.040560, 39.987572],
+        details: {
+            address: "Plaza Tetuán, 10",
+            category: "Tiendas históricas",
+            activity: "1907–2021",
+            foundation: "Fernando Vivas Silvestre y Rosario Lloret",
+            manager: "Guillermo Verchili y José Vicente Sales", 
+            status: "Cerrado",
+            store: "Abierto, Istambul kebab y pizzeria",
+            link: "https://www.elperiodicomediterraneo.com/gente-de-castellon/2021/09/30/comercio-tradicional-castello-baja-persiana-57616951.html\
+                    https://www.elperiodicomediterraneo.com/gente-de-castellon/2021/09/24/galeria-fotos-adios-siglo-historia-57619210.html\
+                    https://www.elperiodic.com/castellon/ayuntamiento-castellon-homenaje-cinco-establecimientos-gala-comercio-siempre_52206",
+            contact: "",
+            notes: ""
+
+        },
+        icon: "",
+        markerImage: "./images/Storici_rosa.png",
+        markerSize: 60,
+        images: [
+            { url: "./images/31_Discos_Medicinales_01.jpg", date: today }
+                   ],
+        video: [
+            {url: "" }
+        ]
+    },   
+    {
+        id: 62,
+        title: "Trini, La casa de los Jamones",
+        type: "Tienda tradicional de ultramarinos y delicatessen (CNAE 4721)",
+        description: "Trini, La casa de los Jamones fue fundada en 1964 por Trinidad, \
+        quien estuvo al frente del establecimiento durante quince años. En 1979 Carmen \
+        Salvador y su marido se hicieron cargo del negocio, regentándolo durante casi \
+        cuatro décadas. Durante más de cincuenta años, el local fue un referente en la \
+        calle Enmedio para la venta de jamones, embutidos, vinos, miel y otros productos \
+        de calidad. El cierre en 2018, motivado por la jubilación de los últimos propietarios, \
+        se produjo sin relevo generacional.\
+        <em>[Fuentes hemerográficas, 2018]</em>",
+        coordinates: [-0.03722, 39.98826],
+        details: {
+            address: "Calle Enmedio, 138",
+            category: "Tiendas históricas",
+            activity: "1964–2018",
+            foundation: "Trinidad (apellido desconocido)",
+            manager: " Carmen Salvador y su marido (1979–2018)", 
+            status: "Cerrado",
+            store: "Abierto, Taberna Enmedio 138",
+            link: "https://www.elperiodicomediterraneo.com/castello/2018/06/10/jamones-trini-tienda-vida-cierra-41313944.html",
+            contact: "",
+            notes: ""
+
+        },
+        icon: "",
+        markerImage: "./images/Storici_rosa.png",
+        markerSize: 60,
+        images: [
+            { url: "./images/31_Discos_Medicinales_01.jpg", date: today }
+                   ],
+        video: [
+            {url: "" }
+        ]
+    },   
+    {
+        id: 63,
+        title: "Mario",
+        type: "Quiosco de prensa (CNAE 4762)",
+        description: "Quiosco de prensa abierto durante la Magdalena de 1970 por Mario Alba \
+        Gasque y Rosa María en un local procedente de una antigua relojería en la calle \
+        Mayor, 100. Posteriormente ampliaron el negocio con un segundo punto de venta en el \
+        Mercado Central. Hoy lo gestionan sus hijos Miguel y Rosa. Como todos los quioscos \
+        de prensa, afronta la crisis del sector derivada de la digitalización de la información.\
+        <em>[Fuentes hemerográficas, 2023, 2026]</em>",
+        coordinates: [-0.04247415146950542, 39.98817478834645],
+        details: {
+            address: "Calle Mayor, 100 y Plaza Santa Clara (Mercado Central)",
+            category: "Tiendas históricas",
+            activity: "1970 –",
+            foundation: "Mario Alba Gasque y Rosa María",
+            manager: "Rosa y Miguel Alba Tille", 
+            status: "Activo",
+            store: "",
+            link: "https://www.elperiodicomediterraneo.com/castello/2018/06/10/jamones-trini-tienda-vida-cierra-41313944.html",
+            contact: "",
+            notes: ""
+
+        },
+        icon: "",
+        markerImage: "./images/Storici_rosa.png",
+        markerSize: 60,
+        images: [
+            { url: "./images/31_Discos_Medicinales_01.jpg", date: today }
+                   ],
+        video: [
+            {url: "" }
+        ]
     }
 ];
 
