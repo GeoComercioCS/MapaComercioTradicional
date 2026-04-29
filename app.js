@@ -2950,22 +2950,49 @@ function updateDescriptionTab() {
 
     // Aggiunge la copertina del video se presente
     if (currentLocation.video && currentLocation.video.length > 0) {
-        const ytIdFromUrl = (url) => {
-            if (!url) return null;
-            const m = url.match(/(?:youtube\.com\/(?:watch\?v=|embed\/)|youtu\.be\/)([A-Za-z0-9_-]{6,})/i);
-            return m ? m[1] : null;
+        const normalizeVideoUrl = (url) => {
+            if (!url) return '';
+            const trimmed = String(url).trim();
+            if (trimmed.startsWith('ttps://')) return `h${trimmed}`;
+            if (trimmed.startsWith('ttp://')) return `h${trimmed}`;
+            return trimmed;
         };
+
+        const getVideoPreviewData = (url) => {
+            const normalizedUrl = normalizeVideoUrl(url);
+            if (!normalizedUrl) return null;
+
+            const yt = normalizedUrl.match(/(?:youtube\.com\/(?:watch\?v=|embed\/)|youtu\.be\/)([A-Za-z0-9_-]{6,})/i);
+            if (yt) {
+                return {
+                    href: normalizedUrl,
+                    thumb: `https://img.youtube.com/vi/${yt[1]}/hqdefault.jpg`,
+                    label: 'Ver video en YouTube'
+                };
+            }
+
+            const vimeo = normalizedUrl.match(/(?:vimeo\.com\/(?:video\/)?)(\d+)/i);
+            if (vimeo) {
+                return {
+                    href: normalizedUrl,
+                    thumb: `https://vumbnail.com/${vimeo[1]}.jpg`,
+                    label: 'Ver video en Vimeo'
+                };
+            }
+
+            return null;
+        };
+
         const videoEntries = currentLocation.video.filter(v => v && v.url);
         if (videoEntries.length > 0) {
             detailHTML += '<div class="detail-field"><strong>VIDEO</strong></div>';
             videoEntries.forEach(v => {
-                const ytId = ytIdFromUrl(v.url);
-                if (ytId) {
-                    const thumb = `https://img.youtube.com/vi/${ytId}/hqdefault.jpg`;
+                const preview = getVideoPreviewData(v.url);
+                if (preview) {
                     detailHTML += `
                         <div class="video-thumbnail-wrapper">
-                            <a href="${v.url}" target="_blank" rel="noopener noreferrer" aria-label="Ver video en YouTube">
-                                <img src="${thumb}" alt="Copertina video" class="video-thumbnail">
+                            <a href="${preview.href}" target="_blank" rel="noopener noreferrer" aria-label="${preview.label}">
+                                <img src="${preview.thumb}" alt="Copertina video" class="video-thumbnail">
                                 <span class="video-play-icon">▶</span>
                             </a>
                         </div>
