@@ -2068,6 +2068,220 @@ const locations = [
         video: [
             {url: "" }
         ]
+    },   
+    {
+        id: 64,
+        title: "Roses Hermanos",
+        type: "Artículos religiosos (CNAE 4778)",
+        description: "Establecimiento histórico de artículos religiosos abierto en 1940 en la \
+        calle Colón con el nombre de Librería Católica. Fundado por la familia Roses con una \
+        tradición familiar en la fabricación de cirios que se remonta a finales del siglo \
+        XIX, primero en Albaida y posteriormente en Vila-real, mantuvo durante casi ocho \
+        décadas una oferta especializada dirigida a parroquias, instituciones religiosas y \
+        público general. Su catálogo incluía imágenes, rosarios, orfebrería, velas, cirios y \
+        libros religiosos. Considerado el único establecimiento de estas características en \
+        la provincia, atendió a clientes de distintas diócesis. El cierre, en diciembre de \
+        2017, se produjo por la jubilación de sus últimos propietarios.\
+        <em>[Fuentes hemerográficas, 2017]</em>",
+        coordinates: [-0.03757972299322225, 39.986479695978964],
+        details: {
+            address: "Calle Colón, 17",
+            category: "Tiendas históricas",
+            activity: "1940–2017",
+            foundation: "Familia Roses",
+            manager: "Mari Carmen Roses, Eduardo Roses y Joaquín Roses", 
+            status: "Cerrado",
+            store: "En venta",
+            link: "https://www.elperiodicomediterraneo.com/castello/2017/12/02/casa-roses-cien-anos-libros-41431251.html\
+                    https://www.levante-emv.com/castello/2017/08/27/calle-colon-pierde-mitica-roses-13759532.html",
+            contact: "",
+            notes: ""
+
+        },
+        icon: "",
+        markerImage: "./images/Storici_rosa.png",
+        markerSize: 60,
+        images: [
+            { url: "./images/31_Discos_Medicinales_01.jpg", date: today }
+                   ],
+        video: [
+            {url: "" }
+        ]
+    },   
+    {
+        id: 65,
+        title: "Casa Carmen",
+        type: "Bar tradicional (CNAE 5630)",
+        description: "Bar de barrio abierto en 1971 tras el traspaso del antiguo Bar Juvenil \
+        por José María Romero y Carmen Castillo. Desde 1989 el negocio pasó a sus hijos, \
+        siendo Mariló, con la ayuda de su marido Félix, la última responsable hasta su \
+        jubilación en 2021. Durante medio siglo, el establecimiento funcionó como espacio \
+        cotidiano de encuentro vecinal, integrando la actividad hostelera con una dimensión \
+        relacional que lo consolidó como referente del barrio.\
+        Mariló recuerda: <em>«Este bar se había convertido en casa. Dediqué toda mi vida al \
+        servicio del vecindario. Nunca tuve tiempo de invitar a nadie a mi casa, pero cada \
+        día podía cocinar almuerzos y comidas para los vecinos, que se habían convertido en \
+        familia. El bar era un centro de agregación donde las soledades - sobre todo de las \
+        personas más mayores - podían encontrar compañía. El último día me emocioné cuando, \
+        al bajar por última vez la persiana, oí las campanadas de la Iglesia de la Sagrada \
+        Familia.»</em>\
+        <em>[Entrevista, 2026]</em>",
+        coordinates: [-0.04052987399590712, 39.99001416773975],
+        details: {
+            address: "Ronda Magdalena, 31",
+            category: "Tiendas históricas",
+            activity: "1971–2021",
+            foundation: "José María Romero y Carmen Castillo",
+            manager: "José, Sergio y Mariló Romero", 
+            status: "Activo - traspasado",
+            store: "Abierto, Bar Bocatería Diamant",
+            link: "",
+            contact: "",
+            notes: ""
+
+        },
+        icon: "",
+        markerImage: "./images/Storici_rosa.png",
+        markerSize: 60,
+        images: [
+            { url: "./images/31_Discos_Medicinales_01.jpg", date: today }
+                   ],
+        video: [
+            {url: "" }
+        ]
+    },   
+    {
+        id: 66,
+        title: "Rosi",
+        type: "Mercería (CNAE 4751)",
+        description: "Elena Miralles Safont es la actual gestora de la mercería. En 2016, \
+        junto con su madre, Rosa Safont Tena, sucedió a su padre, Serafín Miralles Escrig, \
+        cuando este se jubiló, en la gestión del establecimiento que los padres adquirieron \
+        de una mercería precedente en 1975 o 1976. La mercería sigue siendo una referencia \
+        importante para los vecinos del barrio.\
+        <em>[Entrevista, 2026]</em>",
+        coordinates: [-0.041289, 39.979167],
+        details: {
+            address: "Calle Herrero, 52 C",
+            category: "Tiendas históricas",
+            activity: "~1975 –",
+            foundation: "Serafín Miralles Escrig",
+            manager: "Elena Miralles Safont", 
+            status: "Activo",
+            store: "",
+            link: "",
+            contact: "",
+            notes: ""
+
+        },
+        icon: "",
+        markerImage: "./images/Storici_rosa.png",
+        markerSize: 60,
+        images: [
+            { url: "./images/31_Discos_Medicinales_01.jpg", date: today }
+                   ],
+        video: [
+            {url: "https://vimeo.com/1034223552" }
+        ]
+    },   
+    {
+        id: 67,
+        title: "Cuchillería Rodríguez",
+        type: "Cuchillería y productos de peluquería (CNAE 4775)",
+        description: "Cuchillería fundada en 1940 por Rogelio Rodríguez Basalo, originario \
+        de Galicia, y su esposa Adela López de Diego. Rogelio era afilador de utensilios con \
+        piedras de afilar de pedal. Entre su clientela habitual se encontraban barberos de \
+        la ciudad que acudían a afilar sus navajas y que, con el tiempo, empezaron a solicitar \
+        también otros productos relacionados con su oficio — pasta de afeitar, colonia, \
+        cosmética —, lo que llevó a ampliar la oferta hacia productos de barbería y peluquería \
+        en general. Esta combinación, aparentemente heterogénea, tiene por tanto una raíz \
+        histórica coherente. Hoy la cuchillería representa el 40% de la oferta y los productos \
+        de peluquería y cosmética el 60%.\
+        Rogelio Rodríguez Basalo y Adela gestionaron el negocio durante cuarenta años. Su \
+        hijo Rogelio, que aprendió a afilar de joven tras el colegio, asumió posteriormente \
+        la gerencia, hoy en día junto a su hija. El servicio de afilado se externaliza \
+        actualmente a empresas de Valencia y Barcelona, ante la dificultad de encontrar \
+        afiladores — un oficio manual cercano a la mecánica que las nuevas generaciones \
+        no quieren ejercer. Rogelio observa además un cambio cultural en los estilos de \
+        consumo: antes los cuchillos eran objetos de valor destinados a durar toda la vida \
+        y se afilaban con regularidad; hoy predomina la cultura del <em>usar y tirar</em>. \
+        Paradójicamente, son ahora las familias quienes más solicitan el servicio de afilado, \
+        mientras que los restaurantes, que necesitan rapidez, prefieren otros canales.\
+        <em>[Entrevista, 2026; Fuentes hemerográficas, 2008]</em>",
+        coordinates: [-0.03827222375463359, 39.984777463977885],
+        details: {
+            address: "Calle Vera, 20",
+            category: "Tiendas históricas",
+            activity: "1940 –",
+            foundation: "Rogelio Rodríguez Basalo y Adela López de Diego",
+            manager: "Rogelio Rodríguez López y Claudia Rodríguez González (tercera generación) ", 
+            status: "Activo",
+            store: "",
+            link: "https://www.elperiodic.com/castellon/ayuntamiento-castellon-homenaje-cinco-establecimientos-gala-comercio-siempre_52206",
+            contact: "",
+            notes: ""
+
+        },
+        icon: "",
+        markerImage: "./images/Storici_rosa.png",
+        markerSize: 60,
+        images: [
+            { url: "./images/31_Discos_Medicinales_01.jpg", date: today }
+                   ],
+        video: [
+            {url: "" }
+        ]
+    },   
+    {
+        id: 68,
+        title: "Discos Ritmo",
+        type: "Tienda de música (CNAE 4763)",
+        description: "Discos Ritmo abrió el 29 de agosto de 1978 por iniciativa de Vicente Boix, \
+        electricista de profesión que había previsto abrir una tienda de lámparas. La inclusión \
+        de una sección de vinilos y tocadiscos, motivada por su formación musical, cambió el \
+        rumbo del negocio. Durante más de cuatro décadas, el local de la calle O'Donnell fue \
+        referente de la vida musical de Castellón y provincia, llegando a gestionar 25.000 \
+        referencias en CD y a contar con una segunda tienda entre 1998 y 2007 y hasta nueve \
+        empleados.\
+        En sus años de auge, Discos Ritmo recibía hasta cincuenta novedades semanales, \
+        especializándose en música de importación - funky, R&B, rap, salsa, country - y \
+        organizando viajes a conciertos de artistas internacionales. Los DJ de las principales \
+        discotecas de la provincia acudían al local a probar novedades. Desde la tienda se \
+        impulsó también la difusión local del hip hop.\
+        A partir de 2000 la piratería y las plataformas digitales erosionaron progresivamente \
+        el negocio. La desaparición de los reproductores de CD en coches y ordenadores, y la \
+        sustitución de la música física en bares y discotecas por servicios de streaming, \
+        aceleraron el declive. Para compensar, el local incorporó artículos de regalo - \
+        mochilas, paraguas, accesorios - pero el mercado físico no se recuperó. La jubilación \
+        de sus propietarios y la imposibilidad de liquidar el stock musical determinaron \
+        el cierre definitivo en enero de 2024.\
+        <em>[Fuentes hemerográficas, 2019, 2021, 2024]</em>",
+        coordinates: [-0.039318, 39.985346],
+        details: {
+            address: "Calle O'Donnell, 1",
+            category: "Tiendas históricas",
+            activity: "1978–2024",
+            foundation: "Vicente Boix y Ana José Serrano",
+            manager: "Vicente Boix y Ana José Serrano", 
+            status: "Cerrado",
+            store: "Se alquila",
+            link: "https://elpais.com/espana/comunidad-valenciana/2024-02-03/adios-a-discos-ritmo-la-tienda-de-castellon-que-cambio-lamparas-por-vinilos-y-nutrio-a-discotecas.html\
+                    https://castellonplaza.com/castellonplaza/discos-ritmo1\
+                    https://valenciaplaza.com/musica-opera-valencia-comunitat-valenciana/40-anos-despues-discos-ritmo-liquida-todo-su-stock-musical\
+                    https://castellonplaza.com/castellonplaza/discos-ritmos",
+            contact: "",
+            notes: ""
+
+        },
+        icon: "",
+        markerImage: "./images/Storici_rosa.png",
+        markerSize: 60,
+        images: [
+            { url: "./images/31_Discos_Medicinales_01.jpg", date: today }
+                   ],
+        video: [
+            {url: "" }
+        ]
     }
 ];
 
