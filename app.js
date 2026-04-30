@@ -1136,7 +1136,8 @@ const locations = [
         markerImage: "./images/Storici_rosa.png",
         markerSize: 60,
         images: [
-            { url: "./images/31_Discos_Medicinales_01.jpg", date: today }
+            { url: "./images/41_Jeylo_01_2019.jpg", date: today },
+            { url: "./images/41_Jeylo_02_2019.jpg", date: today }
                    ]
     },   
     {
@@ -1162,7 +1163,9 @@ const locations = [
         markerImage: "./images/Storici_rosa.png",
         markerSize: 60,
         images: [
-            { url: "./images/31_Discos_Medicinales_01.jpg", date: today }
+            { url: "./images/42_Fernandez_01_2018.jpg", date: today },
+            { url: "./images/42_Fernandez_02_2019.jpg", date: today }
+
                    ]
     },   
     {
@@ -1203,7 +1206,11 @@ const locations = [
         markerImage: "./images/Storici_rosa.png",
         markerSize: 60,
         images: [
-            { url: "./images/31_Discos_Medicinales_01.jpg", date: today }
+            { url: "./images/43_Vives_01_2026.jpg", date: today },
+            { url: "./images/43_Vives_01_SF.jpg", date: today },
+            { url: "./images/43_Vives_02_SF.jpg", date: today },
+            { url: "./images/43_Vives_03_SF.jpg", date: today },
+            { url: "./images/43_Vives_04_SF.jpg", date: today }
                    ]
     },   
     {
