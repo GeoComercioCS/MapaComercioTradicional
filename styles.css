@@ -430,7 +430,7 @@ body {
 
 /* Highlight style when a marker is selected from the sidebar list */
 .marker-highlight {
-    filter: drop-shadow(0 8px 18px rgba(0,0,0,0.35)) !important;
+    filter: drop-shadow(0 12px 24px rgba(0,0,0,0.8)) !important;
     z-index: 1000 !important;
     transition: filter 180ms ease;
 }

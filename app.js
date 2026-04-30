@@ -507,7 +507,7 @@ const locations = [
         title: "Sin identificar",
         type: "",
         description: "No se dispone de información adicional.",
-        coordinates: [-0.039691, 39.990429],
+        coordinates: [-0.04055, 39.98197],
         details: {
             address: "Calle Ximén Pérez d'Arenós, 16",
             road: "s/d",
@@ -1036,7 +1036,11 @@ const locations = [
         markerImage: "./images/Históricas_puntatore.png",
         markerSize: 40,
         images: [
-            { url: "./images/31_Discos_Medicinales_01.jpg", date: today }
+            { url: "./images/39_Discos_Medicinales_01_2018.jpg", date: "2018" },
+            { url: "./images/39_Discos_Medicinales_02_2018.jpg", date: "2018" },
+            { url: "./images/39_Discos_Medicinales_03_2018.jpg", date: "2018" },
+            { url: "./images/39_Discos_Medicinales_04_2018.jpg", date: "2018" },
+            { url: "./images/39_Discos_Medicinales_05_2018.jpg", date: "2018" }
                    ]
     }
 ];
