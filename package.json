@@ -1,0 +1,29 @@
+{
+  "name": "mapparaf01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patrunomeister/MapaComercioTradicional.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/patrunomeister/MapaComercioTradicional/issues"
+  },
+  "homepage": "https://github.com/patrunomeister/MapaComercioTradicional#readme",
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "vite": "^8.0.10"
+  }
+}
