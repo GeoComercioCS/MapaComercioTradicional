@@ -1251,7 +1251,9 @@ const locations = [
         markerImage: "./images/Storici_rosa.png",
         markerSize: 60,
         images: [
-            { url: "./images/31_Discos_Medicinales_01.jpg", date: today }
+            { url: "./images/44_Virgilia_01_2020.jpg", date: today },
+            { url: "./images/44_Virgilia_02_2026.jpg", date: today },
+            { url: "./images/44_Virgilia_03_2025.jpg", date: today }
                    ]
     },   
     {
@@ -1290,7 +1292,10 @@ const locations = [
         markerImage: "./images/Storici_rosa.png",
         markerSize: 60,
         images: [
-            { url: "./images/31_Discos_Medicinales_01.jpg", date: today }
+            { url: "./images/45_Tot_Jove_01_2020.jpg", date: today },
+            { url: "./images/45_Tot_Jove_02_2020.jpg", date: today },
+            { url: "./images/45_Tot_Jove_03_2020.jpg", date: today },
+            { url: "./images/45_Tot_Jove_04_2019.jpg", date: today }
                    ]
     },   
     {
@@ -1345,7 +1350,10 @@ const locations = [
         markerImage: "./images/Storici_rosa.png",
         markerSize: 60,
         images: [
-            { url: "./images/31_Discos_Medicinales_01.jpg", date: today }
+            { url: "./images/46_IMA_01_1985.jpg", date: today },
+            { url: "./images/46_IMA_02_1985.jpg", date: today },
+            { url: "./images/46_IMA_03_2019.jpg", date: today },
+            { url: "./images/46_IMA_04_2020.jpg", date: today }
                    ],
         video: [
             {url: "https://youtu.be/RjnhSng8MYk?si=Jb9pygjmSFiLObw7" }
