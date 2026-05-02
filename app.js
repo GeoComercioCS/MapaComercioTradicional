@@ -21,7 +21,7 @@ const locations = [
             notes: "" },
         icon: "",
         markerImage: "./images/2_VaLP_glicine.png",
-        markerSize: 40,
+        markerSize: 60,
         images: [
             { url: "./images/01_VeN_Bou_01.jpg", date: today },
             { url: "./images/01_VeN_Bou_02.jpg", date: today },
@@ -54,7 +54,7 @@ const locations = [
             notes: ""        },
         icon: "",
         markerImage: "./images/2_VaLP_glicine.png",
-        markerSize: 40,
+        markerSize: 60,
         images: [
             { url: "./images/02_Fernando_01.jpg", date: today },
             { url: "./images/02_Fernando_02.jpg", date: today }
@@ -77,7 +77,7 @@ const locations = [
         },
         icon: "",
         markerImage: "./images/2_VaLP_glicine.png",
-        markerSize: 40,
+        markerSize: 60,
         images: [
             { url: "./images/03_María_Teresa_01.jpg", date: today }
         ]
@@ -99,7 +99,7 @@ const locations = [
         },
         icon: "",
         markerImage: "./images/2_VaLP_glicine.png",
-        markerSize: 40,
+        markerSize: 60,
         images: [
             { url: "./images/04_Francisca_01.jpeg", date: today }
         ]
@@ -125,7 +125,7 @@ const locations = [
         },
         icon: "",
         markerImage: "./images/2_VaLP_glicine.png",
-        markerSize: 40,
+        markerSize: 60,
         images: [
             { url: "./images/05_María_01.jpg", date: today }
         ]
@@ -147,7 +147,7 @@ const locations = [
         },
         icon: "",
         markerImage: "./images/2_VaLP_glicine.png",
-        markerSize: 40,
+        markerSize: 60,
         images: [
             { url: "./images/06_Desconocido_Valencia_01.jpg", date: today }
         ]
@@ -174,7 +174,7 @@ const locations = [
         },
         icon: "",
         markerImage: "./images/2_VaLP_glicine.png",
-        markerSize: 40,
+        markerSize: 60,
         images: [
             { url: "./images/07_José_Juan_01.jpg", date: today },
             { url: "./images/07_José_Juan_02.jpg", date: today },
@@ -202,7 +202,7 @@ const locations = [
         },
         icon: "",
         markerImage: "./images/2_VaLP_glicine.png",
-        markerSize: 40,
+        markerSize: 60,
         images: [
             { url: "./images/08_Desconocido_S_Felix_01.jpg", date: today }
         ]
@@ -224,7 +224,7 @@ const locations = [
         },
         icon: "",
         markerImage: "./images/2_VaLP_glicine.png",
-        markerSize: 40,
+        markerSize: 60,
         images: [
             { url: "./images/09_Desconocida_Gobernador_01.jpg", date: today }
         ]
@@ -246,7 +246,7 @@ const locations = [
         },
         icon: "",
         markerImage: "./images/2_VaLP_glicine.png",
-        markerSize: 40,
+        markerSize: 60,
         images: [
             { url: "./images/10_Desconocido_San_Blas_01.jpg", date: today }
         ]
@@ -268,7 +268,7 @@ const locations = [
         },
         icon: "",
         markerImage: "./images/2_VaLP_glicine.png",
-        markerSize: 40,
+        markerSize: 60,
         images: [
             { url: "./images/11_Desconocido_Ximenez_01.jpg", date: today }
         ]
@@ -290,7 +290,7 @@ const locations = [
         },
         icon: "",
         markerImage: "./images/2_VaLP_glicine.png",
-        markerSize: 40,
+        markerSize: 60,
         images: [
             { url: "./images/12_Desconocido_Angel_01.jpeg", date: today }
         ]
@@ -312,7 +312,7 @@ const locations = [
         },
         icon: "",
         markerImage: "./images/2_VaLP_glicine.png",
-        markerSize: 40,
+        markerSize: 60,
         images: [
             { url: "./images/13_Desconocido_Jovellanos_01.jpeg", date: today }
         ]
@@ -334,7 +334,7 @@ const locations = [
         },
         icon: "",
         markerImage: "./images/2_VaLP_glicine.png",
-        markerSize: 40,
+        markerSize: 60,
         images: [
             { url: "./images/14_Desconocido_San_Roque_42_01.jpg", date: today },
             { url: "./images/14_Desconocido_San_Roque_42_02.jpg", date: today }
@@ -357,7 +357,7 @@ const locations = [
         },
         icon: "",
         markerImage: "./images/2_VaLP_glicine.png",
-        markerSize: 40,
+        markerSize: 60,
         images: [
             { url: "./images/15_Amparo_01.jpg", date: today },
             { url: "./images/15_Amparo_02.jpg", date: today },
@@ -381,7 +381,7 @@ const locations = [
         },
         icon: "",
         markerImage: "./images/2_VaLP_glicine.png",
-        markerSize: 40,
+        markerSize: 60,
         images: [
             { url: "./images/16_Desconocido_Almansa_01.jpg", date: today }
         ]
@@ -412,7 +412,7 @@ const locations = [
         },
         icon: "",
         markerImage: "./images/2_VaLP_glicine.png",
-        markerSize: 40,
+        markerSize: 60,
         images: [
             { url: "./images/17_Joaquín_01.jpg", date: today }
         ],
@@ -440,7 +440,7 @@ const locations = [
         },
         icon: "",
         markerImage: "./images/2_VaLP_glicine.png",
-        markerSize: 40,
+        markerSize: 60,
         images: [
             { url: "./images/18_María_Dolores_01.jpg", date: today },
             { url: "./images/18_María_Dolores_02.jpg", date: today }
@@ -463,7 +463,7 @@ const locations = [
         },
         icon: "",
         markerImage: "./images/2_VaLP_glicine.png",
-        markerSize: 40,
+        markerSize: 60,
         images: [
             { url: "./images/19_Lucia_01.png", date: today },
             { url: "./images/19_Lucia_02.jpg", date: today }
@@ -496,7 +496,7 @@ const locations = [
         },
         icon: "",
         markerImage: "./images/2_VaLP_glicine.png",
-        markerSize: 40,
+        markerSize: 60,
         images: [
             { url: "./images/20_Catalina_01.jpg", date: today },
             { url: "./images/20_Catalina_02.jpg", date: today }
@@ -519,7 +519,7 @@ const locations = [
         },
         icon: "",
         markerImage: "./images/2_VaLP_glicine.png",
-        markerSize: 40,
+        markerSize: 60,
         images: [
             { url: "./images/21_Desconocido_Ximen_Perez_01.jpg", date: today }
         ]
@@ -548,7 +548,7 @@ const locations = [
         },
         icon: "",
         markerImage: "./images/2_VaLP_glicine.png",
-        markerSize: 40,
+        markerSize: 60,
         images: [
             { url: "./images/22_Carmen_Peris_Gomez_01.jpg", date: today },
             { url: "./images/22_Carmen_Peris_Gomez_02.jpg", date: today },
@@ -582,7 +582,7 @@ const locations = [
         },
         icon: "",
         markerImage: "./images/2_VaLP_glicine.png",
-        markerSize: 40,
+        markerSize: 60,
         images: [
             { url: "./images/23_Rafa_01.jpg", date: today },
             { url: "./images/23_Rafa_02.jpg", date: today }
@@ -611,7 +611,7 @@ const locations = [
         },
         icon: "",
         markerImage: "./images/2_VaLP_glicine.png",
-        markerSize: 40,
+        markerSize: 60,
         images: [
             { url: "./images/24_Juan_01.jpg", date: today }
         ]
@@ -634,7 +634,7 @@ const locations = [
         },
         icon: "",
         markerImage: "./images/2_VaLP_glicine.png",
-        markerSize: 40,
+        markerSize: 60,
         images: [
             { url: "./images/25_Rafa_01.jpg", date: today },
             { url: "./images/25_Rafa_02.jpg", date: today },
@@ -657,7 +657,7 @@ const locations = [
         },
         icon: "",
         markerImage: "./images/2_VaLP_glicine.png",
-        markerSize: 40,
+        markerSize: 60,
         images: [
             { url: "./images/26_Pepe_01.jpg", date: today }
         ]
@@ -679,7 +679,7 @@ const locations = [
         },
         icon: "",
         markerImage: "./images/2_VaLP_glicine.png",
-        markerSize: 40,
+        markerSize: 60,
         images: [
             { url: "./images/27_Desconocido_San_Miguel_01.jpg", date: today }
         ]
@@ -708,7 +708,7 @@ const locations = [
         },
         icon: "",
         markerImage: "./images/2_VaLP_glicine.png",
-        markerSize: 40,
+        markerSize: 60,
         images: [
             { url: "", date: "" }
                    ],
@@ -736,7 +736,7 @@ const locations = [
         },
         icon: "",
         markerImage: "./images/2_VaLP_glicine.png",
-        markerSize: 40,
+        markerSize: 60,
         images: [
 
             { url: "./images/29_Juan_Tomás_Pérez_Segarra_01.jpg", date: today }
@@ -763,7 +763,7 @@ const locations = [
         },
         icon: "",
         markerImage: "./images/2_VaLP_glicine.png",
-        markerSize: 40,
+        markerSize: 60,
         images: [
             { url: "./images/30_Agustín_01.jpg", date: today },
             { url: "./images/30_Agustín_02_2018.jpg", date: today },
@@ -801,7 +801,7 @@ const locations = [
         },
         icon: "",
         markerImage: "./images/2_VaLP_glicine.png",
-        markerSize: 40,
+        markerSize: 60,
         images: [
             { url: "./images/31_Pepe_01_2026.jpg", date: today }
                    ]
@@ -826,7 +826,7 @@ const locations = [
         },
         icon: "",
         markerImage: "./images/2_VaLP_glicine.png",
-        markerSize: 40,
+        markerSize: 60,
         images: [
             { url: "./images/32_Paquita_01_2026.jpg", date: today },
             { url: "./images/32_Paquita_02_2018.JPG", date: today }
@@ -850,7 +850,7 @@ const locations = [
         },
         icon: "",
         markerImage: "./images/2_VaLP_glicine.png",
-        markerSize: 40,
+        markerSize: 60,
         images: [
             { url: "./images/33_Sasa_1_2026.jpg", date: today },
             { url: "./images/33_Sasa_2_2026.jpg", date: today }
@@ -879,7 +879,7 @@ const locations = [
         },
         icon: "",
         markerImage: "./images/2_VaLP_glicine.png",
-        markerSize: 40,
+        markerSize: 60,
         images: [
             { url: "./images/34_Mari_Carmen_01_2026.jpg", date: today },
             { url: "./images/34_Mari_Carmen_02_2026.jpg", date: today },
@@ -904,7 +904,7 @@ const locations = [
         },
         icon: "",
         markerImage: "./images/2_VaLP_glicine.png",
-        markerSize: 40,
+        markerSize: 60,
         images: [
             { url: "./images/35_Ronda_Magdalena_01_2026.JPG", date: today }
                    ]
@@ -928,7 +928,7 @@ const locations = [
         },
         icon: "",
         markerImage: "./images/2_VaLP_glicine.png",
-        markerSize: 40,
+        markerSize: 60,
         images: [
             { url: "./images/36_Bartolomeu_01_2022.jpg", date: today }
                    ]
@@ -957,7 +957,7 @@ const locations = [
         },
         icon: "",
         markerImage: "./images/2_VaLP_glicine.png",
-        markerSize: 40,
+        markerSize: 60,
         images: [
             { url: "./images/37_Delfina_01_2026.JPG", date: today },
             { url: "./images/37_Delfina_02_2026.jpg", date: today },
@@ -1001,7 +1001,7 @@ const locations = [
         },
         icon: "",
         markerImage: "./images/2_VaLP_glicine.png",
-        markerSize: 40,
+        markerSize: 60,
         images: [
             { url: "./images/38_Tica_01_2026.jpg", date: today }
                    ]
