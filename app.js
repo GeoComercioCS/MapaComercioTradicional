@@ -1442,7 +1442,9 @@ const locations = [
         markerImage: "./images/2_Storici_rosso.png",
         markerSize: 60,
         images: [
-            { url: "./images/31_Discos_Medicinales_01.jpg", date: today }
+            { url: "./images/48_Nietas_Saura_01_2025.jpg", date: today },
+            { url: "./images/48_Nietas_Saura_02_2025.jpg", date: today },
+            { url: "./images/48_Nietas_Saura_03_2025.jpg", date: today }
                    ],
         video: [
             {url: "" }
@@ -1527,7 +1529,10 @@ const locations = [
         markerImage: "./images/2_Storici_rosso.png",
         markerSize: 60,
         images: [
-            { url: "./images/31_Discos_Medicinales_01.jpg", date: today }
+            { url: "./images/50_Adell_01_2017.jpg", date: "2017" },
+            { url: "./images/50_Adell_02_2018.jpg", date: today },
+            { url: "./images/50_Adell_03_2019.jpg", date: today },
+            { url: "./images/50_Adell_04_2019.jpg", date: today }
                    ],
         video: [
             {url: "" }
@@ -1588,7 +1593,10 @@ const locations = [
         markerImage: "./images/2_Storici_rosso.png",
         markerSize: 60,
         images: [
-            { url: "./images/31_Discos_Medicinales_01.jpg", date: today }
+            { url: "./images/51_El_Niño_01_2025.jpg", date: today },
+            { url: "./images/51_El_Niño_02_2026.jpg", date: today },
+            { url: "./images/51_El_Niño_03_2026.jpg", date: today },
+            { url: "./images/51_El_Niño_04_2025.jpg", date: today }
                    ],
         video: [
             {url: "" }
@@ -1632,7 +1640,8 @@ const locations = [
         markerImage: "./images/2_Storici_rosso.png",
         markerSize: 60,
         images: [
-            { url: "./images/31_Discos_Medicinales_01.jpg", date: today }
+            { url: "./images/52_Macián_01_2021.jpg", date: today },
+            { url: "./images/52_Macián_02_2024.jpg", date: today }
                    ],
         video: [
             {url: "https://youtu.be/bOBUSJCj7Ik?si=Y9wSBniXYz4dNv-I" }
@@ -1676,7 +1685,8 @@ const locations = [
         markerImage: "./images/2_Storici_rosso.png",
         markerSize: 60,
         images: [
-            { url: "./images/31_Discos_Medicinales_01.jpg", date: today }
+            { url: "./images/53_Casa_Edo_01_2025.jpg", date: today },
+            { url: "./images/53_Casa_Edo_02_2026.jpg", date: today }
                    ],
         video: [
             {url: "" }
