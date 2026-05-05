@@ -19,18 +19,21 @@
         }
 
         #app-wrapper {
-            display: flex;
-            flex-direction: column;
-            height: auto;
+            display: flex !important;
+            flex-direction: column !important;
+            height: auto !important;
             min-height: 100vh;
-            padding-bottom: 0;
+            padding-bottom: 0 !important;
+            width: 100% !important;
         }
 
         .proyecto-content {
+            flex: 1;
             width: 100%;
             max-width: 800px;
             margin: 80px auto 60px;
             padding: 0 24px;
+            box-sizing: border-box;
         }
 
         .proyecto-content h2 {
