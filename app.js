@@ -2420,9 +2420,19 @@ function initMap() {
         zoom: mapConfig.zoom,
         minZoom: mapConfig.minZoom,
         maxZoom: mapConfig.maxZoom,
+        attributionControl: false,
 
 
     });
+
+    // Forza un'attribuzione sempre visibile con riferimento anche a OpenStreetMap.
+    map.addControl(
+        new mapboxgl.AttributionControl({
+            compact: false,
+            customAttribution: '© OpenStreetMap'
+        }),
+        'bottom-right'
+    );
     
     // Handler unificato per il resize della mappa
     const handleMapResize = (delay = 0) => {
