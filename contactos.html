@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto – Geografías del comercio tradicional</title>
+    <title>Contactos – Geografías del comercio tradicional</title>
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -86,16 +86,47 @@
             margin-bottom: 16px;
         }
 
-        .proyecto-content ul {
-            padding-left: 20px;
-            margin-bottom: 16px;
+        .contact-card {
+            background: white;
+            border-radius: 8px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
         }
 
-        .proyecto-content ul li {
-            font-size: 15px;
-            line-height: 1.7;
-            color: var(--dark-grey);
-            margin-bottom: 6px;
+        .contact-card .contact-icon {
+            font-size: 28px;
+            color: var(--primary-color);
+            flex-shrink: 0;
+            width: 40px;
+            text-align: center;
+        }
+
+        .contact-card .contact-info h3 {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--dark-blue);
+            margin: 0 0 6px;
+        }
+
+        .contact-card .contact-info p {
+            font-size: 14px;
+            color: var(--medium-grey);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        .contact-card .contact-info a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .contact-card .contact-info a:hover {
+            text-decoration: underline;
         }
 
         .btn-back {
@@ -175,47 +206,38 @@
 
         <!-- Contenido -->
         <main class="proyecto-content">
-            <h2>Geografías del comercio tradicional</h2>
+            <h2>Contactos</h2>
             <p>
-                <em>Memoria, transformación y paisajes relacionales en Castellón de la Plana</em>
+                Para consultas, colaboraciones o información sobre el proyecto, puedes contactarnos a través de los siguientes canales.
             </p>
 
-            <p>
-                Este proyecto documenta y cartografía los puntos de venta a la porta y las tiendas históricas
-                del comercio tradicional en Castellón de la Plana, con el objetivo de preservar la memoria
-                de unas prácticas comerciales en proceso de transformación.
-            </p>
+            <h3>Investigación y contenidos</h3>
 
-            <h3>Venta a la porta</h3>
-            <p>
-                La venta a la porta es una práctica arraigada en la cultura agraria de la región: agricultores
-                de la huerta venden sus productos directamente al consumidor en la puerta de su domicilio,
-                sin intermediarios. El mapa recoge los puntos activos identificados mediante trabajo de campo
-                y entrevistas entre 2016 y 2026.
-            </p>
+            <div class="contact-card">
+                <div class="contact-icon"><i class="fas fa-user"></i></div>
+                <div class="contact-info">
+                    <h3>Investigador principal</h3>
+                    <p>Responsable de la investigación de campo, entrevistas y documentación del proyecto.</p>
+                    <p><a href="https://github.com/patrunomeister" target="_blank" rel="noopener"><i class="fab fa-github"></i> patrunomeister</a></p>
+                </div>
+            </div>
 
-            <h3>Tiendas históricas</h3>
-            <p>
-                Las tiendas históricas son establecimientos con una larga trayectoria en la ciudad, que forman
-                parte del patrimonio comercial y cultural de Castellón. Su presencia en el mapa busca visibilizar
-                su valor como referentes identitarios del tejido urbano.
-            </p>
+            <div class="contact-card">
+                <div class="contact-icon"><i class="fab fa-github"></i></div>
+                <div class="contact-info">
+                    <h3>Repositorio del proyecto</h3>
+                    <p>El código fuente del mapa está disponible en GitHub. Para reportar incidencias o sugerencias técnicas, abre un issue en el repositorio.</p>
+                    <p><a href="https://github.com/patrunomeister/MapaComercioTradicional" target="_blank" rel="noopener">github.com/patrunomeister/MapaComercioTradicional</a></p>
+                </div>
+            </div>
 
-            <h3>Metodología</h3>
-            <ul>
-                <li>Trabajo de campo y observación directa (2016–2026)</li>
-                <li>Entrevistas con productores y comerciantes</li>
-                <li>Geolocalización y documentación fotográfica</li>
-                <li>Revisión de fuentes históricas y archivos locales</li>
-            </ul>
-
-            <h3>Tecnologías</h3>
-            <ul>
-                <li><a href="https://docs.mapbox.com/mapbox-gl-js/" target="_blank" rel="noopener">Mapbox GL JS</a> – Mapa interactivo</li>
-                <li><a href="https://vitejs.dev/" target="_blank" rel="noopener">Vite</a> – Herramienta de build</li>
-                <li><a href="https://github.com/mapbox/supercluster" target="_blank" rel="noopener">Supercluster</a> – Agrupación de marcadores</li>
-                <li><a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a> – Alojamiento</li>
-            </ul>
+            <div class="contact-card">
+                <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <div class="contact-info">
+                    <h3>Área de estudio</h3>
+                    <p>Castellón de la Plana, Comunitat Valenciana, España.</p>
+                </div>
+            </div>
 
             <a class="btn-back" href="index.html">
                 <i class="fas fa-arrow-left"></i> Volver al mapa
