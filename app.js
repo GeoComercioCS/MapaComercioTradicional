@@ -2369,6 +2369,9 @@ let markers = [];
 let currentLocation = null;
 let currentPopup = null; // Aggiunto per tracciare il popup aperto
 let supercluster = null; // Per la gestione del clustering
+let isClusteringEnabled = true;
+let clusterListenersAttached = false;
+let restoreClustersBelowZoom = null;
 let currentHighlightedMarker = null; // elemento marker attualmente evidenziato
 let highlightedLocationId = null; // ID della location attualmente evidenziata
 
@@ -2584,6 +2587,52 @@ function addMarkers() {
     });
 }
 
+function clearRenderedMarkers() {
+    markers.forEach(m => m.marker.remove());
+    markers = [];
+    currentHighlightedMarker = null;
+}
+
+function attachClusterListeners() {
+    if (!map || clusterListenersAttached) return;
+    map.on('move', updateClusterMarkers);
+    map.on('zoom', updateClusterMarkers);
+    clusterListenersAttached = true;
+}
+
+function detachClusterListeners() {
+    if (!map || !clusterListenersAttached) return;
+    map.off('move', updateClusterMarkers);
+    map.off('zoom', updateClusterMarkers);
+    clusterListenersAttached = false;
+}
+
+function enableClustering() {
+    if (!map || !supercluster) return;
+    isClusteringEnabled = true;
+    attachClusterListeners();
+    updateClusterMarkers();
+}
+
+function maybeRestoreClusteringOnZoomOut() {
+    if (isClusteringEnabled || restoreClustersBelowZoom === null || !map) return;
+    if (map.getZoom() < restoreClustersBelowZoom) {
+        restoreClustersBelowZoom = null;
+        enableClustering();
+    }
+}
+
+function disableClusteringAndShowAllMarkers(restoreOnZoomBelow = null) {
+    if (!map) return;
+
+    isClusteringEnabled = false;
+    restoreClustersBelowZoom = restoreOnZoomBelow;
+    detachClusterListeners();
+
+    clearRenderedMarkers();
+    addMarkers();
+}
+
 // Helper per creare un marker immagine per una location e aggiungerlo alla mappa
 function createMarkerForLocation(location, lngLat) {
     const markerElement = document.createElement('img');
@@ -2602,6 +2651,8 @@ function createMarkerForLocation(location, lngLat) {
         .addTo(map);
 
     markerElement.addEventListener('click', () => {
+        const focusZoom = Math.max(map.getZoom(), 16);
+        disableClusteringAndShowAllMarkers(focusZoom);
         map.easeTo({ center: lngLat, zoom: 16, duration: 400 });
         selectLocation(location.id);
         highlightMarker(location.id);
@@ -2617,6 +2668,8 @@ function initializeClustering() {
     // Verifica che Supercluster sia disponibile
     if (typeof Supercluster === 'undefined') {
         console.warn('Supercluster non disponibile, usando fallback senza clustering');
+        isClusteringEnabled = false;
+        restoreClustersBelowZoom = null;
         addMarkers();
         return;
     }
@@ -2633,10 +2686,12 @@ function initializeClustering() {
     // Inizializza Supercluster con raggio di 40px e zoom massimo di 16
     supercluster = new Supercluster({ radius: 40, maxZoom: 16 });
     supercluster.load(points);
+    isClusteringEnabled = true;
+    restoreClustersBelowZoom = null;
 
     // Aggiorna i marker e i cluster sulla mappa
-    map.on('move', updateClusterMarkers);
-    map.on('zoom', updateClusterMarkers);
+    attachClusterListeners();
+    map.on('zoomend', maybeRestoreClusteringOnZoomOut);
     
     // Aggiorna subito
     updateClusterMarkers();
@@ -2644,6 +2699,7 @@ function initializeClustering() {
 
 // Funzione per aggiornare i marker e i cluster sulla mappa
 function updateClusterMarkers() {
+    if (!isClusteringEnabled) return;
     if (!supercluster || !map) return;
 
     try {
@@ -2871,6 +2927,7 @@ function selectLocation(locationId) {
  * @param {number} locationId - ID del punto.
  */
 function handleMarkerClick(locationId) {
+    disableClusteringAndShowAllMarkers();
     selectLocation(locationId);
     activateTab('description');
 }
@@ -2883,15 +2940,20 @@ function handleListItemClick(locationId) {
     const location = locations.find(loc => loc.id === locationId);
     if (!location) return;
 
+    const focusZoom = Math.max(map.getZoom(), 15);
+    disableClusteringAndShowAllMarkers(focusZoom);
+
     // handleListItemClick invoked
 
     // 1. Seleziona il punto (aggiorna sidebar)
     selectLocation(locationId);
 
-    // 2. Centra la mappa sul punto
+    // 2. Centra la mappa sul punto senza forzare uno zoom troppo ravvicinato,
+    //    in modo da mantenere visibili tutti i marker.
+    const targetZoom = Math.min(map.getZoom(), mapConfig.zoom);
     map.flyTo({
         center: location.coordinates,
-        zoom: 15,
+        zoom: focusZoom,
         duration: 1000
     });
 
