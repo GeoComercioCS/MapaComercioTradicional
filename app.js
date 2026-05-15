@@ -1045,9 +1045,9 @@ const locations = [
         markerImage: "./images/2_Storici_rosso.png",
         markerSize: 60,
         images: [
-            { url: "./images/39_Wamba_01_2019.jpg", date: today },
-            { url: "./images/39_Wamba_02_SF.jpg", date: today },
-            { url: "./images/39_Wamba_03_1955.jpg", date: today }
+            { url: "./images/39_Wamba_01_2019.jpg", date: '2019' },
+            { url: "./images/39_Wamba_02_SF.jpg", date: 'Sin Fecha' },
+            { url: "./images/39_Wamba_03_1955.jpg", date: '1955' }
                    ]
     },   
     {
@@ -1092,10 +1092,10 @@ const locations = [
         markerImage: "./images/2_Storici_rosso.png",
         markerSize: 60,
         images: [
-            { url: "./images/40_Discos_Medicinales_01_2018.jpg", date: today },
-            { url: "./images/40_Discos_Medicinales_02_2018.jpg", date: today },
-            { url: "./images/40_Discos_Medicinales_03_2018.jpg", date: today },
-            { url: "./images/40_Discos_Medicinales_04_2018.jpg", date: today }
+            { url: "./images/40_Discos_Medicinales_01_2018.jpg", date: '2018' },
+            { url: "./images/40_Discos_Medicinales_02_2018.jpg", date: '2018' },
+            { url: "./images/40_Discos_Medicinales_03_2018.jpg", date: '2018' },
+            { url: "./images/40_Discos_Medicinales_04_2018.jpg", date: '2018' }
                    ]
     },   
     {
@@ -1136,8 +1136,8 @@ const locations = [
         markerImage: "./images/2_Storici_rosso.png",
         markerSize: 60,
         images: [
-            { url: "./images/41_Jeylo_01_2019.jpg", date: today },
-            { url: "./images/41_Jeylo_02_2019.jpg", date: today }
+            { url: "./images/41_Jeylo_01_2019.jpg", date: '2019' },
+            { url: "./images/41_Jeylo_02_2019.jpg", date: '2019' }
                    ]
     },   
     {
@@ -1163,8 +1163,8 @@ const locations = [
         markerImage: "./images/2_Storici_rosso.png",
         markerSize: 60,
         images: [
-            { url: "./images/42_Fernandez_01_2018.jpg", date: today },
-            { url: "./images/42_Fernandez_02_2019.jpg", date: today }
+            { url: "./images/42_Fernandez_01_2018.jpg", date: '2018' },
+            { url: "./images/42_Fernandez_02_2019.jpg", date: '2019' }
 
                    ]
     },   
@@ -1206,11 +1206,12 @@ const locations = [
         markerImage: "./images/2_Storici_rosso.png",
         markerSize: 60,
         images: [
-            { url: "./images/43_Vives_01_2026.jpg", date: today },
-            { url: "./images/43_Vives_01_SF.jpg", date: today },
-            { url: "./images/43_Vives_02_SF.jpg", date: today },
-            { url: "./images/43_Vives_03_SF.jpg", date: today },
-            { url: "./images/43_Vives_04_SF.jpg", date: today }
+            { url: "./images/43_Vives_01_2026.jpg", date: '2026' },
+            { url: "./images/43_Vives_02_2026.jpg", date: '2026' },
+            { url: "./images/43_Vives_03_1968.jpg", date: '1968' },
+            { url: "./images/43_Vives_04_1972.jpg", date: '1972' },
+            { url: "./images/43_Vives_05_1992.jpg", date: '1992' },
+            { url: "./images/43_Vives_06_2012.jpg", date: '2012' }
                    ]
     },   
     {
@@ -1251,9 +1252,9 @@ const locations = [
         markerImage: "./images/2_Storici_rosso.png",
         markerSize: 60,
         images: [
-            { url: "./images/44_Virgilia_01_2020.jpg", date: today },
-            { url: "./images/44_Virgilia_02_2026.jpg", date: today },
-            { url: "./images/44_Virgilia_03_2025.jpg", date: today }
+            { url: "./images/44_Virgilia_01_2020.jpg", date: '2020' },
+            { url: "./images/44_Virgilia_02_2026.jpg", date: '2026' },
+            { url: "./images/44_Virgilia_03_2025.jpg", date: '2025' }
                    ]
     },   
     {
@@ -1292,10 +1293,10 @@ const locations = [
         markerImage: "./images/2_Storici_rosso.png",
         markerSize: 60,
         images: [
-            { url: "./images/45_Tot_Jove_01_2020.jpg", date: today },
-            { url: "./images/45_Tot_Jove_02_2020.jpg", date: today },
-            { url: "./images/45_Tot_Jove_03_2020.jpg", date: today },
-            { url: "./images/45_Tot_Jove_04_2019.jpg", date: today }
+            { url: "./images/45_Tot_Jove_01_2020.jpg", date: '2020' },
+            { url: "./images/45_Tot_Jove_02_2020.jpg", date: '2020' },
+            { url: "./images/45_Tot_Jove_03_2020.jpg", date: '2020' },
+            { url: "./images/45_Tot_Jove_04_2019.jpg", date: '2019' }
                    ]
     },   
     {
@@ -1350,10 +1351,10 @@ const locations = [
         markerImage: "./images/2_Storici_rosso.png",
         markerSize: 60,
         images: [
-            { url: "./images/46_IMA_01_1985.jpeg", date: today },
-            { url: "./images/46_IMA_02_1985.jpg", date: today },
-            { url: "./images/46_IMA_03_2019.jpg", date: today },
-            { url: "./images/46_IMA_04_2020.jpg", date: today }
+            { url: "./images/46_IMA_01_1985.jpeg", date: '1985' },
+            { url: "./images/46_IMA_02_1985.jpg", date: '1985' },
+            { url: "./images/46_IMA_03_2019.jpg", date: '2019' },
+            { url: "./images/46_IMA_04_2020.jpg", date: '2020' }
                    ],
         video: [
             {url: "https://youtu.be/RjnhSng8MYk?si=Jb9pygjmSFiLObw7" }
@@ -1398,9 +1399,9 @@ const locations = [
         markerImage: "./images/2_Storici_rosso.png",
         markerSize: 60,
         images: [
-            { url: "./images/47_Saura_01_2025.jpg", date: today },
-            { url: "./images/47_Saura_02_2025.jpg", date: today },
-            { url: "./images/47_Saura_03_2025.jpg", date: today }
+            { url: "./images/47_Saura_01_2025.jpg", date: '2025' },
+            { url: "./images/47_Saura_02_2025.jpg", date: '2025' },
+            { url: "./images/47_Saura_03_2025.jpg", date: '2025' }
                    ],
         video: [
             {url: "" }
@@ -1442,9 +1443,9 @@ const locations = [
         markerImage: "./images/2_Storici_rosso.png",
         markerSize: 60,
         images: [
-            { url: "./images/48_Nietas_Saura_01_2025.jpg", date: today },
-            { url: "./images/48_Nietas_Saura_02_2025.jpg", date: today },
-            { url: "./images/48_Nietas_Saura_03_2025.jpg", date: today }
+            { url: "./images/48_Nietas_Saura_01_2025.jpg", date: '2025' },
+            { url: "./images/48_Nietas_Saura_02_2025.jpg", date: '2025' },
+            { url: "./images/48_Nietas_Saura_03_2025.jpg", date: '2025' }
                    ],
         video: [
             {url: "" }
@@ -1490,7 +1491,7 @@ const locations = [
         markerImage: "./images/2_Storici_rosso.png",
         markerSize: 60,
         images: [
-            { url: "./images/31_Discos_Medicinales_01.jpg", date: today }
+            { url: "./images/49_Patatas_García_2026.jpg", date: '2026' }
                    ],
         video: [
             {url: "" }
@@ -1531,8 +1532,8 @@ const locations = [
         images: [
             { url: "./images/50_Adell_01_2017.jpg", date: '2017' },
             { url: "./images/50_Adell_02_2018.jpg", date: '2018' },
-            { url: "./images/50_Adell_03_2019.jpg", date: today },
-            { url: "./images/50_Adell_04_2019.jpg", date: today }
+            { url: "./images/50_Adell_03_2019.jpg", date: '2019' },
+            { url: "./images/50_Adell_04_2019.jpg", date: '2019' }
                    ],
         video: [
             {url: "" }
@@ -1593,10 +1594,10 @@ const locations = [
         markerImage: "./images/2_Storici_rosso.png",
         markerSize: 60,
         images: [
-            { url: "./images/51_El_Niño_01_2025.jpg", date: today },
-            { url: "./images/51_El_Niño_02_2026.jpg", date: today },
-            { url: "./images/51_El_Niño_03_2026.jpg", date: today },
-            { url: "./images/51_El_Niño_04_2025.jpg", date: today }
+            { url: "./images/51_El_Niño_01_2025.jpg", date: '2025' },
+            { url: "./images/51_El_Niño_02_2026.jpg", date: '2026' },
+            { url: "./images/51_El_Niño_03_2026.jpg", date: '2026' },
+            { url: "./images/51_El_Niño_04_2025.jpg", date: '2025' }
                    ],
         video: [
             {url: "" }
@@ -1640,8 +1641,8 @@ const locations = [
         markerImage: "./images/2_Storici_rosso.png",
         markerSize: 60,
         images: [
-            { url: "./images/52_Macián_01_2021.jpg", date: today },
-            { url: "./images/52_Macián_02_2024.jpg", date: today }
+            { url: "./images/52_Macián_01_2021.jpg", date: '2021' },
+            { url: "./images/52_Macián_02_2024.jpg", date: '2024' }
                    ],
         video: [
             {url: "https://youtu.be/bOBUSJCj7Ik?si=Y9wSBniXYz4dNv-I" }
@@ -1685,8 +1686,8 @@ const locations = [
         markerImage: "./images/2_Storici_rosso.png",
         markerSize: 60,
         images: [
-            { url: "./images/53_Casa_Edo_01_2025.jpg", date: today },
-            { url: "./images/53_Casa_Edo_02_2026.jpg", date: today }
+            { url: "./images/53_Casa_Edo_01_2025.jpg", date: '2025' },
+            { url: "./images/53_Casa_Edo_02_2026.jpg", date: '2026' }
                    ],
         video: [
             {url: "" }
@@ -1726,11 +1727,11 @@ const locations = [
         markerImage: "./images/2_Storici_rosso.png",
         markerSize: 60,
         images: [
-            { url: "./images/54_Lledó_01_2020.jpg", date: today },
-            { url: "./images/54_Lledó_02_2020.jpg", date: today },
-            { url: "./images/54_Lledó_03_2020.jpg", date: today },
-            { url: "./images/54_Lledó_04_2020.jpg", date: today },
-            { url: "./images/54_Lledó_05_2020.jpg", date: today }   
+            { url: "./images/54_Lledó_01_2020.jpg", date: '2020' },
+            { url: "./images/54_Lledó_02_2020.jpg", date: '2020' },
+            { url: "./images/54_Lledó_03_2020.jpg", date: '2020' },
+            { url: "./images/54_Lledó_04_2020.jpg", date: '2020' },
+            { url: "./images/54_Lledó_05_2020.jpg", date: '2020' }   
                    ],
         video: [
             {url: "" }
@@ -1777,8 +1778,8 @@ const locations = [
         markerImage: "./images/2_Storici_rosso.png",
         markerSize: 60,
         images: [
-            { url: "./images/55_Marton_01_2019.jpg", date: today },
-            { url: "./images/55_Marton_02_2023.jpg", date: today }
+            { url: "./images/55_Marton_01_2019.jpg", date: '2019' },
+            { url: "./images/55_Marton_02_2023.jpg", date: '2023' }
                    ],
         video: [
             {url: "" }
@@ -1816,12 +1817,12 @@ const locations = [
         markerImage: "./images/2_Storici_rosso.png",
         markerSize: 60,
         images: [
-            { url: "./images/56_Pepe_Renau_01_2020.jpg", date: today },
-            { url: "./images/56_Pepe_Renau_02_2020.jpg", date: today },
-            { url: "./images/56_Pepe_Renau_03_2020.jpg", date: today },
-            { url: "./images/56_Pepe_Renau_04_2020.jpg", date: today },
-            { url: "./images/56_Pepe_Renau_05_2026.jpg", date: today },
-            { url: "./images/56_Pepe_Renau_06_2026.jpg", date: today }
+            { url: "./images/56_Pepe_Renau_01_2020.jpg", date: '2020' },
+            { url: "./images/56_Pepe_Renau_02_2020.jpg", date: '2020' },
+            { url: "./images/56_Pepe_Renau_03_2020.jpg", date: '2020' },
+            { url: "./images/56_Pepe_Renau_04_2020.jpg", date: '2020' },
+            { url: "./images/56_Pepe_Renau_05_2026.jpg", date: '2026' },
+            { url: "./images/56_Pepe_Renau_06_2026.jpg", date: '2026' }
 
                    ],
         video: [
@@ -1867,8 +1868,8 @@ const locations = [
         markerImage: "./images/2_Storici_rosso.png",
         markerSize: 60,
         images: [
-            { url: "./images/57_Estanco_01_2025.jpg", date: today },
-            { url: "./images/57_Estanco_02_2025.jpg", date: today }
+            { url: "./images/57_Estanco_01_2025.jpg", date: '2025' },
+            { url: "./images/57_Estanco_02_2025.jpg", date: '2025' }
                    ],
         video: [
             {url: "" }
@@ -1915,7 +1916,7 @@ const locations = [
         markerImage: "./images/2_Storici_rosso.png",
         markerSize: 60,
         images: [
-            { url: "./images/58_Breva_01_2025.jpg", date: today }
+            { url: "./images/58_Breva_01_2025.jpg", date: '2025' }
                    ],
         video: [
             {url: "" }
@@ -1949,7 +1950,7 @@ const locations = [
         markerImage: "./images/2_Storici_rosso.png",
         markerSize: 60,
         images: [
-            { url: "./images/59_LaFarola_01_2018.jpg", date: today }
+            { url: "./images/59_LaFarola_01_2018.jpg", date: '2018' }
                    ],
         video: [
             {url: "" }
@@ -1982,7 +1983,7 @@ const locations = [
         markerImage: "./images/2_Storici_rosso.png",
         markerSize: 60,
         images: [
-            { url: "./images/60_Fenollosa_01_2018.jpg", date: today }
+            { url: "./images/60_Fenollosa_01_2018.jpg", date: '2018' }
                    ],
         video: [
             {url: "" }
@@ -2037,7 +2038,7 @@ const locations = [
         markerImage: "./images/2_Storici_rosso.png",
         markerSize: 60,
         images: [
-            { url: "./images/61_Giner_Verchili_01_2019.jpg", date: today }
+            { url: "./images/61_Giner_Verchili_01_2019.jpg", date: '2019' }
                    ],
         video: [
             {url: "" }
@@ -2109,9 +2110,9 @@ const locations = [
         markerImage: "./images/2_Storici_rosso.png",
         markerSize: 60,
         images: [
-            { url: "./images/63_Mario_01_2019.jpg", date: today },
-            { url: "./images/63_Mario_02_2019.jpg", date: today },
-            { url: "./images/63_Mario_03_2019.jpg", date: today }
+            { url: "./images/63_Mario_01_2019.jpg", date: '2019' },
+            { url: "./images/63_Mario_02_2019.jpg", date: '2019' },
+            { url: "./images/63_Mario_03_2019.jpg", date: '2019' }
                    ],
         video: [
             {url: "" }
@@ -2150,8 +2151,8 @@ const locations = [
         markerImage: "./images/2_Storici_rosso.png",
         markerSize: 60,
         images: [
-            { url: "./images/64_Roses_01_2019.jpg", date: today },
-            { url: "./images/64_Roses_02_2019.jpg", date: today }
+            { url: "./images/64_Roses_01_2019.jpg", date: '2019' },
+            { url: "./images/64_Roses_02_2019.jpg", date: '2019' }
                    ],
         video: [
             {url: "" }
@@ -2193,9 +2194,9 @@ const locations = [
         markerImage: "./images/2_Storici_rosso.png",
         markerSize: 60,
         images: [
-            { url: "./images/65_Casa_Carmen_01_2018.jpg", date: today },
-            { url: "./images/65_Casa_Carmen_02_2018.jpg", date: today },
-            { url: "./images/65_Casa_Carmen_03_2021.jpg", date: today }
+            { url: "./images/65_Casa_Carmen_01_2018.jpg", date: '2018' },
+            { url: "./images/65_Casa_Carmen_02_2018.jpg", date: '2018' },
+            { url: "./images/65_Casa_Carmen_03_2021.jpg", date: '2021' }
                    ],
         video: [
             {url: "" }
@@ -2229,9 +2230,9 @@ const locations = [
         markerImage: "./images/2_Storici_rosso.png",
         markerSize: 60,
         images: [
-            { url: "./images/66_Rosi_01_2026.jpg", date: today },
-            { url: "./images/66_Rosi_02_2026.jpg", date: today },
-            { url: "./images/66_Rosi_03_2026.jpg", date: today }
+            { url: "./images/66_Rosi_01_2026.jpg", date: '2026' },
+            { url: "./images/66_Rosi_02_2026.jpg", date: '2026' },
+            { url: "./images/66_Rosi_03_2026.jpg", date: '2026' }
                    ],
         video: [
             {url: "https://vimeo.com/1034223552" }
@@ -2279,9 +2280,11 @@ const locations = [
         markerImage: "./images/2_Storici_rosso.png",
         markerSize: 60,
         images: [
-            { url: "./images/67_Rodríguez_01_2026.jpg", date: today },
-            { url: "./images/67_Rodríguez_02_2026.jpg", date: today },
-            { url: "./images/67_Rodríguez_03_2026.jpg", date: today }
+            { url: "./images/67_Rodríguez_01_2026.jpg", date: '2026' },
+            { url: "./images/67_Rodríguez_02_2026.jpg", date: '2026' },
+            { url: "./images/67_Rodríguez_03_2026.jpg", date: '2026' },
+            { url: "./images/67_Rodríguez_04_SF.jpg", date: 'Sin Fecha' }
+
                    ],
         video: [
             {url: "" }
@@ -2332,8 +2335,8 @@ const locations = [
         markerImage: "./images/2_Storici_rosso.png",
         markerSize: 60,
         images: [
-            { url: "./images/68_Discos_Ritmo_01_2018.jpg", date: today },
-            { url: "./images/68_Discos_Ritmo_02_2026.jpg", date: today }
+            { url: "./images/68_Discos_Ritmo_01_2018.jpg", date: '2018' },
+            { url: "./images/68_Disco_Ritmo_02_2026.jpg", date: '2026' }
                    ],
         video: [
             {url: "" }
