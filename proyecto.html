@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto – Geografías del comercio tradicional</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts - Barlow -->
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-color: #1db3e2;
+            --secondary-color: #0a9ec6;
+            --dark-blue: #212c37;
+            --light-grey: #f5f5f5;
+            --medium-grey: #666;
+            --dark-grey: #333;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Barlow', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background-color: var(--light-grey);
+            overflow: auto;
+        }
+
+        /* ---- Header ---- */
+        .header {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            height: 60px;
+            background-color: var(--dark-blue);
+            color: white;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            z-index: 1000;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .header .logo { display: flex; align-items: center; gap: 10px; }
+        .header .logo h1 { font-size: 20px; font-weight: 900; color: white; margin-left: 10px; }
+        .header .nav-links a {
+            color: white; text-decoration: none;
+            margin-left: 20px; font-weight: 700; font-size: 14px;
+        }
+
+        /* ---- Layout ---- */
+        #proyecto-page {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .proyecto-content {
+            flex: 1;
+            max-width: 800px;
+            width: 100%;
+            margin: 80px auto 60px;
+            padding: 0 24px;
+        }
+
+        .proyecto-content h2 {
+            font-size: 28px;
+            font-weight: 900;
+            color: var(--dark-blue);
+            margin-bottom: 16px;
+        }
+
+        .proyecto-content h3 {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--dark-blue);
+            margin: 32px 0 10px;
+        }
+
+        .proyecto-content p {
+            font-size: 15px;
+            line-height: 1.7;
+            color: var(--dark-grey);
+            margin-bottom: 16px;
+        }
+
+        .proyecto-content ul {
+            padding-left: 20px;
+            margin-bottom: 16px;
+        }
+
+        .proyecto-content ul li {
+            font-size: 15px;
+            line-height: 1.7;
+            color: var(--dark-grey);
+            margin-bottom: 6px;
+        }
+
+        .btn-back {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 40px;
+            padding: 10px 20px;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 14px;
+            border-radius: 4px;
+        }
+
+        .btn-back:hover {
+            background-color: var(--secondary-color);
+        }
+
+        footer {
+            background-color: var(--dark-blue);
+            color: white;
+            padding: 40px 24px;
+            margin-top: auto;
+            text-align: center;
+            border-top: 2px solid var(--primary-color);
+            width: 100%;
+            flex-shrink: 0;
+        }
+
+        footer p {
+            color: rgba(255, 255, 255, 0.9);
+            margin: 8px 0;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        footer a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        footer .footer-links {
+            margin-top: 20px;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        footer .footer-links a {
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div id="proyecto-page">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-map-marked-alt" style="font-size: 28px;"></i>
+                <h1>Geografías del comercio tradicional - Castellón de la Plana</h1>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html">Mapa</a>
+                <a href="proyecto.html">Proyecto</a>
+                <a href="contactos.html">Contactos</a>
+            </nav>
+        </header>
+
+        <!-- Contenido -->
+        <main class="proyecto-content">
+            <h2>Geografías del comercio tradicional</h2>
+            <p>
+                <em>Memoria, transformación y paisajes relacionales en Castellón de la Plana</em>
+            </p>
+
+            <p>
+                Este proyecto documenta y cartografía los puntos de venta a la porta y las tiendas históricas
+                del comercio tradicional en Castellón de la Plana, con el objetivo de preservar la memoria
+                de unas prácticas comerciales en proceso de transformación.
+            </p>
+
+            <h3>Venta a la porta</h3>
+            <p>
+                La venta a la porta es una práctica arraigada en la cultura agraria de la región: agricultores
+                de la huerta venden sus productos directamente al consumidor en la puerta de su domicilio,
+                sin intermediarios. El mapa recoge los puntos activos identificados mediante trabajo de campo
+                y entrevistas entre 2016 y 2026.
+            </p>
+
+            <h3>Tiendas históricas</h3>
+            <p>
+                Las tiendas históricas son establecimientos con una larga trayectoria en la ciudad, que forman
+                parte del patrimonio comercial y cultural de Castellón. Su presencia en el mapa busca visibilizar
+                su valor como referentes identitarios del tejido urbano.
+            </p>
+
+            <h3>Metodología</h3>
+            <ul>
+                <li>Trabajo de campo y observación directa (2016–2026)</li>
+                <li>Entrevistas con productores y comerciantes</li>
+                <li>Geolocalización y documentación fotográfica</li>
+                <li>Revisión de fuentes históricas y archivos locales</li>
+            </ul>
+
+            <h3>Tecnologías</h3>
+            <ul>
+                <li><a href="https://docs.mapbox.com/mapbox-gl-js/" target="_blank" rel="noopener">Mapbox GL JS</a> – Mapa interactivo</li>
+                <li><a href="https://vitejs.dev/" target="_blank" rel="noopener">Vite</a> – Herramienta de build</li>
+                <li><a href="https://github.com/mapbox/supercluster" target="_blank" rel="noopener">Supercluster</a> – Agrupación de marcadores</li>
+                <li><a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a> – Alojamiento</li>
+            </ul>
+
+            <a class="btn-back" href="index.html">
+                <i class="fas fa-arrow-left"></i> Volver al mapa
+            </a>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p><strong>Geografías del comercio tradicional</strong></p>
+            <p>Memoria, transformación y paisajes relacionales en Castellón de la Plana</p>
+            <p style="margin-top: 20px; font-size: 13px; opacity: 0.8;">
+                © 2026 · Proyecto de investigación y documentación
+            </p>
+            <div class="footer-links">
+                <a href="index.html">Mapa</a>
+                <a href="proyecto.html">Proyecto</a>
+                <a href="https://github.com/patrunomeister/MapaComercioTradicional" target="_blank" rel="noopener">Repositorio</a>
+            </div>
+        </footer>
+
+    </div><!-- #proyecto-page -->
+</body>
+</html>
