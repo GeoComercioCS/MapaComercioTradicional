@@ -1218,7 +1218,10 @@ const locations = [
             { url: "./images/43_Vives_04_1972.jpg", date: '1972' },
             { url: "./images/43_Vives_05_1992.jpg", date: '1992' },
             { url: "./images/43_Vives_06_2012.jpg", date: '2012' }
-                   ]
+                   ],
+        video: [
+            {url: "https://youtu.be/MJ8V0J88rLQ" }
+        ]
     },   
     {
         id: 44,
@@ -1303,7 +1306,10 @@ const locations = [
             { url: "./images/45_Tot_Jove_02_2020.jpg", date: '2020' },
             { url: "./images/45_Tot_Jove_03_2020.jpg", date: '2020' },
             { url: "./images/45_Tot_Jove_04_2019.jpg", date: '2019' }
-                   ]
+                   ],
+        video: [
+            {url: "https://youtu.be/R50W66uCdbk" }
+        ]
     },   
     {
         id: 46,
@@ -1363,7 +1369,7 @@ const locations = [
             { url: "./images/46_IMA_04_2020.jpg", date: '2020' }
                    ],
         video: [
-            {url: "https://youtu.be/RjnhSng8MYk?si=Jb9pygjmSFiLObw7" }
+            {url: "https://youtu.be/mZIZCW48mYg" }
         ]
     },   
     {
@@ -1410,7 +1416,7 @@ const locations = [
             { url: "./images/47_Saura_03_2025.jpg", date: '2025' }
                    ],
         video: [
-            {url: "" }
+            {url: "https://youtu.be/VN79hy_OfFc" }
         ]
     },   
     {
@@ -1454,7 +1460,7 @@ const locations = [
             { url: "./images/48_Nietas_Saura_03_2025.jpg", date: '2025' }
                    ],
         video: [
-            {url: "" }
+            {url: "https://youtu.be/-ZrXJRion7s" }
         ]
     },   
     {
@@ -1500,7 +1506,7 @@ const locations = [
             { url: "./images/49_Patatas_García_2026.jpg", date: '2026' }
                    ],
         video: [
-            {url: "" }
+            {url: "https://youtu.be/miB_ofyYRiw" }
         ]
     },   
     {
@@ -1651,7 +1657,7 @@ const locations = [
             { url: "./images/52_Macián_02_2024.jpg", date: '2024' }
                    ],
         video: [
-            {url: "https://youtu.be/bOBUSJCj7Ik?si=Y9wSBniXYz4dNv-I" }
+            {url: "https://youtu.be/EVMPSl4pAkw" }
         ]
     },   
     {
@@ -1696,7 +1702,7 @@ const locations = [
             { url: "./images/53_Casa_Edo_02_2026.jpg", date: '2026' }
                    ],
         video: [
-            {url: "" }
+            {url: "https://youtu.be/W1GkmpToUyg" }
         ]
     },   
     {
@@ -1740,7 +1746,7 @@ const locations = [
             { url: "./images/54_Lledó_05_2020.jpg", date: '2020' }   
                    ],
         video: [
-            {url: "" }
+            {url: "https://youtu.be/pbVtSjbGu4M" }
         ]
     },   
     {
@@ -1925,7 +1931,7 @@ const locations = [
             { url: "./images/58_Breva_01_2025.jpg", date: '2025' }
                    ],
         video: [
-            {url: "" }
+            {url: "https://youtu.be/ZVPRlFMnyQk" }
         ]
     },   
     {
@@ -2387,7 +2393,7 @@ const locations = [
             { url: "./images/69_Altosa_02_2026.jpg", date: '2026' }
                    ],
         video: [
-            {url: "" }
+            {url: "https://youtu.be/FRQ9z-5L680" }
         ]
     }
 ];
