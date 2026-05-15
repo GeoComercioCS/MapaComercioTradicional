@@ -2073,9 +2073,9 @@ const locations = [
         markerImage: "./images/2_Storici_rosso.png",
         markerSize: 60,
         images: [
-            { url: "./images/62_Trini_01_2018.jpg", date: today },
-            { url: "./images/62_Trini_02_2018.jpg", date: today },
-            { url: "./images/62_Trini_03_2018.jpg", date: today }
+            { url: "./images/62_Trini_01_2018.jpg", date: '2018' },
+            { url: "./images/62_Trini_02_2018.jpg", date: '2018' },
+            { url: "./images/62_Trini_03_2026.jpg", date: '2026' }
                    ],
         video: [
             {url: "" }
@@ -2338,6 +2338,48 @@ const locations = [
         video: [
             {url: "" }
         ]
+    },   
+    {
+        id: 69,
+        title: "Altosa",
+        type: "Suministros Agrícolas (CNAE 4776 )",
+        description: "Francisco Torre Navarro abrió su negocio en 1980, continuando una \
+        tradición familiar dedicada a la venta de productos agrícolas, especialmente \
+        plaguicidas. El establecimiento se encuentra en el barrio del Raval, donde el 80% \
+        de los residentes tenía actividad agrícola — algo que aún hoy se percibe en las \
+        entradas de las casas, diseñadas para el paso de carros. En el barrio existían \
+        antes numerosos negocios y talleres vinculados a la agricultura; hoy Altosa es \
+        el único superviviente, reflejo de la desaparición progresiva de los pequeños \
+        productores de cítricos, debida también a la reducción de la importancia de la \
+        Cooperativa San Isidro, la mayor cooperativa agrícola de Castellón, que durante \
+        décadas los sostuvo. Su declive coincide con el de un modelo agrícola que ya no \
+        resulta rentable. Hoy su clientela está formada principalmente por personas mayores \
+        que siguen cuidando sus huertos.\
+        <em>[Entrevista, 2026]</em>",
+        coordinates: [-0.03527999436755315, 39.98948746456178],
+        details: {
+            address: "Calle Sanahuja, 40",
+            category: "Tiendas históricas",
+            activity: "1980-",
+            foundation: "Francisco Torre Navarro",
+            manager: "Francisco Torre Navarro", 
+            status: "Activo",
+            store: "",
+            link: "",
+            contact: "",
+            notes: ""
+
+        },
+        icon: "",
+        markerImage: "./images/2_Storici_rosso.png",
+        markerSize: 60,
+        images: [
+            { url: "./images/69_Altosa_01_2021.jpg", date: '2021' },
+            { url: "./images/69_Altosa_02_2026.jpg", date: '2026' }
+                   ],
+        video: [
+            {url: "" }
+        ]
     }
 ];
 
@@ -2360,6 +2402,7 @@ const mapConfig = {
     minZoom: 10,
     maxZoom: 18,
     style: 'mapbox://styles/geocomerciocs/cmn92oyra000r01r774wa81r1'
+
     
 };
 

@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 import { resolve } from 'path';
 
 export default defineConfig({
-  base: '/MapaComercioTradicional/',
+  base: '/dist-deploy/', // Configura il percorso base per GitHub Pages
   build: {
     rollupOptions: {
       input: {
