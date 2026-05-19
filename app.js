@@ -182,7 +182,7 @@ const locations = [
             
         ],
         video: [
-            {url: "https://youtu.be/c4ovEOUzjR0" }
+            {url: "" }
         ]
     },
     {
@@ -417,7 +417,7 @@ const locations = [
             { url: "./images/17_Joaquín_01.jpg", date: 'Sin Fecha' }
         ],
         video: [
-            {url: "https://youtu.be/x_9PsidJ5Ug" }
+            {url: "" }
         ]
     },
     {
@@ -556,7 +556,7 @@ const locations = [
             { url: "./images/22_Carmen_Peris_Gomez_04.jpg", date: 'Sin Fecha' }
         ],
         video: [
-            {url: "https://youtu.be/0iyorHf_8r4" }
+            {url: "" }
         ]
     },
     {
@@ -713,14 +713,14 @@ const locations = [
             { url: "", date: "" }
                    ],
         video: [
-            {url: "https://youtu.be/8Z03hg0hSok" }
+            {url: "" }
         ]
 
     },
     {
         id: 29,
         title: "Juan Tomás Pérez Segarra",
-        type: "2025",
+        type: "",
         description: "Juan Tomás abre su punto de <em>venta la porta</em> \
         solo por las tardes, ya que por las mañanas cuida su parcela, \
         donde cultiva únicamente clementinas. <em>[Entrevista, 2025]</em>",
@@ -772,7 +772,7 @@ const locations = [
             
                    ],
         video: [
-            {url: "https://youtu.be/pwJ0-6DafZo" }
+            {url: "" }
         ]
     },
     {
