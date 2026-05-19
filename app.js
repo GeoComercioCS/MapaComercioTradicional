@@ -3084,12 +3084,34 @@ function updateDescriptionTab() {
     detailTitle.textContent = currentLocation.title;
     detailType.textContent = currentLocation.type;
     
+    const category = (currentLocation.details.category || '').toLowerCase();
+    const isHistoricalStore = category === 'tiendas históricas' || category === 'tiendas historicas';
+
     let detailHTML = `
         <p>${currentLocation.description}</p>
         <div class="detail-field">
             <strong>DIRECCIÓN</strong>
             <span>${currentLocation.details.address}</span>
         </div>
+    `;
+
+    if (isHistoricalStore) {
+        detailHTML += `
+        <div class="detail-field">
+            <strong>AÑOS DE ACTIVIDAD</strong>
+            <span>${currentLocation.details.activity || ''}</span>
+        </div>
+        <div class="detail-field">
+            <strong>FUNDACIÓN</strong>
+            <span>${currentLocation.details.foundation || ''}</span>
+        </div>
+        <div class="detail-field">
+            <strong>GESTIÓN</strong>
+            <span>${currentLocation.details.manager || ''}</span>
+        </div>
+        `;
+    } else {
+        detailHTML += `
         <div class="detail-field">
             <strong>PARTIDA RURAL</strong>
             <span>${currentLocation.details.road || ''}</span>
@@ -3098,6 +3120,10 @@ function updateDescriptionTab() {
             <strong>OBSERVACIÓN DE CAMPO</strong>
             <span>${currentLocation.details.observation || ''}</span>
         </div>
+        `;
+    }
+
+    detailHTML += `
         <div class="detail-field">
             <strong>CATEGORÍA</strong>
             <span>${currentLocation.details.category}</span>
@@ -3116,6 +3142,15 @@ function updateDescriptionTab() {
             <span>${currentLocation.details.status}</span>
         </div>
     `;
+
+    if (isHistoricalStore) {
+        detailHTML += `
+        <div class="detail-field">
+            <strong>ESTADO DEL ESTABLECIMIENTO</strong>
+            <span>${currentLocation.details.store || ''}</span>
+        </div>
+        `;
+    }
 
     // Aggiunge la copertina del video se presente
     if (currentLocation.video && currentLocation.video.length > 0) {
