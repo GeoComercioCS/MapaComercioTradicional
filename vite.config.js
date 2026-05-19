@@ -8,7 +8,8 @@ export default defineConfig({
     outDir: 'dist-pages',
     rollupOptions: {
       input: {
-        main: resolve(__dirname, 'index.html'),
+        home: resolve(__dirname, 'index.html'),
+        mapa: resolve(__dirname, 'mapa.html'),
         proyecto: resolve(__dirname, 'proyecto.html'),
         contactos: resolve(__dirname, 'contactos.html'),
       },
