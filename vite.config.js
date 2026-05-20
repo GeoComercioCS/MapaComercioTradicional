@@ -10,6 +10,7 @@ export default defineConfig({
       input: {
         home: resolve(__dirname, 'index.html'),
         mapa: resolve(__dirname, 'mapa.html'),
+        glosario: resolve(__dirname, 'glosario.html'),
         proyecto: resolve(__dirname, 'proyecto.html'),
         contactos: resolve(__dirname, 'contactos.html'),
       },

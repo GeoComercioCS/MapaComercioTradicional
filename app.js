@@ -3150,6 +3150,21 @@ function updateDescriptionTab() {
             <span>${currentLocation.details.store || ''}</span>
         </div>
         `;
+
+        const rawLinks = currentLocation.details.link || '';
+        const links = rawLinks.match(/https?:\/\/[^\s]+/g) || [];
+        if (links.length > 0) {
+            const linksHTML = links
+                .map(url => `<a href="${url}" target="_blank" rel="noopener noreferrer">Link</a>`)
+                .join('<br>');
+
+            detailHTML += `
+            <div class="detail-field">
+                <strong>ENLACES</strong>
+                <span>${linksHTML}</span>
+            </div>
+            `;
+        }
     }
 
     // Aggiunge la copertina del video se presente
