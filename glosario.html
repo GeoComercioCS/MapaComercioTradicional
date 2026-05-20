@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glosario - Geografias del comercio tradicional</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-color: #1db3e2;
+            --secondary-color: #0a9ec6;
+            --dark-blue: #212c37;
+            --light-grey: #f5f5f5;
+            --medium-grey: #666;
+            --dark-grey: #333;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Barlow', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background-color: var(--light-grey);
+            overflow: auto;
+        }
+
+        .header {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            height: 60px;
+            background-color: var(--dark-blue);
+            color: white;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            z-index: 1000;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .header .logo { display: flex; align-items: center; gap: 10px; }
+        .header .logo a { text-decoration: none; color: inherit; }
+        .header .logo h1 { font-size: 20px; font-weight: 900; color: white; margin-left: 10px; }
+
+        .header .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        .header .nav-links a.active {
+            color: var(--primary-color);
+        }
+
+        #glosario-page {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .glosario-content {
+            flex: 1;
+            max-width: 980px;
+            width: 100%;
+            margin: 80px auto 60px;
+            padding: 0 24px;
+        }
+
+        .glosario-top-logo {
+            text-align: center;
+            margin: 10px 0 24px;
+        }
+
+        .glosario-top-logo img {
+            max-width: 260px;
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .glosario-content h2 {
+            font-size: 28px;
+            font-weight: 900;
+            color: var(--dark-blue);
+            margin-bottom: 16px;
+        }
+
+        .glosario-content h3 {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--dark-blue);
+            margin: 28px 0 10px;
+        }
+
+        .glosario-content p,
+        .glosario-content li {
+            font-size: 15px;
+            line-height: 1.7;
+            color: var(--dark-grey);
+        }
+
+        .glosario-content ul {
+            padding-left: 20px;
+            margin-bottom: 14px;
+        }
+
+        .glossary-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            margin-top: 18px;
+        }
+
+        .glossary-card {
+            background: white;
+            border-radius: 8px;
+            padding: 22px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+        }
+
+        .glossary-card h4 {
+            font-size: 16px;
+            color: var(--dark-blue);
+            margin-bottom: 8px;
+        }
+
+        .term {
+            margin-top: 12px;
+        }
+
+        .term strong {
+            color: var(--dark-blue);
+        }
+
+        .license-note {
+            margin-top: 28px;
+            padding: 18px;
+            background: #eaf7fc;
+            border-left: 4px solid var(--primary-color);
+            border-radius: 6px;
+        }
+
+        .btn-back {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 36px;
+            padding: 10px 20px;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 14px;
+            border-radius: 4px;
+        }
+
+        .btn-back:hover {
+            background-color: var(--secondary-color);
+        }
+
+        footer {
+            background-color: var(--dark-blue);
+            color: white;
+            padding: 40px 24px;
+            margin-top: auto;
+            text-align: center;
+            border-top: 2px solid var(--primary-color);
+            width: 100%;
+            flex-shrink: 0;
+        }
+
+        footer p {
+            color: rgba(255, 255, 255, 0.9);
+            margin: 8px 0;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        footer a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        footer .footer-links {
+            margin-top: 20px;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        footer .footer-links a { font-size: 13px; }
+
+        @media (max-width: 860px) {
+            .glossary-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .header .logo h1 {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="glosario-page">
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-map-marked-alt" style="font-size: 28px;"></i>
+                <a href="index.html"><h1>Geografias del comercio tradicional - Castellon de la Plana</h1></a>
+            </div>
+            <nav class="nav-links">
+                <a href="mapa.html">Mapa</a>
+                <a href="glosario.html" class="active">Glosario</a>
+                <a href="proyecto.html">Proyecto</a>
+                <a href="contactos.html">Contactos</a>
+            </nav>
+        </header>
+
+        <main class="glosario-content">
+            <div class="glosario-top-logo">
+                <img src="./images/logo3.png" alt="Logo del proyecto">
+            </div>
+
+            <h2>Glosario</h2>
+            <p><em>Criterios y terminos de referencia del proyecto.</em></p>
+
+            <h3>Criterios comunes</h3>
+            <p>
+                La fecha de referencia para el estado de cada establecimiento o punto de venta es febrero de 2026.
+                Los datos, fotografias y entrevistas se recopilaron durante trabajo de campo entre 2016 y 2026.
+            </p>
+            <p>
+                La cartografia utiliza dos marcadores: uno para comercios historicos y otro para venta a la porta.
+                Cada marcador abre la ficha con descripcion, imagenes y, cuando existe, enlace de video.
+            </p>
+
+            <div class="glossary-grid">
+                <section class="glossary-card">
+                    <h4>Comercios historicos</h4>
+
+                    <p class="term"><strong>Comercio historico:</strong> establecimiento con continuidad temporal,
+                    memoria urbana y valor identitario. En este proyecto, se considera historico con antiguedad minima de 40 anos.</p>
+
+                    <p class="term"><strong>CNAE:</strong> Clasificacion Nacional de Actividades Economicas usada para
+                    identificar la actividad principal del establecimiento.</p>
+
+                    <p class="term"><strong>Fundacion / Fundadores:</strong> identifica quien inicio la actividad,
+                    con nombre completo cuando esta disponible.</p>
+
+                    <p class="term"><strong>Gestion:</strong> persona o personas responsables actuales o ultimas responsables
+                    en caso de cierre.</p>
+
+                    <p class="term"><strong>Estado de la actividad:</strong> situacion comercial a fecha de referencia.</p>
+                    <ul>
+                        <li>Activo</li>
+                        <li>Cerrado</li>
+                        <li>Activo (traspasado)</li>
+                        <li>Activo (traspasado, ahora [nuevo nombre])</li>
+                        <li>Activo (cambio de actividad)</li>
+                    </ul>
+
+                    <p class="term"><strong>Estado del establecimiento:</strong> situacion fisica del local cuando la actividad original cesa o cambia.</p>
+                    <ul>
+                        <li>Cerrado</li>
+                        <li>En venta</li>
+                        <li>Se alquila</li>
+                        <li>Abierto, [nueva actividad]</li>
+                    </ul>
+                </section>
+
+                <section class="glossary-card">
+                    <h4>Venta a la porta</h4>
+
+                    <p class="term"><strong>Venta a la porta:</strong> venta directa de productos agricolas en bajos de viviendas,
+                    con producto de huertas familiares del termino municipal.</p>
+
+                    <p class="term"><strong>Sin identificar:</strong> etiqueta usada cuando no fue posible identificar a la persona vendedora.</p>
+
+                    <p class="term"><strong>Partida rural:</strong> division tradicional del territorio agricola de Castellon
+                    (ej.: Fadrell, Brunella, La Magdalena).</p>
+
+                    <p class="term"><strong>Estado:</strong> situacion de la actividad en la fecha de referencia.</p>
+                    <ul>
+                        <li>Activo / Inactivo</li>
+                    </ul>
+
+                    <p class="term"><strong>Observacion de campo:</strong> anos en que se verifico directamente la actividad.</p>
+
+                    <p class="term"><strong>Hanegada:</strong> unidad de superficie agraria; en Comunitat Valenciana equivale a 831 m2.</p>
+
+                    <p class="term"><strong>Bajo:</strong> local de planta baja habilitado como punto de venta a la porta.</p>
+                </section>
+            </div>
+
+            <h3>Fuentes y notacion</h3>
+            <ul>
+                <li><em>[Entrevista, ano]</em>: entrevista directa realizada por los autores.</li>
+                <li><em>[Fuentes hemerograficas, ano]</em>: prensa y hemeroteca con enlace en la ficha.</li>
+                <li><strong>s/d</strong>: sin datos disponibles para ese campo.</li>
+                <li>Terminos populares o en valenciano se mantienen en cursiva.</li>
+            </ul>
+
+            <div class="license-note">
+                <p>
+                    <strong>Propiedad intelectual:</strong> los contenidos del proyecto se distribuyen bajo
+                    Creative Commons Atribucion-NoComercial 4.0 Internacional (CC BY-NC 4.0).
+                </p>
+            </div>
+
+            <a class="btn-back" href="mapa.html">
+                <i class="fas fa-arrow-left"></i> Volver al mapa
+            </a>
+        </main>
+
+        <footer>
+            <p><strong>Geografias del comercio tradicional</strong></p>
+            <p>Memoria, transformacion y paisajes relacionales en Castellon de la Plana</p>
+            <p style="margin-top: 20px; font-size: 13px; opacity: 0.8;">
+                Creative Commons Atribucion-NoComercial 4.0 Internacional (CC BY-NC 4.0)
+            </p>
+            <div class="footer-links">
+                <a href="mapa.html">Mapa</a>
+                <a href="glosario.html">Glosario</a>
+                <a href="proyecto.html">Proyecto</a>
+                <a href="https://github.com/geocomerciocs/MapaComercioTradicional" target="_blank" rel="noopener">Repositorio</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
