@@ -1029,7 +1029,7 @@ const locations = [
         coordinates: [-0.03743, 39.98449],
         details: {
             address: "Calle San Vicente, 40 (anteriormente Calle Mayor, 11)",
-            category: "Tiendas históricas",
+            category: "Comercios históricos",
             activity: "1936–2021",
             foundation: "Vicente Traver Sanz",
             manager: "Vicente Traver Ardiez", 
@@ -1078,7 +1078,7 @@ const locations = [
         coordinates: [-0.03821, 39.98507],
         details: {
             address: "Calle Pascual Tirado, 1",
-            category: "Tiendas históricas",
+            category: "Comercios históricos",
             activity: "1983–2019",
             foundation: "José Luis Roig y Miguel Ángel Villanueva",
             manager: "José Luis Roig y Miguel Ángel Villanueva", 
@@ -1122,7 +1122,7 @@ const locations = [
         coordinates: [-0.03593, 39.98776],
         details: {
             address: "Calle Caballeros, 36",
-            category: "Tiendas históricas",
+            category: "Comercios históricos",
             activity: "1963 –",
             foundation: "Dolores Badenes Gual y Jesús Medrano",
             manager: "Dolores Badenes Gual", 
@@ -1154,7 +1154,7 @@ const locations = [
         coordinates: [-0.03677, 39.98685],
         details: {
             address: "Calle Cervantes, 25",
-            category: "Tiendas históricas",
+            category: "Comercios históricos",
             activity: "s/d",
             foundation: "s/d",
             manager: "s/d", 
@@ -1197,7 +1197,7 @@ const locations = [
         coordinates: [-0.03736, 39.99226],
         details: {
             address: "Calle Cerdán de Tallada, 4",
-            category: "Tiendas históricas",
+            category: "Comercios históricos",
             activity: "1908 - ",
             foundation: "Jose Mele Molí y Antonia Benajes",
             manager: " Iván Vives Traver, Carlos Vives Traver y María Vives Traver (quinta generación)", 
@@ -1246,7 +1246,7 @@ const locations = [
         coordinates: [-0.03325, 39.99123],
         details: {
             address: "Calle Sanz de Bremond, 19",
-            category: "Tiendas históricas",
+            category: "Comercios históricos",
             activity: "1964 -",
             foundation: "Virgilia Aparici y José Viciano",
             manager: "José Virgilio Viciano Aparici y Mari Carmen Molín", 
@@ -1287,7 +1287,7 @@ const locations = [
         coordinates: [-0.03248, 39.98839],
         details: {
             address: "Calle Rafalafena, 14",
-            category: "Tiendas históricas",
+            category: "Comercios históricos",
             activity: "1979 - ",
             foundation: "Provi Sales",
             manager: "Provi Sales (1979-2024), Delia Valero (2024 - actualidad)", 
@@ -1348,7 +1348,7 @@ const locations = [
         coordinates: [-0.03419, 39.98969],
         details: {
             address: "Avenida Capuchinos, 13 ",
-            category: "Tiendas históricas",
+            category: "Comercios históricos",
             activity: "1969 –",
             foundation: "Rosenda Alcaide e Ismael Pérez",
             manager: " Inma Pérez (2001 – actualidad)", 
@@ -1396,7 +1396,7 @@ const locations = [
         coordinates: [-0.04033, 39.98983],
         details: {
             address: "Plaza del Maestrazgo, 2",
-            category: "Tiendas históricas",
+            category: "Comercios históricos",
             activity: "~1950 –",
             foundation: "Jaime Saura",
             manager: "Jaime Brun Saura (tercera generación)", 
@@ -1440,7 +1440,7 @@ const locations = [
         coordinates: [-0.04032, 39.98229],
         details: {
             address: "Calle Trinidad, 94",
-            category: "Tiendas históricas",
+            category: "Comercios históricos",
             activity: "1984–2025",
             foundation: "Mari Carmen y Nuria Saura",
             manager: "Mari Carmen y Nuria Saura", 
@@ -1488,7 +1488,7 @@ const locations = [
         coordinates: [-0.03479, 39.98646],
         details: {
             address: "Calle Aarau, 3",
-            category: "Tiendas históricas",
+            category: "Comercios históricos",
             activity: "1982 –",
             foundation: "Javier García y Yolanda Cosín",
             manager: "Javier García y Yolanda Cosín (1982–2025), nuevo propietario (2025 – actualidad)", 
@@ -1526,7 +1526,7 @@ const locations = [
         coordinates: [-0.039375, 39.986361],
         details: {
             address: "Calle Alloza, 58",
-            category: "Tiendas históricas",
+            category: "Comercios históricos",
             activity: "1875 –",
             foundation: "Alfredo Adell Bellés",
             manager: "Manolo Fuentes Adell y Raquel Ferragut", 
@@ -1591,7 +1591,7 @@ const locations = [
         coordinates: [-0.041472, 39.987358],
         details: {
             address: "Calle Zaragoza, 17",
-            category: "Tiendas históricas",
+            category: "Comercios históricos",
             activity: "1968 –",
             foundation: "María Rosa Tena Beltrán",
             manager: "Nuria Fabregat", 
@@ -1638,7 +1638,7 @@ const locations = [
         coordinates: [-0.0373419, 39.9844299],
         details: {
             address: "Calle Mayor, 12",
-            category: "Tiendas históricas",
+            category: "Comercios históricos",
             activity: "1947 –",
             foundation: "Rosalía Palos García y Pedro Macián Salvador",
             manager: "Pedro Macián Sidro y Marimer Sidro (tercera generación)", 
@@ -1683,7 +1683,7 @@ const locations = [
         coordinates: [-0.040253, 39.989099],
         details: {
             address: "Calle Rosel, 18-D",
-            category: "Tiendas históricas",
+            category: "Comercios históricos",
             activity: "1959 –",
             foundation: "Vicente Edo y Presentación",
             manager: "Raquel Badenas Edo (tercera generación)", 
@@ -1724,7 +1724,7 @@ const locations = [
         coordinates: [-0.03305, 39.99057],
         details: {
             address: "Calle Perot de Granyana, 2",
-            category: "Tiendas históricas",
+            category: "Comercios históricos",
             activity: "s/d –",
             foundation: "s/d",
             manager: "Lledó Mundo y Agustín s/d", 
@@ -1774,7 +1774,7 @@ const locations = [
         coordinates: [-0.03777, 39.98795],
         details: {
             address: "Calle Enmedio, 103 (anteriormente Calle Segorbe, 51)",
-            category: "Tiendas históricas",
+            category: "Comercios históricos",
             activity: "años 70 – 2023",
             foundation: "Toni Marqués (Antonio Marqués)",
             manager: "Toni Marqués, Inmaculada Marqués y Toni Caballer", 
@@ -1814,7 +1814,7 @@ const locations = [
         coordinates: [-0.036570, 39.986990],
         details: {
             address: "Calle Caballeros, 15-17",
-            category: "Tiendas históricas",
+            category: "Comercios históricos",
             activity: "1986 –",
             foundation: "José Renau Fauró y Ana Silvestre Torner",
             manager: "José Miguel Renau Silvestre y Nuria", 
@@ -1865,7 +1865,7 @@ const locations = [
         coordinates: [-0.040696, 39.989925],
         details: {
             address: "Ronda Magdalena, 31",
-            category: "Tiendas históricas",
+            category: "Comercios históricos",
             activity: "1921 –",
             foundation: "Dolores Huguet",
             manager: "Javier y María Dolores (tercera generación)", 
@@ -1913,7 +1913,7 @@ const locations = [
         coordinates: [-0.03305, 39.99057],
         details: {
             address: "Calle Trinidad, 104",
-            category: "Tiendas históricas",
+            category: "Comercios históricos",
             activity: "1964 –",
             foundation: "Jose Breva Pastor",
             manager: "Jose Breva Pastor (fundador, 1964–1996), Antonio Tomás Breva Nebot (hijo, 1996–actualidad)", 
@@ -1947,7 +1947,7 @@ const locations = [
         coordinates: [-0.042449347272556524, 39.98801531813292],
         details: {
             address: "Plaza Independencia, 6",
-            category: "Tiendas históricas",
+            category: "Comercios históricos",
             activity: "~1980 – 2022",
             foundation: "s/d",
             manager: "Carlos Tosca", 
@@ -1979,7 +1979,7 @@ const locations = [
         coordinates: [-0.041437, 39.987692],
         details: {
             address: "Calle Zaragoza, 15",
-            category: "Tiendas históricas",
+            category: "Comercios históricos",
             activity: "1918–2024",
             foundation: "Familia Fenollosa",
             manager: "Familia Fenollosa", 
@@ -2033,7 +2033,7 @@ const locations = [
         coordinates: [-0.040560, 39.987572],
         details: {
             address: "Plaza Tetuán, 10",
-            category: "Tiendas históricas",
+            category: "Comercios históricos",
             activity: "1907–2021",
             foundation: "Fernando Vivas Silvestre y Rosario Lloret",
             manager: "Guillermo Verchili y José Vicente Sales", 
@@ -2071,7 +2071,7 @@ const locations = [
         coordinates: [-0.03722, 39.98826],
         details: {
             address: "Calle Enmedio, 138",
-            category: "Tiendas históricas",
+            category: "Comercios históricos",
             activity: "1964–2018",
             foundation: "Trinidad (apellido desconocido)",
             manager: " Carmen Salvador y su marido (1979–2018)", 
@@ -2107,7 +2107,7 @@ const locations = [
         coordinates: [-0.04247415146950542, 39.98817478834645],
         details: {
             address: "Calle Mayor, 100 y Plaza Santa Clara (Mercado Central)",
-            category: "Tiendas históricas",
+            category: "Comercios históricos",
             activity: "1970 –",
             foundation: "Mario Alba Gasque y Rosa María",
             manager: "Rosa y Miguel Alba Tille", 
@@ -2147,7 +2147,7 @@ const locations = [
         coordinates: [-0.03757972299322225, 39.986479695978964],
         details: {
             address: "Calle Colón, 17",
-            category: "Tiendas históricas",
+            category: "Comercios históricos",
             activity: "1940–2017",
             foundation: "Familia Roses",
             manager: "Mari Carmen Roses, Eduardo Roses y Joaquín Roses", 
@@ -2191,7 +2191,7 @@ const locations = [
         coordinates: [-0.04052987399590712, 39.99001416773975],
         details: {
             address: "Ronda Magdalena, 31",
-            category: "Tiendas históricas",
+            category: "Comercios históricos",
             activity: "1971–2021",
             foundation: "José María Romero y Carmen Castillo",
             manager: "José, Sergio y Mariló Romero", 
@@ -2227,7 +2227,7 @@ const locations = [
         coordinates: [-0.041289, 39.979167],
         details: {
             address: "Calle Herrero, 52 C",
-            category: "Tiendas históricas",
+            category: "Comercios históricos",
             activity: "~1975 –",
             foundation: "Serafín Miralles Escrig",
             manager: "Elena Miralles Safont", 
@@ -2277,7 +2277,7 @@ const locations = [
         coordinates: [-0.03827222375463359, 39.984777463977885],
         details: {
             address: "Calle Vera, 20",
-            category: "Tiendas históricas",
+            category: "Comercios históricos",
             activity: "1940 –",
             foundation: "Rogelio Rodríguez Basalo y Adela López de Diego",
             manager: "Rogelio Rodríguez López y Claudia Rodríguez González (tercera generación) ", 
@@ -2329,7 +2329,7 @@ const locations = [
         coordinates: [-0.039318, 39.985346],
         details: {
             address: "Calle O'Donnell, 1",
-            category: "Tiendas históricas",
+            category: "Comercios históricos",
             activity: "1978–2024",
             foundation: "Vicente Boix y Ana José Serrano",
             manager: "Vicente Boix y Ana José Serrano", 
@@ -2374,7 +2374,7 @@ const locations = [
         coordinates: [-0.03527999436755315, 39.98948746456178],
         details: {
             address: "Calle Sanahuja, 40",
-            category: "Tiendas históricas",
+            category: "Comercios históricos",
             activity: "1980-",
             foundation: "Francisco Torre Navarro",
             manager: "Francisco Torre Navarro", 
@@ -2515,7 +2515,7 @@ function initMap() {
     
     // Popola la lista nella sidebar (solo 'Venta a la porta')
     populateLocationList();
-    // Popola la lista delle Tiendas históricas nella sidebar sinistra
+    // Popola la lista delle Comercios históricos nella sidebar sinistra
     populateHistoricalList();
     
     // Aggiungi event listener ai pulsanti di controllo
@@ -2869,7 +2869,7 @@ function populateLocationList() {
 
     if (items.length === 0) {
         locationList.innerHTML = '<div class="empty-state"><i class="fas fa-map-marker-alt"></i><p>Nessun punto di interesse trovato</p></div>';
-        locationCount.textContent = '0 punti';
+        locationCount.textContent = '0 puntos';
         return;
     }
 
@@ -2897,17 +2897,17 @@ function populateLocationList() {
         locationList.appendChild(item);
     });
 
-    locationCount.textContent = `${items.length} punti`;
+    locationCount.textContent = `${items.length} puntos`;
 }
 
-// Popola la lista delle Tiendas históricas nella sidebar sinistra
+// Popola la lista delle Comercios históricos nella sidebar sinistra
 function populateHistoricalList() {
     const historicalList = document.getElementById('historicalList');
     const historicalCount = document.getElementById('historicalCount');
 
     if (!historicalList || !historicalCount) return;
 
-    const items = locations.filter(loc => loc.details && loc.details.category === 'Tiendas históricas');
+    const items = locations.filter(loc => loc.details && loc.details.category === 'Comercios históricos');
 
     if (items.length === 0) {
         historicalList.innerHTML = '<div class="empty-state"><i class="fas fa-store"></i><p>Nessuna tienda histórica trovata</p></div>';
@@ -2957,7 +2957,7 @@ function selectLocation(locationId) {
     if (currentLocation.details && currentLocation.details.category) {
         if (currentLocation.details.category === 'Venta a la porta') {
             activateTab('list');
-        } else if (currentLocation.details.category === 'Tiendas históricas') {
+        } else if (currentLocation.details.category === 'Comercios históricos') {
             activateTab('historical');
         }
     }
@@ -3085,7 +3085,7 @@ function updateDescriptionTab() {
     detailType.textContent = currentLocation.type;
     
     const category = (currentLocation.details.category || '').toLowerCase();
-    const isHistoricalStore = category === 'tiendas históricas' || category === 'tiendas historicas';
+    const isHistoricalStore = category === 'comercios históricos';
 
     let detailHTML = `
         <p>${currentLocation.description}</p>
