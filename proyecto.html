@@ -88,6 +88,32 @@
             margin-bottom: 16px;
         }
 
+        .proyecto-content .hero-image {
+            display: block;
+            width: min(100%, 560px);
+            margin: 0 auto 28px;
+        }
+
+        .proyecto-content .lead {
+            font-size: 18px;
+            color: var(--medium-grey);
+            margin-bottom: 24px;
+        }
+
+        .proyecto-content .funding {
+            background: white;
+            border-left: 4px solid var(--primary-color);
+            padding: 16px 18px;
+            margin: 24px 0 32px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+        }
+
+        .proyecto-content hr {
+            border: 0;
+            border-top: 1px solid rgba(33, 44, 55, 0.16);
+            margin: 28px 0;
+        }
+
         .proyecto-content ul {
             padding-left: 20px;
             margin-bottom: 16px;
@@ -98,6 +124,52 @@
             line-height: 1.7;
             color: var(--dark-grey);
             margin-bottom: 6px;
+        }
+
+        .proyecto-content .team-block,
+        .proyecto-content .dataset-block,
+        .proyecto-content .license-block {
+            background: white;
+            padding: 20px 22px;
+            border-radius: 8px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+            margin-bottom: 18px;
+        }
+
+        .proyecto-content .team-block p:last-child,
+        .proyecto-content .dataset-block p:last-child,
+        .proyecto-content .license-block p:last-child {
+            margin-bottom: 0;
+        }
+
+        .proyecto-content .logo-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 24px;
+            flex-wrap: wrap;
+            margin-top: 28px;
+        }
+
+        .proyecto-content .logo-row img {
+            max-width: min(100%, 320px);
+            height: auto;
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .proyecto-content {
+                margin-top: 92px;
+                padding: 0 18px;
+            }
+
+            .proyecto-content h2 {
+                font-size: 24px;
+            }
+
+            .proyecto-content .lead {
+                font-size: 16px;
+            }
         }
 
         .btn-back {
@@ -178,47 +250,99 @@
 
         <!-- Contenido -->
         <main class="proyecto-content">
+            <img class="hero-image" src="./images/logo4.png" width="220" alt="Geografías del comercio tradicional">
+
             <h2>Geografías del comercio tradicional</h2>
-            <p>
+            <p class="lead">
                 <em>Memoria, transformación y paisajes relacionales en Castellón de la Plana</em>
             </p>
 
             <p>
-                Este proyecto documenta y cartografía los puntos de venta a la porta y las tiendas históricas
-                del comercio tradicional en Castellón de la Plana, con el objetivo de preservar la memoria
-                de unas prácticas comerciales en proceso de transformación.
+                Este proyecto documenta y cartografía dos formas singulares del comercio tradicional de Castellón de la Plana:
+                los comercios históricos y los puntos de <em>venta a la porta</em>. La cartografía digital es el resultado de un largo
+                trabajo de campo, entrevistas, observación directa y documentación fotográfica desarrollado entre 2016 y 2026,
+                y visibiliza prácticas comerciales que constituyen un patrimonio vivo: generador de capital social, memoria
+                colectiva e identidad urbana.
             </p>
+
+            <div class="funding">
+                <p>
+                    El proyecto ha sido financiado por la <strong>Fundación Dávalos-Fletcher</strong> a través de la Ayuda a la Investigación
+                    en Ciencias Sociales y Humanidades, Convocatoria 2025.
+                </p>
+            </div>
+
+            <hr>
 
             <h3>Venta a la porta</h3>
             <p>
-                La venta a la porta es una práctica arraigada en la cultura agraria de la región: agricultores
-                de la huerta venden sus productos directamente al consumidor en la puerta de su domicilio,
-                sin intermediarios. El mapa recoge los puntos activos identificados mediante trabajo de campo
-                y entrevistas entre 2016 y 2026.
+                La <em>venta a la porta</em> es un sistema histórico de venta directa de productos agrícolas en los locales de planta baja
+                de las viviendas urbanas de los propios productores, conectando la huerta periurbana con el tejido urbano de la ciudad.
+                Regulada por el Decreto 201/2017 de la Generalitat Valenciana sobre venta de proximidad, constituye una práctica singular
+                propia de Castellón. A través de este estudio se reconoce a esta antigua práctica comercial, que aún se preserva en las
+                calles de Castellón, un valor como patrimonio relevante de la cultura local. El mapa recoge 38 puntos documentados mediante
+                trabajo de campo sistemático entre 2016 y 2026, de los cuales 20 activos en la fecha de referencia de febrero de 2026.
             </p>
 
-            <h3>Tiendas históricas</h3>
+            <hr>
+
+            <h3>Comercios históricos</h3>
             <p>
-                Las tiendas históricas son establecimientos con una larga trayectoria en la ciudad, que forman
-                parte del patrimonio comercial y cultural de Castellón. Su presencia en el mapa busca visibilizar
-                su valor como referentes identitarios del tejido urbano.
+                Los comercios históricos son establecimientos comerciales, locales públicos o actividades artesanales que se distinguen por
+                la continuidad de su actividad, la transmisión familiar intergeneracional y su vínculo con la memoria colectiva y la identidad
+                urbana. A efectos de este proyecto, se han considerado comercios históricos los establecimientos con una antigüedad mínima de
+                40 años. El mapa consta de 31 puntos relevados, no como censo exhaustivo sino como selección razonada, tipológicamente diversa
+                y geográficamente representativa, que incluye establecimientos de barrios periféricos junto a los del centro histórico.
             </p>
+
+            <hr>
 
             <h3>Metodología</h3>
             <ul>
                 <li>Trabajo de campo y observación directa (2016–2026)</li>
-                <li>Entrevistas con productores y comerciantes</li>
-                <li>Geolocalización y documentación fotográfica</li>
-                <li>Revisión de fuentes históricas y archivos locales</li>
+                <li>Entrevistas semiestructuradas con productores y comerciantes</li>
+                <li>Inventario fotográfico geolocalizado</li>
+                <li>Revisión de fuentes hemerográficas y archivos locales</li>
+                <li>Fecha de referencia para el estado de todos los puntos mapeados: febrero de 2026</li>
             </ul>
+
+            <hr>
 
             <h3>Tecnologías</h3>
             <ul>
                 <li><a href="https://docs.mapbox.com/mapbox-gl-js/" target="_blank" rel="noopener">Mapbox GL JS</a> – Mapa interactivo</li>
-                <li><a href="https://vitejs.dev/" target="_blank" rel="noopener">Vite</a> – Herramienta de build</li>
+                <li><a href="https://vitejs.dev/" target="_blank" rel="noopener">Vite</a> – Build tool</li>
                 <li><a href="https://github.com/mapbox/supercluster" target="_blank" rel="noopener">Supercluster</a> – Agrupación de marcadores</li>
-                <li><a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a> – Alojamiento</li>
+                <li><a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a> – Hosting</li>
             </ul>
+
+            <hr>
+
+            <h3>Equipo</h3>
+            <div class="team-block">
+                <p><strong>Dirección:</strong> Raffaella Rose, Institut Interuniversitari de Geografia, Universitat Jaume I</p>
+                <p><strong>Equipo:</strong> Enrique Montón Chiva, Francisco Javier Soriano Martí, Obdulia Monteserín Abella y Pablo Marco Dols, Universitat Jaume I</p>
+                <p><strong>Cartografía digital:</strong> Vincenzo Patruno, Istat</p>
+                <p><strong>Diseño gráfico:</strong> Veronica Cristofoletti, arquitecta</p>
+            </div>
+
+            <div class="dataset-block">
+                <p>
+                    <strong>Dataset:</strong> Rose, R. et al. (2026). <em>Geografías del comercio tradicional: Memoria, transformación y paisajes relacionales en Castellón de la Plana - Dataset</em>.
+                    Zenodo.
+                    <a href="https://doi.org/10.5281/zenodo.19978305" target="_blank" rel="noopener">https://doi.org/10.5281/zenodo.19978305</a>
+                </p>
+            </div>
+
+            <div class="license-block">
+                <p><strong>Licencia:</strong> Creative Commons Atribución-NoComercial 4.0 Internacional (CC BY-NC 4.0)</p>
+                <p>Institut Interuniversitari de Geografia, Universitat Jaume I · Fundación Dávalos-Fletcher · 2026</p>
+            </div>
+
+            <div class="logo-row">
+                <img src="./images/bottom_fundacion.png" alt="Fundacion Dávalos-Fletcher">
+                <img src="./images/bottom_istituto.png" alt="Institut Interuniversitari de Geografia, Universitat Jaume I">
+            </div>
 
             <a class="btn-back" href="mapa.html">
                 <i class="fas fa-arrow-left"></i> Volver al mapa
