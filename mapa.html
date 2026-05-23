@@ -25,7 +25,7 @@
         <!-- Header -->
         <header class="header">
             <div class="logo">
-                <i class="fas fa-map-marked-alt" style="font-size: 28px;"></i>
+                <i class="fas fa-map-marked-alt logo-icon"></i>
                 <a href="index.html"><h1>Geografías del comercio tradicional - Castellón de la Plana </h1></a>
             </div>
             <nav class="nav-links">
@@ -46,10 +46,10 @@
             <div id="map"></div>
             
             <!-- Controlli Mappa -->
-            <div style="position: absolute; top: 10px; left: 10px; z-index: 10;">
-                <button id="zoomIn" style="background: white; border: none; padding: 8px; margin-bottom: 5px; border-radius: 4px; cursor: pointer; box-shadow: 0 1px 4px rgba(0,0,0,0.3);"><i class="fas fa-plus"></i></button>
-                <button id="zoomOut" style="background: white; border: none; padding: 8px; margin-bottom: 5px; border-radius: 4px; cursor: pointer; box-shadow: 0 1px 4px rgba(0,0,0,0.3);"><i class="fas fa-minus"></i></button>
-                <button id="resetView" style="background: white; border: none; padding: 8px; border-radius: 4px; cursor: pointer; box-shadow: 0 1px 4px rgba(0,0,0,0.3);"><i class="fas fa-crosshairs"></i></button>
+            <div class="map-controls">
+                <button id="zoomIn" class="map-control-btn"><i class="fas fa-plus"></i></button>
+                <button id="zoomOut" class="map-control-btn"><i class="fas fa-minus"></i></button>
+                <button id="resetView" class="map-control-btn"><i class="fas fa-crosshairs"></i></button>
             </div>
             
             
@@ -74,9 +74,9 @@
             <div class="sidebar-content-wrapper">
                 <!-- Tab 3: Lista dei Punti di Interesse -->
                 <div id="listContent" class="tab-content active">
-                    <div class="sidebar-header" style="display: block; background: #f5f5f5; color: var(--dark-grey); border-bottom: 1px solid #ddd;">
-                        <h2 style="font-size: 16px;">Venta a la porta</h2>
-                        <p id="locationCount" style="font-size: 12px;"></p>
+                    <div class="sidebar-header sidebar-panel-header">
+                        <h2 class="sidebar-panel-title">Venta a la porta</h2>
+                        <p id="locationCount" class="sidebar-panel-count"></p>
                     </div>
                     <div id="locationList" class="sidebar-content">
                         <!-- La lista dei punti verrà iniettata qui da JavaScript -->
@@ -85,9 +85,9 @@
 
                 <!-- Contenuto per il tab 'Históricas' (solo punti con category: Tiendas históricas) -->
                 <div id="historicalContent" class="tab-content">
-                    <div class="sidebar-header" style="display: block; background: #f5f5f5; color: var(--dark-grey); border-bottom: 1px solid #ddd;">
-                        <h2 style="font-size: 16px;">Comercios históricos</h2>
-                        <p id="historicalCount" style="font-size: 12px;"></p>
+                    <div class="sidebar-header sidebar-panel-header">
+                        <h2 class="sidebar-panel-title">Comercios históricos</h2>
+                        <p id="historicalCount" class="sidebar-panel-count"></p>
                     </div>
                     <div id="historicalList" class="sidebar-content">
                         <!-- Lista storiche riempita da JavaScript -->
@@ -121,7 +121,7 @@
                                 <h2 id="detailTitle">Seleccione un punto</h2>
                                 <p id="detailType">No se seleccionaron puntos</p>
                             </div>
-                            <button id="detailClose" class="detail-close" style="display: none;"><i class="fas fa-times"></i></button>
+                            <button id="detailClose" class="detail-close"><i class="fas fa-times"></i></button>
                         </div>
                         <div id="detailBody" class="detail-body">
                             <div class="empty-state">
