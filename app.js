@@ -2432,6 +2432,7 @@ let clusterListenersAttached = false;
 let restoreClustersBelowZoom = null;
 let currentHighlightedMarker = null; // elemento marker attualmente evidenziato
 let highlightedLocationId = null; // ID della location attualmente evidenziata
+const descriptionExpandedState = new Map(); // stato Leer mas/Less per singola location
 
 // Evidenzia un marker corrispondente all'ID location senza aprire popup
 function highlightMarker(locationId) {
@@ -3086,9 +3087,13 @@ function updateDescriptionTab() {
     
     const category = (currentLocation.details.category || '').toLowerCase();
     const isHistoricalStore = category === 'comercios históricos';
+    const isDescriptionExpanded = descriptionExpandedState.get(currentLocation.id) === true;
 
     let detailHTML = `
-        <p>${currentLocation.description}</p>
+        <div class="description-block${isDescriptionExpanded ? ' expanded' : ''}">
+            <div class="description-text">${currentLocation.description}</div>
+            <button type="button" class="description-toggle" aria-expanded="${isDescriptionExpanded ? 'true' : 'false'}">${isDescriptionExpanded ? 'Leer menos' : 'Leer más'}</button>
+        </div>
         <div class="detail-field">
             <strong>DIRECCIÓN</strong>
             <span>${currentLocation.details.address}</span>
@@ -3195,6 +3200,27 @@ function updateDescriptionTab() {
     }
 
     detailBody.innerHTML = detailHTML;
+
+    const descriptionBlock = detailBody.querySelector('.description-block');
+    const descriptionText = detailBody.querySelector('.description-text');
+    const descriptionToggle = detailBody.querySelector('.description-toggle');
+
+    if (descriptionBlock && descriptionText && descriptionToggle) {
+        const hasOverflow = descriptionText.scrollHeight > descriptionText.clientHeight + 2;
+
+        if (!hasOverflow) {
+            descriptionToggle.style.display = 'none';
+            descriptionBlock.classList.add('no-toggle');
+            return;
+        }
+
+        descriptionToggle.addEventListener('click', () => {
+            const expanded = descriptionBlock.classList.toggle('expanded');
+            descriptionExpandedState.set(currentLocation.id, expanded);
+            descriptionToggle.textContent = expanded ? 'Leer menos' : 'Leer más';
+            descriptionToggle.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+        });
+    }
 }
 
 // Aggiorna il contenuto della tab "Immagini"

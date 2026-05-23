@@ -379,6 +379,57 @@ body {
     line-height: 1.6;
     margin-bottom: 15px;
 }
+
+.description-block {
+    --description-collapsed-max-height: 10.2em; /* ~10 linee su desktop */
+    --description-fade-height: 2.6em;
+    margin-bottom: 15px;
+}
+
+.description-text {
+    position: relative;
+    font-size: 13px;
+    color: var(--medium-grey);
+    line-height: 1.6;
+}
+
+.description-block:not(.expanded) .description-text {
+    max-height: var(--description-collapsed-max-height);
+    overflow: hidden;
+}
+
+.description-block:not(.expanded):not(.no-toggle) .description-text::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: var(--description-fade-height);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #ffffff 88%);
+    pointer-events: none;
+}
+
+.description-toggle {
+    margin-top: 6px;
+    padding: 0;
+    border: 0;
+    background: none;
+    color: var(--primary-color);
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.description-toggle:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .description-block {
+        --description-collapsed-max-height: 7.2em; /* ~7 linee su mobile */
+        --description-fade-height: 2.2em;
+    }
+}
     
 .detail-body .detail-field {
     margin-bottom: 12px;
@@ -1069,7 +1120,7 @@ body {
 
 #proyecto-page .proyecto-content .hero-image {
     display: block;
-    width: min(100%, 560px);
+    width: min(60%, 560px);
     margin: 0 auto 28px;
 }
 
