@@ -10,193 +10,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- Google Fonts - Barlow -->
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700;900&display=swap" rel="stylesheet">
-
-    <style>
-        :root {
-            --primary-color: #1db3e2;
-            --secondary-color: #0a9ec6;
-            --dark-blue: #212c37;
-            --light-grey: #f5f5f5;
-            --medium-grey: #666;
-            --dark-grey: #333;
-        }
-
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-
-        body {
-            font-family: 'Barlow', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background-color: var(--light-grey);
-            overflow: auto;
-        }
-
-        /* ---- Header ---- */
-        .header {
-            position: fixed;
-            top: 0; left: 0; right: 0;
-            height: 60px;
-            background-color: var(--dark-blue);
-            color: white;
-            padding: 0 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            z-index: 1000;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-        .header .logo { display: flex; align-items: center; gap: 10px; }
-        .header .logo a { text-decoration: none; color: inherit; }
-        .header .logo h1 { font-size: 20px; font-weight: 900; color: white; margin-left: 10px; }
-        .header .nav-links a {
-            color: white; text-decoration: none;
-            margin-left: 20px; font-weight: 700; font-size: 14px;
-        }
-
-        /* ---- Layout ---- */
-        #proyecto-page {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-        .proyecto-content {
-            flex: 1;
-            max-width: 800px;
-            width: 100%;
-            margin: 80px auto 60px;
-            padding: 0 24px;
-        }
-
-        .proyecto-content h2 {
-            font-size: 28px;
-            font-weight: 900;
-            color: var(--dark-blue);
-            margin-bottom: 16px;
-        }
-
-        .proyecto-content h3 {
-            font-size: 18px;
-            font-weight: 700;
-            color: var(--dark-blue);
-            margin: 32px 0 10px;
-        }
-
-        .proyecto-content p {
-            font-size: 15px;
-            line-height: 1.7;
-            color: var(--dark-grey);
-            margin-bottom: 16px;
-        }
-
-        .contact-card {
-            background: white;
-            border-radius: 8px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 1px 4px rgba(0,0,0,0.08);
-            display: flex;
-            gap: 20px;
-            align-items: flex-start;
-        }
-
-        .contact-card .contact-icon {
-            font-size: 28px;
-            color: var(--primary-color);
-            flex-shrink: 0;
-            width: 40px;
-            text-align: center;
-        }
-
-        .contact-card .contact-info h3 {
-            font-size: 16px;
-            font-weight: 700;
-            color: var(--dark-blue);
-            margin: 0 0 6px;
-        }
-
-        .contact-card .contact-info p {
-            font-size: 14px;
-            color: var(--medium-grey);
-            margin: 0;
-            line-height: 1.6;
-        }
-
-        .contact-card .contact-info a {
-            color: var(--primary-color);
-            text-decoration: none;
-            font-weight: 700;
-        }
-
-        .contact-card .contact-info a:hover {
-            text-decoration: underline;
-        }
-
-        .btn-back {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            margin-top: 40px;
-            padding: 10px 20px;
-            background-color: var(--primary-color);
-            color: white;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 14px;
-            border-radius: 4px;
-        }
-
-        .btn-back:hover {
-            background-color: var(--secondary-color);
-        }
-
-        footer {
-            background-color: var(--dark-blue);
-            color: white;
-            padding: 40px 24px;
-            margin-top: auto;
-            text-align: center;
-            border-top: 2px solid var(--primary-color);
-            width: 100%;
-            flex-shrink: 0;
-        }
-
-        footer p {
-            color: rgba(255, 255, 255, 0.9);
-            margin: 8px 0;
-            font-size: 14px;
-            line-height: 1.6;
-        }
-
-        footer a {
-            color: var(--primary-color);
-            text-decoration: none;
-            font-weight: 700;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-        footer .footer-links {
-            margin-top: 20px;
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        footer .footer-links a {
-            font-size: 13px;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" crossorigin href="/MapaComercioTradicional/assets/styles-Bhui3vBx.css">
 </head>
-<body>
+<body class="contactos-body">
     <div id="proyecto-page">
 
         <!-- Header -->
         <header class="header">
             <div class="logo">
-                <i class="fas fa-map-marked-alt" style="font-size: 28px;"></i>
+                <i class="fas fa-map-marked-alt logo-icon"></i>
                 <a href="index.html"><h1>Geografías del comercio tradicional - Castellón de la Plana</h1></a>
             </div>
             <nav class="nav-links">
@@ -251,7 +74,7 @@
         <footer>
             <p><strong>Geografías del comercio tradicional</strong></p>
             <p>Memoria, transformación y paisajes relacionales en Castellón de la Plana</p>
-            <p style="margin-top: 20px; font-size: 13px; opacity: 0.8;">
+            <p class="footer-license-note">
                 Creative Commons Atribución-NoComercial 4.0 Internacional (CC BY-NC 4.0)
             </p>
             <div class="footer-links">
