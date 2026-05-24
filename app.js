@@ -3089,11 +3089,39 @@ function updateDescriptionTab() {
     const isHistoricalStore = category === 'comercios históricos';
     const isDescriptionExpanded = descriptionExpandedState.get(currentLocation.id) === true;
 
+    let videoHTML = '';
+    if (currentLocation.video && currentLocation.video.length > 0) {
+        const ytIdFromUrl = (url) => {
+            if (!url) return null;
+            const m = url.match(/(?:youtube\.com\/(?:watch\?v=|embed\/)|youtu\.be\/)([A-Za-z0-9_-]{6,})/i);
+            return m ? m[1] : null;
+        };
+        const videoEntries = currentLocation.video.filter(v => v && v.url);
+        if (videoEntries.length > 0) {
+            videoHTML += '<div class="detail-field"><strong>VIDEO</strong></div>';
+            videoEntries.forEach(v => {
+                const ytId = ytIdFromUrl(v.url);
+                if (ytId) {
+                    const thumb = `https://img.youtube.com/vi/${ytId}/hqdefault.jpg`;
+                    videoHTML += `
+                        <div class="video-thumbnail-wrapper">
+                            <a href="${v.url}" target="_blank" rel="noopener noreferrer" aria-label="Ver video en YouTube">
+                                <img src="${thumb}" alt="Copertina video" class="video-thumbnail">
+                                <span class="video-play-icon">▶</span>
+                            </a>
+                        </div>
+                    `;
+                }
+            });
+        }
+    }
+
     let detailHTML = `
         <div class="description-block${isDescriptionExpanded ? ' expanded' : ''}">
             <div class="description-text">${currentLocation.description}</div>
             <button type="button" class="description-toggle" aria-expanded="${isDescriptionExpanded ? 'true' : 'false'}">${isDescriptionExpanded ? 'Leer menos' : 'Leer más'}</button>
         </div>
+        ${videoHTML}
         <div class="detail-field">
             <strong>DIRECCIÓN</strong>
             <span>${currentLocation.details.address}</span>
@@ -3169,33 +3197,6 @@ function updateDescriptionTab() {
                 <span>${linksHTML}</span>
             </div>
             `;
-        }
-    }
-
-    // Aggiunge la copertina del video se presente
-    if (currentLocation.video && currentLocation.video.length > 0) {
-        const ytIdFromUrl = (url) => {
-            if (!url) return null;
-            const m = url.match(/(?:youtube\.com\/(?:watch\?v=|embed\/)|youtu\.be\/)([A-Za-z0-9_-]{6,})/i);
-            return m ? m[1] : null;
-        };
-        const videoEntries = currentLocation.video.filter(v => v && v.url);
-        if (videoEntries.length > 0) {
-            detailHTML += '<div class="detail-field"><strong>VIDEO</strong></div>';
-            videoEntries.forEach(v => {
-                const ytId = ytIdFromUrl(v.url);
-                if (ytId) {
-                    const thumb = `https://img.youtube.com/vi/${ytId}/hqdefault.jpg`;
-                    detailHTML += `
-                        <div class="video-thumbnail-wrapper">
-                            <a href="${v.url}" target="_blank" rel="noopener noreferrer" aria-label="Ver video en YouTube">
-                                <img src="${thumb}" alt="Copertina video" class="video-thumbnail">
-                                <span class="video-play-icon">▶</span>
-                            </a>
-                        </div>
-                    `;
-                }
-            });
         }
     }
 
