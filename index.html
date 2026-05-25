@@ -7,7 +7,7 @@
 </title>
     
     <!-- Mapbox GL JS CSS -->
-    <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.0.0/mapbox-gl.css" rel="stylesheet">
     
     <!-- Font Awesome per le icone -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -58,12 +58,12 @@
             <!-- Tab Button per Tiendas -->
             <div class="sidebar-tabs tabs-left">
                 <button class="tab-button active" data-tab="list">
-                    <i class="fas fa-list"></i> Venta a la Porta
+                    <i class="fas fa-list"></i> Porta
                 </button>
                 
                 <!-- Nuovo tab per Tiendas históricas -->
                 <button class="tab-button" data-tab="historical">
-                    <i class="fas fa-landmark"></i> Comercios históricos
+                    <i class="fas fa-landmark"></i> Históricas
                 </button>
             </div>
             
@@ -147,12 +147,12 @@
     </div>
     
     <!-- Mapbox GL JS -->
-    <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.0.0/mapbox-gl.js"></script>
     
     <!-- Supercluster (clustering library) -->
     <script src="https://cdn.jsdelivr.net/npm/supercluster@7.1.5/dist/supercluster.min.js"></script>
     
     <!-- Il tuo script -->
-    <script src="app.js"></script>
+    <script type="module" src="app.js"></script>
 </body>
 </html>

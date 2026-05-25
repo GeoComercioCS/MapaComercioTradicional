@@ -2419,11 +2419,12 @@ locations.forEach((location) => {
 // Configurazione della mappa
 const mapConfig = {
     accessToken: 'pk.eyJ1IjoiZ2VvY29tZXJjaW9jcyIsImEiOiJjbW44cWZ1OXkwMGlyMnFxeXJkYXZpMDZsIn0.B7PfV-LvgohQa11LgU9c1g',
-    center: [-0.051301, 39.984624], // Centro di Castellón de la Plana (adattato per i dati forniti)
-    zoom: 13,
+    center: [-0.038, 39.98549], // Allineato alla vista di confronto Mapbox Studio
+    zoom: 14.67,
     minZoom: 10,
     maxZoom: 18,
-    style: 'mapbox://styles/geocomerciocs/cmn92oyra000r01r774wa81r1'
+    style: 'mapbox://styles/geocomerciocs/cmn92oyra000r01r774wa81r1',
+    fallbackStyle: 'mapbox://styles/mapbox/streets-v12'
 
     
 };
@@ -2440,6 +2441,7 @@ let restoreClustersBelowZoom = null;
 let currentHighlightedMarker = null; // elemento marker attualmente evidenziato
 let highlightedLocationId = null; // ID della location attualmente evidenziata
 const descriptionExpandedState = new Map(); // stato Leer mas/Less per singola location
+let hasAppliedStyleFallback = false;
 
 // Evidenzia un marker corrispondente all'ID location senza aprire popup
 function highlightMarker(locationId) {
@@ -2492,6 +2494,32 @@ function initMap() {
         attributionControl: false,
 
 
+    });
+
+    const applyFallbackStyle = (reason) => {
+        if (hasAppliedStyleFallback || !map || typeof map.setStyle !== 'function') return;
+        hasAppliedStyleFallback = true;
+        console.warn('Style personalizzato non disponibile, uso style di fallback.', reason);
+        map.setStyle(mapConfig.fallbackStyle);
+    };
+
+    map.on('error', (event) => {
+        if (hasAppliedStyleFallback) return;
+        const message = event && event.error && event.error.message ? String(event.error.message) : '';
+        if (!message) return;
+
+        const styleErrorHints = [
+            'styles/v1/geocomerciocs',
+            'style',
+            '401',
+            '403',
+            '404'
+        ];
+
+        const isLikelyStyleError = styleErrorHints.some((hint) => message.toLowerCase().includes(hint));
+        if (isLikelyStyleError) {
+            applyFallbackStyle(message);
+        }
     });
 
     // Forza un'attribuzione sempre visibile con riferimento anche a OpenStreetMap.

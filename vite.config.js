@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 import { resolve } from 'path';
 
 export default defineConfig({
-  base: '/MapaComercioTradicional/', // Percorso pubblico del repo su GitHub Pages
+  base: './', // Asset relativi: funziona sia in locale sia su hosting statico
   build: {
     emptyOutDir: false,
     outDir: 'dist-pages',
