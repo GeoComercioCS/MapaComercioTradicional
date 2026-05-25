@@ -49,7 +49,7 @@ const locations = [
             road: "Brunella",
             category: "Venta a la porta",
             status: "Activo",
-            observation: "2019",
+            observation: "2019, 2026",
             contact: "",
             notes: ""        },
         icon: "",
@@ -71,7 +71,7 @@ const locations = [
             road: "s/d",
             category: "Venta a la porta",
             status: "Inactivo",
-            observation: "2019",
+            observation: "2019, 2026",
             contact: "",
             notes: ""
         },
@@ -127,7 +127,9 @@ const locations = [
         markerImage: "./images/2_VaLP_glicine.png",
         markerSize: 60,
         images: [
-            { url: "./images/05_María_01.jpg", date: 'Sin Fecha' }
+            { url: "./images/05_María_01.jpg", date: 'Sin Fecha' },
+            { url: "./images/05_María_03_2026.jpg", date: '2026' },
+            { url: "./images/05_María_04_2026.jpg", date: '2026' }
         ]
     },
     {
@@ -141,7 +143,7 @@ const locations = [
             road: "s/d",
             category: "Venta a la porta",
             status: "Inactivo",
-            observation: "2019",
+            observation: "2019 y 2026",
             contact: "",
             notes: ""
         },
@@ -149,7 +151,8 @@ const locations = [
         markerImage: "./images/2_VaLP_glicine.png",
         markerSize: 60,
         images: [
-            { url: "./images/06_Desconocido_Valencia_01.jpg", date: 'Sin Fecha' }
+            { url: "./images/06_Desconocido_Valencia_01.jpg", date: 'Sin Fecha' },
+            { url: "./images/06_Desconocido_Valencia_02_2019.jpg", date: '2019' }
         ]
     },
     {
@@ -168,7 +171,7 @@ const locations = [
             road: "Taxida y Coscollosa",
             category: "Venta a la porta",
             status: "Activo",
-            observation: "2019 y 2021",
+            observation: "2019, 2021 y 2026",
             contact: "",
             notes: ""
         },
@@ -178,11 +181,12 @@ const locations = [
         images: [
             { url: "./images/07_José_Juan_01.jpg", date: 'Sin Fecha' },
             { url: "./images/07_José_Juan_02.jpg", date: 'Sin Fecha' },
-            { url: "./images/07_José_Juan_03.jpg", date: 'Sin Fecha' }
+            { url: "./images/07_José_Juan_03.jpg", date: 'Sin Fecha' },
+            { url: "./images/07_José_Juan_04_2021.jpg", date: '2021' }
             
         ],
         video: [
-            {url: "" }
+            {url: "https://youtu.be/PV1wpXiOAzw" }
         ]
     },
     {
@@ -196,7 +200,7 @@ const locations = [
             road: "s/d",
             category: "Venta a la porta",
             status: "Inactivo",
-            observation: "2019",
+            observation: "2019 y 2026",
             contact: "",
             notes: ""
         },
@@ -240,7 +244,7 @@ const locations = [
             road: "s/d",
             category: "Venta a la porta",
             status: "Inactivo",
-            observation: "2019",
+            observation: "2019 y 2026",
             contact: "",
             notes: ""
         },
@@ -284,7 +288,7 @@ const locations = [
             road: "s/d",
             category: "Venta a la porta",
             status: "Inactivo",
-            observation: "2019",
+            observation: "2019 y 2026",
             contact: "",
             notes: ""
         },
@@ -306,7 +310,7 @@ const locations = [
             road: "s/d",
             category: "Venta a la porta",
             status: "Inactivo",
-            observation: "2017",
+            observation: "2017 y 2026",
             contact: "",
             notes: ""
         },
@@ -351,7 +355,7 @@ const locations = [
             road: "s/d",    
             category: "Venta a la porta",
             status: "Inactivo",
-            observation: "2016 y 2023",
+            observation: "2016, 2023 y 2026",
             contact: "",
             notes: ""
         },
@@ -406,7 +410,7 @@ const locations = [
             road: "Canet, Taxida y Almalafa",       
             category: "Venta a la porta",
             status: "Activo",
-            observation: "2024",
+            observation: "2024 y 2026",
             contact: "",
             notes: ""
         },
@@ -414,10 +418,11 @@ const locations = [
         markerImage: "./images/2_VaLP_glicine.png",
         markerSize: 60,
         images: [
-            { url: "./images/17_Joaquín_01.jpg", date: 'Sin Fecha' }
+            { url: "./images/17_Joaquín_01.jpg", date: 'Sin Fecha' },
+            { url: "./images/17_Joaquín_02_2026.jpg", date: '2026' },
         ],
         video: [
-            {url: "" }
+            {url: "https://youtu.be/XFVGBZ8aOnQ" }
         ]
     },
     {
@@ -434,7 +439,7 @@ const locations = [
             road: "La Magdalena",
             category: "Venta a la porta",
             status: "Activo",
-            observation: "2025",
+            observation: "2025 y 2026",
             contact: "",
             notes: ""
         },
@@ -443,7 +448,8 @@ const locations = [
         markerSize: 60,
         images: [
             { url: "./images/18_María_Dolores_01.jpg", date: 'Sin Fecha' },
-            { url: "./images/18_María_Dolores_02.jpg", date: 'Sin Fecha' }
+            { url: "./images/18_María_Dolores_02.jpg", date: 'Sin Fecha' },
+            { url: "./images/18_María_Dolores_03_2024.jpg", date: '2024' }
         ]
     },
     {
@@ -490,7 +496,7 @@ const locations = [
             road: "s/d",
             category: "Venta a la porta",
             status: "Activo",
-            observation: "2025",
+            observation: "2025 y 2026",
             contact: "",
             notes: ""
         },
@@ -513,7 +519,7 @@ const locations = [
             road: "s/d",
             category: "Venta a la porta",
             status: "Inactivo",
-            observation: "2018",
+            observation: "2018 y 2026",
             contact: "",
             notes: ""
         },
@@ -556,7 +562,7 @@ const locations = [
             { url: "./images/22_Carmen_Peris_Gomez_04.jpg", date: 'Sin Fecha' }
         ],
         video: [
-            {url: "" }
+            {url: "https://youtu.be/YUZUxaWcHS4" }
         ]
     },
     {
@@ -576,7 +582,7 @@ const locations = [
             road: "Borrassa, Bovalar y La Plana",
             category: "Venta a la porta",
             status: "Activo",
-            observation: "2025",
+            observation: "2025 y 2026",
             contact: "",
             notes: ""
         },
@@ -605,7 +611,7 @@ const locations = [
             road: "Canet, Gumbau, La Plana y Senillar",
             category: "Venta a la porta",
             status: "Activo",
-            observation: "2025",
+            observation: "2025 y 2026",
             contact: "",
             notes: ""
         },
@@ -651,7 +657,7 @@ const locations = [
             address: "Calle San Felix, 50",
             category: "Venta a la porta",
             status: "Inactivo",
-            observation: "2025",
+            observation: "2025 y 2026",
             contact: "",
             notes: ""
         },
@@ -710,10 +716,11 @@ const locations = [
         markerImage: "./images/2_VaLP_glicine.png",
         markerSize: 60,
         images: [
-            { url: "", date: "" }
+            { url: "28_Antonio_01_2020.jpg", date: "2020" },
+            { url: "28_Antonio_02_SF.jpg", date: "Sin Fecha" }
                    ],
         video: [
-            {url: "" }
+            {url: "https://youtu.be/mkGu4FOgviw" }
         ]
 
     },
@@ -730,7 +737,7 @@ const locations = [
             road: "La Plana",
             category: "Venta a la porta",
             status: "Activo",
-            observation: "2025",
+            observation: "2025 y 2026",
             contact: "",
             notes: ""
         },
@@ -757,7 +764,7 @@ const locations = [
             road: "Coscollosa, Ramell y Almalafa",
             category: "Venta a la porta",
             status: "Inactivo",
-            observation: "2018",
+            observation: "2018 y 2026",
             contact: "",
             notes: ""
         },
@@ -772,7 +779,7 @@ const locations = [
             
                    ],
         video: [
-            {url: "" }
+            {url: "https://youtu.be/8VPnyQWbh8k" }
         ]
     },
     {

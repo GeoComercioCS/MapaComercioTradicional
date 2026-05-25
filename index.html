@@ -1,59 +1,158 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geografías del comercio tradicional - Castellón de la Plana</title>
-    <link rel="icon" type="image/x-icon" href="./favicon.ico">
-
-    <!-- Font Awesome -->
+    <title>Geografías del comercio tradicional: Memoria, transformación y paisajes relacionales en Castellón de la Plana
+</title>
+    
+    <!-- Mapbox GL JS CSS -->
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet">
+    
+    <!-- Font Awesome per le icone -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+    
     <!-- Google Fonts - Barlow -->
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css">
+    
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="landing-body">
-    <div id="landing-page">
-
+<body>
+    <div id="app-wrapper">
+        
         <!-- Header -->
         <header class="header">
             <div class="logo">
-                <i class="fas fa-map-marked-alt logo-icon"></i>
-                <a href="index.html"><h1>Geografías del comercio tradicional - Castellón de la Plana</h1></a>
+                <i class="fas fa-map-marked-alt" style="font-size: 28px;"></i>
+                <h1>Geografías del comercio tradicional - Castellón de la Plana </h1>
             </div>
             <nav class="nav-links">
-                <a href="mapa.html">Mapa</a>
-                <a href="glosario.html">Glosario</a>
-                <a href="proyecto.html">Proyecto</a>
-                <a href="contactos.html">Contactos</a>
+                <a href="#">Mapa</a>
+                <a href="#">Proyecto</a>
+                <a href="#">Contactos</a>
             </nav>
+
+            <!-- Mobile sidebar toggle (hidden on desktop) -->
+            <button id="sidebarToggle" class="sidebar-toggle" aria-label="Apri/Chiudi la lista" title="Apri/Chiudi lista">
+                <i class="fas fa-bars"></i>
+            </button>
         </header>
-
-        <!-- Contenido -->
-        <main class="landing-content">
-            <div class="landing-logo">
-                <img src="./images/logo4.png" alt="Geografías del comercio tradicional">
+        
+        <!-- Contenitore della Mappa -->
+        <div class="map-container">
+            <div id="map"></div>
+            
+            <!-- Controlli Mappa -->
+            <div style="position: absolute; top: 10px; left: 10px; z-index: 10;">
+                <button id="zoomIn" style="background: white; border: none; padding: 8px; margin-bottom: 5px; border-radius: 4px; cursor: pointer; box-shadow: 0 1px 4px rgba(0,0,0,0.3);"><i class="fas fa-plus"></i></button>
+                <button id="zoomOut" style="background: white; border: none; padding: 8px; margin-bottom: 5px; border-radius: 4px; cursor: pointer; box-shadow: 0 1px 4px rgba(0,0,0,0.3);"><i class="fas fa-minus"></i></button>
+                <button id="resetView" style="background: white; border: none; padding: 8px; border-radius: 4px; cursor: pointer; box-shadow: 0 1px 4px rgba(0,0,0,0.3);"><i class="fas fa-crosshairs"></i></button>
             </div>
-            <a class="btn-map" href="mapa.html">
-                <i class="fas fa-map"></i> Mapa
-            </a>
-        </main>
-
-        <!-- Footer -->
-        <footer>
-            <p><strong>Geografías del comercio tradicional</strong></p>
-            <p>Memoria, transformación y paisajes relacionales en Castellón de la Plana</p>
-            <p class="footer-license-note">
-                Creative Commons Atribución-NoComercial 4.0 Internacional (CC BY-NC 4.0)
-            </p>
-            <div class="footer-links">
-                <a href="mapa.html">Mapa</a>
-                <a href="proyecto.html">Proyecto</a>
-                <a href="https://github.com/patrunomeister/MapaComercioTradicional" target="_blank" rel="noopener">Repositorio</a>
+            
+            
+        </div>
+        
+        <!-- Sidebar Sinistra: Solo Tiendas -->
+        <aside class="sidebar sidebar-left">
+            
+            <!-- Tab Button per Tiendas -->
+            <div class="sidebar-tabs tabs-left">
+                <button class="tab-button active" data-tab="list">
+                    <i class="fas fa-list"></i> Venta a la Porta
+                </button>
+                
+                <!-- Nuovo tab per Tiendas históricas -->
+                <button class="tab-button" data-tab="historical">
+                    <i class="fas fa-landmark"></i> Comercios históricos
+                </button>
             </div>
-        </footer>
+            
+            <!-- Tab Content Wrapper Sinistra -->
+            <div class="sidebar-content-wrapper">
+                <!-- Tab 3: Lista dei Punti di Interesse -->
+                <div id="listContent" class="tab-content active">
+                    <div class="sidebar-header" style="display: block; background: #f5f5f5; color: var(--dark-grey); border-bottom: 1px solid #ddd;">
+                        <h2 style="font-size: 16px;">Venta a la porta</h2>
+                        <p id="locationCount" style="font-size: 12px;"></p>
+                    </div>
+                    <div id="locationList" class="sidebar-content">
+                        <!-- La lista dei punti verrà iniettata qui da JavaScript -->
+                    </div>
+                </div>
 
-    </div><!-- #landing-page -->
+                <!-- Contenuto per il tab 'Históricas' (solo punti con category: Tiendas históricas) -->
+                <div id="historicalContent" class="tab-content">
+                    <div class="sidebar-header" style="display: block; background: #f5f5f5; color: var(--dark-grey); border-bottom: 1px solid #ddd;">
+                        <h2 style="font-size: 16px;">Tiendas históricas</h2>
+                        <p id="historicalCount" style="font-size: 12px;"></p>
+                    </div>
+                    <div id="historicalList" class="sidebar-content">
+                        <!-- Lista storiche riempita da JavaScript -->
+                    </div>
+                </div>
+            </div>
+            
+        </aside>
+        
+        <!-- Sidebar Destra: Descripción e Imágenes -->
+        <aside class="sidebar sidebar-right">
+            
+            <!-- Tab Buttons -->
+            <div class="sidebar-tabs tabs-right">
+                <button class="tab-button active" data-tab="description">
+                    <i class="fas fa-info-circle"></i> Descripción
+                </button>
+                <button class="tab-button" data-tab="images">
+                    <i class="fas fa-image"></i> Imágenes
+                </button>
+            </div>
+            
+            <!-- Tab Content Wrapper Destra -->
+            <div class="sidebar-content-wrapper">
+                
+                <!-- Tab 1: Descrizione del Punto (Detail Card) -->
+                <div id="descriptionContent" class="tab-content active">
+                    <div id="detailCard" class="detail-card">
+                        <div id="detailHeader" class="detail-header">
+                            <div>
+                                <h2 id="detailTitle">Seleccione un punto</h2>
+                                <p id="detailType">No se seleccionaron puntos</p>
+                            </div>
+                            <button id="detailClose" class="detail-close" style="display: none;"><i class="fas fa-times"></i></button>
+                        </div>
+                        <div id="detailBody" class="detail-body">
+                            <div class="empty-state">
+                                <i class="fas fa-hand-point-left"></i>
+                                <p>Haz clic en un punto del mapa o selecciónalo de la lista para ver sus detalles.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tab 2: Immagini -->
+                <div id="imagesContent" class="tab-content">
+                    <div class="empty-state">
+                        <i class="fas fa-camera"></i>
+                        <p>Aquí aparecerán las imágenes relacionadas con el punto seleccionado.</p>
+                    </div>
+                    <div id="imageGallery" class="image-gallery">
+                        <!-- Le immagini verranno iniettate qui da JavaScript -->
+                    </div>
+                </div>
+                
+            </div>
+            
+        </aside>
+        
+    </div>
+    
+    <!-- Mapbox GL JS -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+    
+    <!-- Supercluster (clustering library) -->
+    <script src="https://cdn.jsdelivr.net/npm/supercluster@7.1.5/dist/supercluster.min.js"></script>
+    
+    <!-- Il tuo script -->
+    <script src="app.js"></script>
 </body>
 </html>
