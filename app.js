@@ -2302,7 +2302,7 @@ const locations = [
             { url: "./images/67_Rodríguez_01_2026.jpg", date: '2026' },
             { url: "./images/67_Rodríguez_02_2026.jpg", date: '2026' },
             { url: "./images/67_Rodríguez_03_2026.jpg", date: '2026' },
-            { url: "./images/67_Rodríguez_04_SF.jpg", date: 'Sin Fecha' }
+            { url: "./images/67_Rodríguez_04_SF.jpeg", date: 'Sin Fecha' }
 
                    ],
         video: [
@@ -2443,6 +2443,13 @@ let highlightedLocationId = null; // ID della location attualmente evidenziata
 const descriptionExpandedState = new Map(); // stato Leer mas/Less per singola location
 let hasAppliedStyleFallback = false;
 
+// Helper condiviso per estrarre l'ID YouTube da URL standard e short URL.
+function getYouTubeId(url) {
+    if (!url) return null;
+    const m = url.match(/(?:youtube\.com\/(?:watch\?v=|embed\/)|youtu\.be\/)([A-Za-z0-9_-]{6,})/i);
+    return m ? m[1] : null;
+}
+
 // Evidenzia un marker corrispondente all'ID location senza aprire popup
 function highlightMarker(locationId) {
     highlightedLocationId = locationId;
@@ -2498,6 +2505,7 @@ function initMap() {
         zoom: mapConfig.zoom,
         minZoom: mapConfig.minZoom,
         maxZoom: mapConfig.maxZoom,
+        antialias: true,
         attributionControl: false,
 
 
@@ -2581,36 +2589,11 @@ function initMap() {
     // Esponi la mappa globalmente per eventuali utility e per trigger di resize
     window.map = map;
 
-    // Ridimensiona la mappa poco dopo l'inizializzazione in caso il container fosse nascosto al momento del load
-        handleMapResize(100);
-        handleMapResize(500);    // Ridimensiona la mappa al cambiamento di dimensione finestra
+    // Ridimensiona la mappa al cambiamento di dimensione finestra
     window.addEventListener('resize', () => handleMapResize());
 
     // Assicuriamoci che non ci sia una classe residua che nasconde la sidebar all'avvio
     document.body.classList.remove('sidebar-collapsed');
-
-// Rimuovo le funzioni di debug che non sono più necessarie    // Helper: tenta ridimensionamenti ripetuti finché la canvas non abbia dimensioni > 0 o scada il numero di tentativi
-    function ensureMapRendered(attempts, delayMs) {
-        let tries = 0;
-        const container = document.getElementById('map');
-        const tick = () => {
-            tries++;
-            try {
-                if (window.map && window.map.resize) window.map.resize();
-            } catch (e) {}
-            const canvas = container ? container.querySelector('canvas') : null;
-            const cw = canvas ? canvas.width : 0;
-            const ch = canvas ? canvas.height : 0;
-            logMapSizes('ensureMapRendered try ' + tries);
-            if ((cw > 0 && ch > 0) || tries >= attempts) {
-                if (cw > 0 && ch > 0) console.info('map canvas ready', {cw, ch});
-                else console.warn('map canvas still zero after attempts', {tries, cw, ch});
-                return;
-            }
-            setTimeout(tick, delayMs);
-        };
-        tick();
-    }
 
     // Mobile: toggle per mostrare/nascondere la sidebar
     const sidebarToggle = document.getElementById('sidebarToggle');
@@ -3051,7 +3034,6 @@ function handleListItemClick(locationId) {
 
     // 2. Centra la mappa sul punto senza forzare uno zoom troppo ravvicinato,
     //    in modo da mantenere visibili tutti i marker.
-    const targetZoom = Math.min(map.getZoom(), mapConfig.zoom);
     map.flyTo({
         center: location.coordinates,
         zoom: focusZoom,
@@ -3133,16 +3115,11 @@ function updateDescriptionTab() {
 
     let videoHTML = '';
     if (currentLocation.video && currentLocation.video.length > 0) {
-        const ytIdFromUrl = (url) => {
-            if (!url) return null;
-            const m = url.match(/(?:youtube\.com\/(?:watch\?v=|embed\/)|youtu\.be\/)([A-Za-z0-9_-]{6,})/i);
-            return m ? m[1] : null;
-        };
         const videoEntries = currentLocation.video.filter(v => v && v.url);
         if (videoEntries.length > 0) {
             videoHTML += '<div class="detail-field"><strong>VIDEO</strong></div>';
             videoEntries.forEach(v => {
-                const ytId = ytIdFromUrl(v.url);
+                const ytId = getYouTubeId(v.url);
                 if (ytId) {
                     const thumb = `https://img.youtube.com/vi/${ytId}/hqdefault.jpg`;
                     videoHTML += `
@@ -3289,14 +3266,6 @@ function updateImagesTab() {
     }
     
     // Aggiornamento immagini per currentLocation
-    // Se tra le images c'è un link YouTube, embeddalo prima delle immagini
-    const ytIdFromUrl = (url) => {
-        if (!url) return null;
-        const m = url.match(/(?:youtube\.com\/(?:watch\?v=|embed\/)|youtu\.be\/)([A-Za-z0-9_-]{6,})/i);
-        return m ? m[1] : null;
-    };
-
-    const videos = [];
     const images = [];
 
     currentLocation.images.forEach(image => {
@@ -3310,19 +3279,6 @@ function updateImagesTab() {
     });
 
     let galleryHTML = '';
-
-    // Inserisci prima i video (se presenti). Aggiungo una piccola etichetta e faccio sì che i video
-    // occupino tutta la larghezza della tab; le immagini saranno posizionate sotto.
-    videos.forEach(src => {
-        galleryHTML += `
-            <div class="media-item video-item">
-                <div class="media-label">Video</div>
-                <div class="video-wrap">
-                    <iframe src="${src}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-        `;
-    });
 
     // Poi le immagini (aprono un modal interno al click)
     images.forEach((imgObj) => {

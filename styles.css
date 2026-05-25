@@ -74,6 +74,19 @@ body {
     height: 100%;
     margin-top: 60px;
 }
+
+.logo-icon {
+    font-size: 28px;
+}
+
+.header .logo a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.header .nav-links a.active {
+    color: #DFAACE;
+}
     
 #map {
     width: 100%;
@@ -543,7 +556,7 @@ body {
 .cluster-count {
     font-size: 14px;
     font-weight: 700;
-    color: white;
+    color: #DFAACE;
     text-align: center;
 }
 
@@ -1030,5 +1043,204 @@ body {
 
     .sidebar {
         margin-bottom: 0; /* Ensure sidebars extend fully */
+    }
+}
+
+/* Static content pages: proyecto, contactos, glosario */
+body.proyecto-body,
+body.contactos-body,
+body.glosario-body {
+    overflow: auto;
+    background: #f5f5f5;
+}
+
+#proyecto-page,
+#glosario-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.proyecto-content,
+.glosario-content {
+    width: min(100%, 1100px);
+    margin: 90px auto 28px;
+    padding: 28px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    color: var(--dark-grey);
+}
+
+.proyecto-content h2,
+.glosario-content h2 {
+    font-size: 28px;
+    color: var(--dark-blue);
+    margin-bottom: 10px;
+}
+
+.proyecto-content h3,
+.glosario-content h3 {
+    color: var(--primary-color);
+    margin: 20px 0 10px;
+}
+
+.proyecto-content h4,
+.glosario-content h4 {
+    color: var(--dark-blue);
+    margin-bottom: 10px;
+}
+
+.proyecto-content p,
+.glosario-content p,
+.proyecto-content li,
+.glosario-content li {
+    line-height: 1.65;
+    font-size: 16px;
+}
+
+.proyecto-content ul,
+.glosario-content ul {
+    margin-left: 20px;
+}
+
+.proyecto-content hr {
+    border: none;
+    border-top: 1px solid #e8e8e8;
+    margin: 20px 0;
+}
+
+.hero-image,
+.glosario-top-logo img {
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 240px;
+    width: 100%;
+    height: auto;
+}
+
+.lead {
+    font-size: 18px;
+    color: var(--medium-grey);
+    margin-bottom: 14px;
+}
+
+.funding,
+.dataset-block,
+.license-block,
+.license-note,
+.team-block {
+    background: #faf7f9;
+    border: 1px solid #f0e7ec;
+    border-radius: 8px;
+    padding: 14px 16px;
+    margin-top: 14px;
+}
+
+.logo-row {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 18px;
+}
+
+.logo-row img {
+    max-height: 66px;
+    width: auto;
+}
+
+.glossary-grid {
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.glossary-card {
+    border: 1px solid #ececec;
+    border-radius: 8px;
+    padding: 16px;
+    background: #fff;
+}
+
+.glossary-card img {
+    margin: 8px 0 10px;
+}
+
+.term {
+    margin-bottom: 10px;
+}
+
+.contact-card {
+    display: grid;
+    grid-template-columns: 54px 1fr;
+    gap: 14px;
+    align-items: start;
+    background: #fff;
+    border: 1px solid #ececec;
+    border-radius: 8px;
+    padding: 14px;
+    margin-top: 12px;
+}
+
+.contact-icon {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.contact-info h3 {
+    margin-top: 0;
+}
+
+.btn-back {
+    margin-top: 22px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #fff;
+    text-decoration: none;
+    background: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-weight: 700;
+}
+
+.btn-back:hover {
+    background: var(--dark-blue);
+    border-color: var(--dark-blue);
+}
+
+#proyecto-page footer,
+#glosario-page footer {
+    margin-top: auto;
+    background: var(--dark-blue);
+    color: #fff;
+    text-align: center;
+    padding: 18px 16px;
+}
+
+.footer-license-note {
+    opacity: 0.9;
+    margin-top: 4px;
+}
+
+@media (max-width: 900px) {
+    .proyecto-content,
+    .glosario-content {
+        margin: 78px 12px 18px;
+        padding: 18px;
+    }
+
+    .glossary-grid {
+        grid-template-columns: 1fr;
     }
 }
