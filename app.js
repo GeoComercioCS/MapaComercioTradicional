@@ -2442,12 +2442,83 @@ let currentHighlightedMarker = null; // elemento marker attualmente evidenziato
 let highlightedLocationId = null; // ID della location attualmente evidenziata
 const descriptionExpandedState = new Map(); // stato Leer mas/Less per singola location
 let hasAppliedStyleFallback = false;
+let mobileDetailToggleButton = null;
 
 // Helper condiviso per estrarre l'ID YouTube da URL standard e short URL.
 function getYouTubeId(url) {
     if (!url) return null;
     const m = url.match(/(?:youtube\.com\/(?:watch\?v=|embed\/)|youtu\.be\/)([A-Za-z0-9_-]{6,})/i);
     return m ? m[1] : null;
+}
+
+function isMobileViewport() {
+    return window.matchMedia('(max-width: 768px)').matches;
+}
+
+function setMobileHeaderHeightVar() {
+    const header = document.querySelector('.header');
+    const height = header ? Math.max(header.offsetHeight, 60) : 60;
+    document.documentElement.style.setProperty('--mobile-header-height', `${height}px`);
+}
+
+function updateMobileDetailToggleIcon(isOpen) {
+    if (!mobileDetailToggleButton) return;
+    const icon = mobileDetailToggleButton.querySelector('i');
+    if (icon) icon.className = isOpen ? 'fas fa-chevron-left' : 'fas fa-chevron-right';
+    mobileDetailToggleButton.classList.toggle('open', isOpen);
+    mobileDetailToggleButton.setAttribute('aria-label', isOpen ? 'Chiudi dettagli' : 'Mostra dettagli');
+}
+
+function setHighlightedMarkerVisibility(visible) {
+    if (!currentHighlightedMarker || !currentHighlightedMarker.markerElement) return;
+    currentHighlightedMarker.markerElement.style.opacity = visible ? '1' : '0';
+}
+
+function ensureMobileDetailToggleButton() {
+    if (mobileDetailToggleButton) return;
+    const mapContainer = document.querySelector('.map-container');
+    if (!mapContainer) return;
+
+    const button = document.createElement('button');
+    button.id = 'mobileDetailToggle';
+    button.type = 'button';
+    button.className = 'mobile-detail-toggle';
+    button.setAttribute('aria-label', 'Mostra dettagli');
+    button.innerHTML = '<i class="fas fa-chevron-right"></i>';
+
+    button.addEventListener('click', () => {
+        const shouldOpen = !document.body.classList.contains('mobile-details-open');
+        document.body.classList.toggle('mobile-details-open', shouldOpen);
+        updateMobileDetailToggleIcon(shouldOpen);
+        setHighlightedMarkerVisibility(!shouldOpen);
+        if (map && map.resize) {
+            setTimeout(() => { try { map.resize(); } catch (e) {} }, 260);
+        }
+    });
+
+    mapContainer.appendChild(button);
+    mobileDetailToggleButton = button;
+}
+
+function setMobileDetailToggleVisible(visible) {
+    ensureMobileDetailToggleButton();
+    if (!mobileDetailToggleButton) return;
+
+    const canShow = visible && isMobileViewport();
+    mobileDetailToggleButton.classList.toggle('show', canShow);
+
+    if (!canShow) {
+        document.body.classList.remove('mobile-details-open');
+        updateMobileDetailToggleIcon(false);
+        setHighlightedMarkerVisibility(true);
+    }
+}
+
+function syncMobileLayoutState() {
+    setMobileHeaderHeightVar();
+    if (!isMobileViewport()) {
+        setMobileDetailToggleVisible(false);
+    }
 }
 
 // Evidenzia un marker corrispondente all'ID location senza aprire popup
@@ -2480,6 +2551,7 @@ function highlightMarker(locationId) {
     const highlightedSize = Math.round(size * 1.6); // 60% più grande
     
     el.classList.add('marker-highlight');
+    el.style.opacity = '1';
     el.style.width = `${highlightedSize}px`;
     el.style.height = `${highlightedSize}px`;
     el.style.zIndex = '2000';
@@ -2557,7 +2629,10 @@ function initMap() {
     };
 
     // Resize dopo il caricamento della mappa e all'inizio
-    map.on('load', () => handleMapResize());
+    map.on('load', () => {
+        handleMapResize();
+        syncMobileLayoutState();
+    });
     handleMapResize(100);
     handleMapResize(500);
 
@@ -2589,43 +2664,19 @@ function initMap() {
     // Esponi la mappa globalmente per eventuali utility e per trigger di resize
     window.map = map;
 
+    ensureMobileDetailToggleButton();
+    setMobileDetailToggleVisible(false);
+    syncMobileLayoutState();
+
     // Ridimensiona la mappa al cambiamento di dimensione finestra
-    window.addEventListener('resize', () => handleMapResize());
+    window.addEventListener('resize', () => {
+        handleMapResize();
+        syncMobileLayoutState();
+    });
 
-    // Assicuriamoci che non ci sia una classe residua che nasconde la sidebar all'avvio
+    // Assicuriamoci che non ci siano classi mobili residue all'avvio
     document.body.classList.remove('sidebar-collapsed');
-
-    // Mobile: toggle per mostrare/nascondere la sidebar
-    const sidebarToggle = document.getElementById('sidebarToggle');
-    const body = document.body;
-    if (sidebarToggle) {
-        // Aggiorna visibilità in base alla larghezza
-        const mq = window.matchMedia('(max-width: 768px)');
-        function updateToggleVisibility() {
-            if (mq.matches) {
-                sidebarToggle.style.display = 'inline-block';
-            } else {
-                sidebarToggle.style.display = 'none';
-                // assicurati che la sidebar sia visibile su desktop
-                body.classList.remove('sidebar-collapsed');
-                // reset icon
-                const ico = sidebarToggle.querySelector('i');
-                if (ico) ico.className = 'fas fa-bars';
-                // ridimensiona mappa
-                if (map && map.resize) map.resize();
-            }
-        }
-        updateToggleVisibility();
-        mq.addListener(updateToggleVisibility);
-
-        sidebarToggle.addEventListener('click', () => {
-            const collapsed = body.classList.toggle('sidebar-collapsed');
-            const ico = sidebarToggle.querySelector('i');
-            if (ico) ico.className = collapsed ? 'fas fa-times' : 'fas fa-bars';
-            // aspetta la transizione CSS e poi ridimensiona la mappa
-            handleMapResize(250);
-        });
-    }
+    document.body.classList.remove('mobile-details-open');
     
     // --- LOGICA TAB ---
     document.querySelectorAll('.tab-button').forEach(button => {
@@ -2741,6 +2792,12 @@ function createMarkerForLocation(location, lngLat) {
         selectLocation(location.id);
         highlightMarker(location.id);
         activateTab('description');
+
+        if (isMobileViewport()) {
+            document.body.classList.remove('mobile-details-open');
+            updateMobileDetailToggleIcon(false);
+            setMobileDetailToggleVisible(true);
+        }
     });
 
     markers.push({ marker, location, markerElement });
@@ -3045,6 +3102,12 @@ function handleListItemClick(locationId) {
     
     // 4. Attiva il tab descrizione nella sidebar destra (sia desktop che mobile)
     activateTab('description');
+
+    if (isMobileViewport()) {
+        document.body.classList.remove('mobile-details-open');
+        updateMobileDetailToggleIcon(false);
+        setMobileDetailToggleVisible(true);
+    }
     
     // give map a moment to animate and then ensure correct sizing
     if (map && map.resize) {
