@@ -2456,6 +2456,7 @@ function highlightMarker(locationId) {
             const size = currentHighlightedMarker.location ? currentHighlightedMarker.location.markerSize || 40 : 40;
             el.style.width = `${size}px`;
             el.style.height = `${size}px`;
+            el.style.zIndex = '';
         }
     } catch (e) { console.warn('Errore rimuovendo evidenziazione precedente', e); }
 
@@ -2469,11 +2470,17 @@ function highlightMarker(locationId) {
     // Applica classe di evidenziazione e aumenta le dimensioni
     const el = entry.markerElement;
     const size = entry.location.markerSize || 40;
-    const highlightedSize = Math.round(size * 1.3); // 30% più grande
+    const highlightedSize = Math.round(size * 1.6); // 60% più grande
     
     el.classList.add('marker-highlight');
     el.style.width = `${highlightedSize}px`;
     el.style.height = `${highlightedSize}px`;
+    el.style.zIndex = '2000';
+
+    // Porta l'elemento in cima allo stack visivo dei marker
+    if (el.parentNode) {
+        el.parentNode.appendChild(el);
+    }
     
     // Mantieni riferimento per poterla rimuovere in seguito
     currentHighlightedMarker = entry;
