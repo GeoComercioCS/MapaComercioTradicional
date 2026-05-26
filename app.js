@@ -2302,7 +2302,7 @@ const locations = [
             { url: "./images/67_Rodríguez_01_2026.jpg", date: '2026' },
             { url: "./images/67_Rodríguez_02_2026.jpg", date: '2026' },
             { url: "./images/67_Rodríguez_03_2026.jpg", date: '2026' },
-            { url: "./images/67_Rodríguez_04_SF.jpeg", date: 'Sin Fecha' }
+            { url: "./images/67_Rodríguez_04_SF.jpg", date: 'Sin Fecha' }
 
                    ],
         video: [
