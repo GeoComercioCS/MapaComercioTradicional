@@ -354,7 +354,7 @@ body {
     margin-bottom: 6px;
 }
 
-.description-block:not(.expanded) .description-text {
+.description-block:not(.expanded):not(.no-toggle) .description-text {
     display: -webkit-box;
     line-clamp: 5;
     -webkit-line-clamp: 5;
@@ -363,7 +363,7 @@ body {
     max-height: 8em;
 }
 
-.description-block:not(.expanded) .description-text::after {
+.description-block:not(.expanded):not(.no-toggle) .description-text::after {
     content: '';
     position: absolute;
     left: 0;
@@ -378,6 +378,7 @@ body {
     color: var(--primary-color);
     font-size: 12px;
     font-weight: 700;
+    font-style: italic;
     background: none;
     border: none;
     padding: 0;
@@ -390,6 +391,16 @@ body {
 
 .description-block.no-toggle .description-toggle {
     display: none;
+}
+
+.description-block.no-toggle .description-text {
+    display: block;
+    max-height: none;
+    overflow: visible;
+}
+
+.description-block.no-toggle .description-text::after {
+    content: none;
 }
     
 .detail-body .detail-field {
