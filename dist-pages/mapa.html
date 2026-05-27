@@ -17,8 +17,9 @@
     <!-- Google Fonts - Barlow -->
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700;900&display=swap" rel="stylesheet">
     
-  <script type="module" crossorigin src="./assets/mapa-B6AHobs_.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/styles-BiFMpZ10.css">
+  <script type="module" crossorigin src="./assets/mapa-Ch4tUis0.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/mobile-header-MUnHb31T.js">
+  <link rel="stylesheet" crossorigin href="./assets/mobile-header-VL9_IXea.css">
 </head>
 <body>
     <div id="app-wrapper">
@@ -39,10 +40,18 @@
                 </a>
             </nav>
 
-            <!-- Mobile sidebar toggle (hidden on desktop) -->
-            <button id="sidebarToggle" class="sidebar-toggle" aria-label="Apri/Chiudi la lista" title="Apri/Chiudi lista">
+            <!-- Mobile header navigation toggle -->
+            <button id="sidebarToggle" class="sidebar-toggle" aria-label="Apri/Chiudi il menu" aria-expanded="false" title="Apri/Chiudi menu">
                 <i class="fas fa-bars"></i>
             </button>
+
+            <div id="mobileHeaderMenu" class="mobile-header-menu" aria-hidden="true">
+                <a href="mapa.html"><i class="fas fa-map"></i> Mapa</a>
+                <a href="glosario.html"><i class="fas fa-book"></i> Glosario</a>
+                <a href="proyecto.html"><i class="fas fa-diagram-project"></i> Proyecto</a>
+                <a href="contactos.html"><i class="fas fa-envelope"></i> Contactos</a>
+                <a href="https://www.youtube.com/@GeocomercioCS" target="_blank" rel="noopener"><i class="fab fa-youtube"></i> YouTube</a>
+            </div>
         </header>
         
         <!-- Contenitore della Mappa -->
@@ -158,7 +167,7 @@
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.0.0/mapbox-gl.js"></script>
     
     <!-- Supercluster (clustering library) -->
-    <script src="https://cdn.jsdelivr.net/npm/supercluster@7.1.5/dist/supercluster.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/supercluster@7.1.5/dist/supercluster.min.js"></script>
     
     <!-- Il tuo script -->
 </body>

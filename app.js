@@ -23,11 +23,12 @@ const locations = [
         markerImage: "./images/2_VaLP_glicine.png",
         markerSize: 60,
         images: [
-            { url: "./images/01_VeN_Bou_01.jpg", date: 'Sin Fecha' },
-            { url: "./images/01_VeN_Bou_02.jpg", date: 'Sin Fecha' },
-            { url: "./images/01_VeN_Bou_03.jpg", date: 'Sin Fecha' },
-            { url: "./images/01_VeN_Bou_04.jpg", date: 'Sin Fecha' },
-            { url: "./images/01_VeN_Bou_05.jpg", date: 'Sin Fecha' }
+            { url: "./images/01_VeN_Bou_01.jpg", date: '2016' },
+            { url: "./images/01_VeN_Bou_02.jpg", date: '2016' },
+            { url: "./images/01_VeN_Bou_03.jpg", date: '2016' },
+            { url: "./images/01_VeN_Bou_04.jpg", date: '2019' },
+            { url: "./images/01_VeN_Bou_05.jpg", date: '2020' },
+            { url: "./images/01_VeN_Bou_06_2026.jpg", date: '2026' }
         ]
     },
     {
@@ -127,7 +128,7 @@ const locations = [
         markerImage: "./images/2_VaLP_glicine.png",
         markerSize: 60,
         images: [
-            { url: "./images/05_María_01.jpg", date: 'Sin Fecha' },
+            { url: "./images/05_María_01_2018.jpg", date: '2018' },
             { url: "./images/05_María_03_2026.jpg", date: '2026' },
             { url: "./images/05_María_04_2026.jpg", date: '2026' }
         ]
@@ -2302,7 +2303,7 @@ const locations = [
             { url: "./images/67_Rodríguez_01_2026.jpg", date: '2026' },
             { url: "./images/67_Rodríguez_02_2026.jpg", date: '2026' },
             { url: "./images/67_Rodríguez_03_2026.jpg", date: '2026' },
-            { url: "./images/67_Rodríguez_04_SF.jpg", date: 'Sin Fecha' }
+            { url: "./images/67_Rodriguez_04_SF.jpg", date: 'Sin Fecha' }
 
                    ],
         video: [
@@ -2518,6 +2519,7 @@ function syncMobileLayoutState() {
     setMobileHeaderHeightVar();
     if (!isMobileViewport()) {
         setMobileDetailToggleVisible(false);
+        document.body.classList.remove('mobile-nav-open');
     }
 }
 
@@ -2677,6 +2679,7 @@ function initMap() {
     // Assicuriamoci che non ci siano classi mobili residue all'avvio
     document.body.classList.remove('sidebar-collapsed');
     document.body.classList.remove('mobile-details-open');
+    document.body.classList.remove('mobile-nav-open');
     
     // --- LOGICA TAB ---
     document.querySelectorAll('.tab-button').forEach(button => {

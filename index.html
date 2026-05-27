@@ -26,6 +26,18 @@
                     <i class="fab fa-youtube"></i>
                 </a>
             </nav>
+
+            <button id="sidebarToggle" class="sidebar-toggle" aria-label="Apri/Chiudi il menu" aria-expanded="false" title="Apri/Chiudi menu">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div id="mobileHeaderMenu" class="mobile-header-menu" aria-hidden="true">
+                <a href="mapa.html"><i class="fas fa-map"></i> Mapa</a>
+                <a href="glosario.html"><i class="fas fa-book"></i> Glosario</a>
+                <a href="proyecto.html"><i class="fas fa-diagram-project"></i> Proyecto</a>
+                <a href="contactos.html"><i class="fas fa-envelope"></i> Contactos</a>
+                <a href="https://www.youtube.com/@GeocomercioCS" target="_blank" rel="noopener"><i class="fab fa-youtube"></i> YouTube</a>
+            </div>
         </header>
 
         <main class="proyecto-content" style="display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; min-height: calc(100vh - 220px);">
@@ -43,5 +55,6 @@
             </p>
         </footer>
     </div>
+    <script type="module" src="./mobile-header.js"></script>
 </body>
 </html>
