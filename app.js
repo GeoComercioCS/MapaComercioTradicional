@@ -57,8 +57,8 @@ const locations = [
         markerImage: "./images/2_VaLP_glicine.png",
         markerSize: 60,
         images: [
-            { url: "./images/02_Fernando_01.jpg", date: 'Sin Fecha' },
-            { url: "./images/02_Fernando_02.jpg", date: 'Sin Fecha' }
+            { url: "./images/02_Fernando_01.jpg", date: '2019' },
+            { url: "./images/02_Fernando_02.jpg", date: '2019' }
         ]
     },
     {
@@ -80,7 +80,7 @@ const locations = [
         markerImage: "./images/2_VaLP_glicine.png",
         markerSize: 60,
         images: [
-            { url: "./images/03_María_Teresa_01.jpg", date: 'Sin Fecha' }
+            { url: "./images/03_María_Teresa_01.jpg", date: '2019' }
         ]
     },
     {
@@ -102,7 +102,7 @@ const locations = [
         markerImage: "./images/2_VaLP_glicine.png",
         markerSize: 60,
         images: [
-            { url: "./images/04_Francisca_01.jpeg", date: 'Sin Fecha' }
+            { url: "./images/04_Francisca_01.jpeg", date: '2018' }
         ]
     },
     {
@@ -152,7 +152,7 @@ const locations = [
         markerImage: "./images/2_VaLP_glicine.png",
         markerSize: 60,
         images: [
-            { url: "./images/06_Desconocido_Valencia_01.jpg", date: 'Sin Fecha' },
+            { url: "./images/06_Desconocido_Valencia_01.jpg", date: '2019' },
             { url: "./images/06_Desconocido_Valencia_02_2019.jpg", date: '2019' }
         ]
     },
@@ -180,9 +180,9 @@ const locations = [
         markerImage: "./images/2_VaLP_glicine.png",
         markerSize: 60,
         images: [
-            { url: "./images/07_José_Juan_01.jpg", date: 'Sin Fecha' },
-            { url: "./images/07_José_Juan_02.jpg", date: 'Sin Fecha' },
-            { url: "./images/07_José_Juan_03.jpg", date: 'Sin Fecha' },
+            { url: "./images/07_José_Juan_01.jpg", date: '2019' },
+            { url: "./images/07_José_Juan_02.jpg", date: '2019' },
+            { url: "./images/07_José_Juan_03.jpg", date: '2021' },
             { url: "./images/07_José_Juan_04_2021.jpg", date: '2021' }
             
         ],
@@ -209,7 +209,7 @@ const locations = [
         markerImage: "./images/2_VaLP_glicine.png",
         markerSize: 60,
         images: [
-            { url: "./images/08_Desconocido_S_Felix_01.jpg", date: 'Sin Fecha' }
+            { url: "./images/08_Desconocido_S_Felix_01.jpg", date: '2019' }
         ]
     },
     {
@@ -231,7 +231,7 @@ const locations = [
         markerImage: "./images/2_VaLP_glicine.png",
         markerSize: 60,
         images: [
-            { url: "./images/09_Desconocida_Gobernador_01.jpg", date: 'Sin Fecha' }
+            { url: "./images/09_Desconocida_Gobernador_01.jpg", date: '2019' }
         ]
     },
     {
@@ -253,7 +253,7 @@ const locations = [
         markerImage: "./images/2_VaLP_glicine.png",
         markerSize: 60,
         images: [
-            { url: "./images/10_Desconocido_San_Blas_01.jpg", date: 'Sin Fecha' }
+            { url: "./images/10_Desconocido_San_Blas_01.jpg", date: '2019' }
         ]
     },
     {
