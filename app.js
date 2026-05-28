@@ -275,7 +275,7 @@ const locations = [
         markerImage: "./images/2_VaLP_glicine.png",
         markerSize: 60,
         images: [
-            { url: "./images/11_Desconocido_Ximenez_01.jpg", date: 'Sin Fecha' }
+            { url: "./images/11_Desconocido_Ximenez_01.jpg", date: '2020' }
         ]
     },
     {
@@ -297,7 +297,7 @@ const locations = [
         markerImage: "./images/2_VaLP_glicine.png",
         markerSize: 60,
         images: [
-            { url: "./images/12_Desconocido_Angel_01.jpeg", date: 'Sin Fecha' }
+            { url: "./images/12_Desconocido_Angel_01.jpeg", date: '2020' }
         ]
     },
     {
@@ -319,7 +319,7 @@ const locations = [
         markerImage: "./images/2_VaLP_glicine.png",
         markerSize: 60,
         images: [
-            { url: "./images/13_Desconocido_Jovellanos_01.jpeg", date: 'Sin Fecha' }
+            { url: "./images/13_Desconocido_Jovellanos_01.jpeg", date: '2017' }
         ]
     },
     {
@@ -341,8 +341,8 @@ const locations = [
         markerImage: "./images/2_VaLP_glicine.png",
         markerSize: 60,
         images: [
-            { url: "./images/14_Desconocido_San_Roque_42_01.jpg", date: 'Sin Fecha' },
-            { url: "./images/14_Desconocido_San_Roque_42_02.jpg", date: 'Sin Fecha' }
+            { url: "./images/14_Desconocido_San_Roque_42_01.jpg", date: '2021' },
+            { url: "./images/14_Desconocido_San_Roque_42_02.jpg", date: '2021' }
         ]
     },
     {
@@ -364,9 +364,9 @@ const locations = [
         markerImage: "./images/2_VaLP_glicine.png",
         markerSize: 60,
         images: [
-            { url: "./images/15_Amparo_01.jpg", date: 'Sin Fecha' },
-            { url: "./images/15_Amparo_02.jpg", date: 'Sin Fecha' },
-            { url: "./images/15_Amparo_03.jpg", date: 'Sin Fecha' }
+            { url: "./images/15_Amparo_01.jpg", date: '2016' },
+            { url: "./images/15_Amparo_02.jpg", date: '2023' },
+            { url: "./images/15_Amparo_03.jpg", date: '2023' }
         ]
     },
     {
@@ -388,7 +388,7 @@ const locations = [
         markerImage: "./images/2_VaLP_glicine.png",
         markerSize: 60,
         images: [
-            { url: "./images/16_Desconocido_Almansa_01.jpg", date: 'Sin Fecha' }
+            { url: "./images/16_Desconocido_Almansa_01.jpg", date: '2017' }
         ]
     },
     {
@@ -419,7 +419,7 @@ const locations = [
         markerImage: "./images/2_VaLP_glicine.png",
         markerSize: 60,
         images: [
-            { url: "./images/17_Joaquín_01.jpg", date: 'Sin Fecha' },
+            { url: "./images/17_Joaquín_01.jpg", date: '2023' },
             { url: "./images/17_Joaquín_02_2026.jpg", date: '2026' },
         ],
         video: [
@@ -448,9 +448,9 @@ const locations = [
         markerImage: "./images/2_VaLP_glicine.png",
         markerSize: 60,
         images: [
-            { url: "./images/18_María_Dolores_01.jpg", date: 'Sin Fecha' },
-            { url: "./images/18_María_Dolores_02.jpg", date: 'Sin Fecha' },
-            { url: "./images/18_María_Dolores_03_2024.jpg", date: '2024' }
+            { url: "./images/18_María_Dolores_01.jpg", date: '2025' },
+            { url: "./images/18_María_Dolores_02.jpg", date: '2025' },
+            { url: "./images/18_María_Dolores_3_2024.jpg", date: '2024' }
         ]
     },
     {
@@ -472,8 +472,8 @@ const locations = [
         markerImage: "./images/2_VaLP_glicine.png",
         markerSize: 60,
         images: [
-            { url: "./images/19_Lucia_01.png", date: 'Sin Fecha' },
-            { url: "./images/19_Lucia_02.jpg", date: 'Sin Fecha' }
+            { url: "./images/19_Lucia_01.png", date: '2024' },
+            { url: "./images/19_Lucia_02.jpg", date: '2024' }
         ]
     },
     {
@@ -505,8 +505,8 @@ const locations = [
         markerImage: "./images/2_VaLP_glicine.png",
         markerSize: 60,
         images: [
-            { url: "./images/20_Catalina_01.jpg", date: 'Sin Fecha' },
-            { url: "./images/20_Catalina_02.jpg", date: 'Sin Fecha' }
+            { url: "./images/20_Catalina_01.jpg", date: '2025' },
+            { url: "./images/20_Catalina_02.jpg", date: '2025' }
         ]
     },
     {
@@ -528,7 +528,7 @@ const locations = [
         markerImage: "./images/2_VaLP_glicine.png",
         markerSize: 60,
         images: [
-            { url: "./images/21_Desconocido_Ximen_Perez_01.jpg", date: 'Sin Fecha' }
+            { url: "./images/21_Desconocido_Ximen_Perez_01.jpg", date: '2018' }
         ]
     },
     {
@@ -557,10 +557,10 @@ const locations = [
         markerImage: "./images/2_VaLP_glicine.png",
         markerSize: 60,
         images: [
-            { url: "./images/22_Carmen_Peris_Gomez_01.jpg", date: 'Sin Fecha' },
-            { url: "./images/22_Carmen_Peris_Gomez_02.jpg", date: 'Sin Fecha' },
-            { url: "./images/22_Carmen_Peris_Gomez_03.jpg", date: 'Sin Fecha' },
-            { url: "./images/22_Carmen_Peris_Gomez_04.jpg", date: 'Sin Fecha' }
+            { url: "./images/22_Carmen_Peris_Gomez_01.jpg", date: '2025' },
+            { url: "./images/22_Carmen_Peris_Gomez_02.jpg", date: '2025' },
+            { url: "./images/22_Carmen_Peris_Gomez_03.jpg", date: '2025' },
+            { url: "./images/22_Carmen_Peris_Gomez_04.jpg", date: '2025' }
         ],
         video: [
             {url: "https://youtu.be/YUZUxaWcHS4" }
@@ -591,8 +591,8 @@ const locations = [
         markerImage: "./images/2_VaLP_glicine.png",
         markerSize: 60,
         images: [
-            { url: "./images/23_Rafa_01.jpg", date: 'Sin Fecha' },
-            { url: "./images/23_Rafa_02.jpg", date: 'Sin Fecha' }
+            { url: "./images/23_Rafa_01.jpg", date: '2025' },
+            { url: "./images/23_Rafa_02.jpg", date: '2025' }
         ]
     },
     {
@@ -620,7 +620,7 @@ const locations = [
         markerImage: "./images/2_VaLP_glicine.png",
         markerSize: 60,
         images: [
-            { url: "./images/24_Juan_01.jpg", date: 'Sin Fecha' }
+            { url: "./images/24_Juan_01.jpg", date: '2025' }
         ]
     },
     {
@@ -643,9 +643,9 @@ const locations = [
         markerImage: "./images/2_VaLP_glicine.png",
         markerSize: 60,
         images: [
-            { url: "./images/25_Rafa_01.jpg", date: 'Sin Fecha' },
-            { url: "./images/25_Rafa_02.jpg", date: 'Sin Fecha' },
-            { url: "./images/25_Rafa_03.jpg", date: 'Sin Fecha' }
+            { url: "./images/25_Rafa_01.jpg", date: '2025' },
+            { url: "./images/25_Rafa_02.jpg", date: '2025' },
+            { url: "./images/25_Rafa_03.jpg", date: '2025' }
         ]
     },
     {
@@ -666,7 +666,7 @@ const locations = [
         markerImage: "./images/2_VaLP_glicine.png",
         markerSize: 60,
         images: [
-            { url: "./images/26_Pepe_01.jpg", date: 'Sin Fecha' }
+            { url: "./images/26_Pepe_01.jpg", date: '2025' }
         ]
     },
     {
@@ -688,7 +688,7 @@ const locations = [
         markerImage: "./images/2_VaLP_glicine.png",
         markerSize: 60,
         images: [
-            { url: "./images/27_Desconocido_San_Miguel_01.jpg", date: 'Sin Fecha' }
+            { url: "./images/27_Desconocido_San_Miguel_01.jpg", date: '2020' }
         ]
     },
     {
@@ -747,7 +747,7 @@ const locations = [
         markerSize: 60,
         images: [
 
-            { url: "./images/29_Juan_Tomás_Pérez_Segarra_01.jpg", date: 'Sin Fecha' }
+            { url: "./images/29_Juan_Tomás_Pérez_Segarra_01.jpg", date: '2025' }
                    ]
     },
     {
@@ -773,7 +773,7 @@ const locations = [
         markerImage: "./images/2_VaLP_glicine.png",
         markerSize: 60,
         images: [
-            { url: "./images/30_Agustín_01.jpg", date: 'Sin Fecha' },
+            { url: "./images/30_Agustín_01.jpg", date: '2018' },
             { url: "./images/30_Agustín_02_2018.jpg", date: '2018' },
             { url: "./images/30_Agustín_03_2018.jpg", date: '2018' },
             { url: "./images/30_Agustín_04_2018.JPG", date: '2018' }
