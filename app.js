@@ -2300,10 +2300,14 @@ const locations = [
         markerImage: "./images/2_Storici_rosso.png",
         markerSize: 60,
         images: [
-            { url: "./images/67_Rodríguez_01_2026.jpg", date: '2026' },
-            { url: "./images/67_Rodríguez_02_2026.jpg", date: '2026' },
-            { url: "./images/67_Rodríguez_03_2026.jpg", date: '2026' },
-            { url: "./images/67_Rodriguez_04_SF.jpg", date: 'Sin Fecha' }
+            { url: "./images/67_Rodríguez_01_1955.jpg", date: '1955' },
+            { url: "./images/67_Rodríguez_02_1955.jpg", date: '1955' },
+            { url: "./images/67_Rodriguez_03_1955.jpg", date: '1955' },
+            { url: "./images/67_Rodríguez_04_1965.jpg", date: '1965' },
+            { url: "./images/67_Rodriguez_05_1980.jpg", date: '1980' },
+            { url: "./images/67_Rodríguez_06_2026.jpg", date: '2026' },
+            { url: "./images/67_Rodríguez_07_2026.jpg", date: '2026' },
+            { url: "./images/67_Rodríguez_08_2026.jpg", date: '2026' }
 
                    ],
         video: [
@@ -2356,7 +2360,8 @@ const locations = [
         markerSize: 60,
         images: [
             { url: "./images/68_Discos_Ritmo_01_2018.jpg", date: '2018' },
-            { url: "./images/68_Disco_Ritmo_02_2026.jpg", date: '2026' }
+            { url: "./images/68_Disco_Ritmo_02_2026.jpg", date: '2026' },
+            { url: "./images/68_Disco_Ritmo_03_2026.jpg", date: '2026' }
                    ],
         video: [
             {url: "" }
