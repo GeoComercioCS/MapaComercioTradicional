@@ -2131,8 +2131,8 @@ const locations = [
         markerSize: 60,
         images: [
             { url: "./images/63_Mario_01_2019.jpg", date: '2019' },
-            { url: "./images/63_Mario_02_2019.jpg", date: '2019' },
-            { url: "./images/63_Mario_03_2019.jpg", date: '2019' }
+            { url: "./images/63_Mario_02_2026.jpg", date: '2026' },
+            { url: "./images/63_Mario_03_2026.jpg", date: '2026' }
                    ],
         video: [
             {url: "" }
