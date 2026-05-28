@@ -584,7 +584,7 @@ body {
 .cluster-count {
     font-size: 14px;
     font-weight: 700;
-    color: #DFAACE;
+    color: #F5F0EB;
     text-align: center;
 }
 
@@ -678,7 +678,7 @@ body {
     bottom: 4px;
     left: 4px;
     font-size: 12px;
-    color: #fff;
+    color: #F5F0EB;
     background: rgba(0, 0, 0, 0.6);
     padding: 2px 6px;
     border-radius: 3px;
@@ -931,7 +931,7 @@ body {
     border: none;
     border-radius: 999px;
     background: #111;
-    color: #fff;
+    color: #F5F0EB;
     display: none;
     align-items: center;
     justify-content: center;
@@ -1009,7 +1009,7 @@ body.mobile-details-open .mobile-detail-toggle {
     bottom: 20px;
     z-index: 7010;
     background: rgba(0,0,0,0.7);
-    color: #fff;
+    color: #F5F0EB;
     border: none;
     padding: 10px 14px;
     border-radius: 6px;
@@ -1034,7 +1034,7 @@ body.mobile-details-open .mobile-detail-toggle {
     top: 50%;
     transform: translateY(-50%);
     background: rgba(0,0,0,0.5);
-    color: #fff;
+    color: #F5F0EB;
     border: none;
     width: 44px;
     height: 44px;
@@ -1085,7 +1085,7 @@ body.mobile-details-open .mobile-detail-toggle {
     left: 50%;
     transform: translateX(-50%) translateY(-6px);
     background: rgba(0,0,0,0.6);
-    color: #fff;
+    color: #F5F0EB;
     padding: 6px 10px;
     border-radius: 999px;
     font-weight: 700;
@@ -1291,7 +1291,7 @@ body.glosario-body {
     height: 54px;
     border-radius: 50%;
     background: var(--primary-color);
-    color: #fff;
+    color: #F5F0EB;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1315,7 +1315,7 @@ body.glosario-body {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    color: #fff;
+    color: #F5F0EB;
     text-decoration: none;
     background: var(--primary-color);
     border: 1px solid var(--primary-color);
@@ -1333,7 +1333,7 @@ body.glosario-body {
 #glosario-page footer {
     margin-top: auto;
     background: #551E36;
-    color: #fff;
+    color: #F5F0EB;
     text-align: center;
     padding: 18px 16px;
 }
