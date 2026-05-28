@@ -775,6 +775,7 @@ body {
         padding: 8px 52px 8px 10px;
         align-items: flex-start;
         position: fixed;
+        z-index: 6500;
     }
 
     .header .logo {
