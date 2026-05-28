@@ -3267,12 +3267,15 @@ function updateDescriptionTab() {
     `;
 
     if (isHistoricalStore) {
-        detailHTML += `
+        const establishmentState = (currentLocation.details.store || '').trim();
+        if (establishmentState) {
+            detailHTML += `
         <div class="detail-field">
             <strong>ESTADO DEL ESTABLECIMIENTO</strong>
-            <span>${currentLocation.details.store || ''}</span>
+            <span>${establishmentState}</span>
         </div>
         `;
+        }
 
         const rawLinks = currentLocation.details.link || '';
         const links = rawLinks.match(/https?:\/\/[^\s]+/g) || [];
