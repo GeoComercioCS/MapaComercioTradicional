@@ -2300,11 +2300,11 @@ const locations = [
         markerImage: "./images/2_Storici_rosso.png",
         markerSize: 60,
         images: [
-            { url: "./images/67_Rodríguez_01_1955.jpg", date: '1955' },
+            { url: "./images/67_Rodriguez_01_1955.jpg", date: '1955' },
             { url: "./images/67_Rodríguez_02_1955.jpg", date: '1955' },
             { url: "./images/67_Rodriguez_03_1955.jpg", date: '1955' },
             { url: "./images/67_Rodríguez_04_1965.jpg", date: '1965' },
-            { url: "./images/67_Rodriguez_05_1980.jpg", date: '1980' },
+            { url: "./images/67_Rodríguez_05_1980.jpg", date: '1980' },
             { url: "./images/67_Rodríguez_06_2026.jpg", date: '2026' },
             { url: "./images/67_Rodríguez_07_2026.jpg", date: '2026' },
             { url: "./images/67_Rodríguez_08_2026.jpg", date: '2026' }
