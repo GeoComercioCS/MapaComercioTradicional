@@ -1240,6 +1240,10 @@ body.glosario-body {
     margin-top: 14px;
 }
 
+.funding {
+    background: #dfaace;
+}
+
 .logo-row {
     display: flex;
     gap: 18px;
