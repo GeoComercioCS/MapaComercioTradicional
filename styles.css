@@ -249,7 +249,7 @@ body {
 }
     
 .location-item.active {
-    background-color: #FAF7F9;
+    background-color: #DFAACE;
     border-left: 4px solid var(--primary-color);
     padding-left: 16px;
 }
