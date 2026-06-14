@@ -192,16 +192,20 @@ const locations = [
     },
     {
         id: 8,
-        title: "Sin identificar",
+        title: "Manuel Bou y Ángeles Badenas",
         type: "",
-        description: "No se dispone de información adicional.",
+        description: "Manuel Bou y Ángeles Badenas vendieron frutas, verduras y flores de temporada, las típicas calas entre ellas, desde las 8 \
+        hasta la 13:30 de forma ininterrumpida desde al menos 1990 hasta el año del COVID. A la fecha de la actualización Manuel tiene 94 años \
+        y Ángeles 91.\
+        <em>Actualización junio 2026: nombres de los vendedores, partida rural, edad y periodo de actividad. Fuente: David, nieto de los \
+        vendedores.</em>",
         coordinates: [-0.03664, 39.98933],
         details: {
             address: "Calle San Felix 20",
-            road: "s/d",
+            road: "Catalana",
             category: "Venta a la porta",
             status: "Inactivo",
-            observation: "2019 y 2026",
+            observation: "2019, 2026",
             contact: "",
             notes: ""
         },
@@ -546,7 +550,7 @@ const locations = [
         coordinates: [-0.035665, 39.991318],
         details: {
             address: "Calle Ebanista Hervás, 7",
-            road: "Calle Ebanista Hervás, 7",
+            road: "Canet",
             category: "Venta a la porta",
             status: "Activo",
             observation: "2025",
