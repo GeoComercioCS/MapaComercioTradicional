@@ -721,8 +721,8 @@ const locations = [
         markerImage: "./images/2_VaLP_glicine.png",
         markerSize: 60,
         images: [
-            { url: "28_Antonio_01_2020.jpg", date: "2020" },
-            { url: "28_Antonio_02_SF.jpg", date: "Sin Fecha" }
+            { url: "./images/28_Antonio_01_2020.jpg", date: "2020" },
+            { url: "./images/28_Antonio_02_SF.jpg", date: "Sin Fecha" }
                    ],
         video: [
             {url: "https://youtu.be/mkGu4FOgviw" }
